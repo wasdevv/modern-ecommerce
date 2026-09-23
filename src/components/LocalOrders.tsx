@@ -13,7 +13,7 @@ export default function LocalOrders() {
   if (receipts.length === 0) return null;
   return (
     <section className="mt-6 rounded-lg border border-dashed bg-white p-4">
-      <h2 className="font-semibold">Placed from this browser</h2>
+      <h2 className="font-semibold">Feitos neste navegador</h2>
       <ul className="mt-2 divide-y text-sm">
         {receipts.map((r) => (
           <li key={r.id} className="flex flex-wrap justify-between gap-2 py-2">

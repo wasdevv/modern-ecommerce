@@ -2,7 +2,7 @@
   {
     "id": "prod_001",
     "name": "SaaS Dashboard Template",
-    "description": "SaaS Dashboard Template. Production-ready Next.js + Tailwind template with TypeScript, dark mode and documented components.",
+    "description": "SaaS Dashboard Template. Template Next.js + Tailwind pronto para produção, com TypeScript, dark mode e componentes documentados.",
     "priceCents": 23990,
     "originalPriceCents": 35990,
     "category": "templates",
@@ -16,7 +16,7 @@
   {
     "id": "prod_002",
     "name": "Startup Landing Page",
-    "description": "Startup Landing Page. Production-ready Next.js + Tailwind template with TypeScript, dark mode and documented components.",
+    "description": "Startup Landing Page. Template Next.js + Tailwind pronto para produção, com TypeScript, dark mode e componentes documentados.",
     "priceCents": 20990,
     "category": "templates",
     "image": "/images/products/prod_002.svg",
@@ -29,7 +29,7 @@
   {
     "id": "prod_003",
     "name": "Admin Panel Pro",
-    "description": "Admin Panel Pro. Production-ready Next.js + Tailwind template with TypeScript, dark mode and documented components.",
+    "description": "Admin Panel Pro. Template Next.js + Tailwind pronto para produção, com TypeScript, dark mode e componentes documentados.",
     "priceCents": 14990,
     "category": "templates",
     "image": "/images/products/prod_003.svg",
@@ -42,7 +42,7 @@
   {
     "id": "prod_004",
     "name": "Developer Portfolio",
-    "description": "Developer Portfolio. Production-ready Next.js + Tailwind template with TypeScript, dark mode and documented components.",
+    "description": "Developer Portfolio. Template Next.js + Tailwind pronto para produção, com TypeScript, dark mode e componentes documentados.",
     "priceCents": 14990,
     "category": "templates",
     "image": "/images/products/prod_004.svg",
@@ -55,7 +55,7 @@
   {
     "id": "prod_005",
     "name": "Documentation Site Starter",
-    "description": "Documentation Site Starter. Production-ready Next.js + Tailwind template with TypeScript, dark mode and documented components.",
+    "description": "Documentation Site Starter. Template Next.js + Tailwind pronto para produção, com TypeScript, dark mode e componentes documentados.",
     "priceCents": 6990,
     "category": "templates",
     "image": "/images/products/prod_005.svg",
@@ -68,7 +68,7 @@
   {
     "id": "prod_006",
     "name": "Analytics Dashboard",
-    "description": "Analytics Dashboard. Production-ready Next.js + Tailwind template with TypeScript, dark mode and documented components.",
+    "description": "Analytics Dashboard. Template Next.js + Tailwind pronto para produção, com TypeScript, dark mode e componentes documentados.",
     "priceCents": 9990,
     "category": "templates",
     "image": "/images/products/prod_006.svg",
@@ -81,7 +81,7 @@
   {
     "id": "prod_007",
     "name": "Agency Website Template",
-    "description": "Agency Website Template. Production-ready Next.js + Tailwind template with TypeScript, dark mode and documented components.",
+    "description": "Agency Website Template. Template Next.js + Tailwind pronto para produção, com TypeScript, dark mode e componentes documentados.",
     "priceCents": 12990,
     "originalPriceCents": 19990,
     "category": "templates",
@@ -95,7 +95,7 @@
   {
     "id": "prod_008",
     "name": "Blog Starter Kit",
-    "description": "Blog Starter Kit. Production-ready Next.js + Tailwind template with TypeScript, dark mode and documented components.",
+    "description": "Blog Starter Kit. Template Next.js + Tailwind pronto para produção, com TypeScript, dark mode e componentes documentados.",
     "priceCents": 18990,
     "category": "templates",
     "image": "/images/products/prod_008.svg",
@@ -108,7 +108,7 @@
   {
     "id": "prod_009",
     "name": "Booking App Template",
-    "description": "Booking App Template. Production-ready Next.js + Tailwind template with TypeScript, dark mode and documented components.",
+    "description": "Booking App Template. Template Next.js + Tailwind pronto para produção, com TypeScript, dark mode e componentes documentados.",
     "priceCents": 20990,
     "category": "templates",
     "image": "/images/products/prod_009.svg",
@@ -121,7 +121,7 @@
   {
     "id": "prod_010",
     "name": "CRM Dashboard",
-    "description": "CRM Dashboard. Production-ready Next.js + Tailwind template with TypeScript, dark mode and documented components.",
+    "description": "CRM Dashboard. Template Next.js + Tailwind pronto para produção, com TypeScript, dark mode e componentes documentados.",
     "priceCents": 21990,
     "originalPriceCents": 29990,
     "category": "templates",
@@ -135,7 +135,7 @@
   {
     "id": "prod_011",
     "name": "Changelog & Roadmap Site",
-    "description": "Changelog & Roadmap Site. Production-ready Next.js + Tailwind template with TypeScript, dark mode and documented components.",
+    "description": "Changelog & Roadmap Site. Template Next.js + Tailwind pronto para produção, com TypeScript, dark mode e componentes documentados.",
     "priceCents": 18990,
     "originalPriceCents": 24990,
     "category": "templates",
@@ -149,7 +149,7 @@
   {
     "id": "prod_012",
     "name": "Invoice App Template",
-    "description": "Invoice App Template. Production-ready Next.js + Tailwind template with TypeScript, dark mode and documented components.",
+    "description": "Invoice App Template. Template Next.js + Tailwind pronto para produção, com TypeScript, dark mode e componentes documentados.",
     "priceCents": 22990,
     "category": "templates",
     "image": "/images/products/prod_012.svg",
@@ -162,7 +162,7 @@
   {
     "id": "prod_013",
     "name": "Status Page Template",
-    "description": "Status Page Template. Production-ready Next.js + Tailwind template with TypeScript, dark mode and documented components.",
+    "description": "Status Page Template. Template Next.js + Tailwind pronto para produção, com TypeScript, dark mode e componentes documentados.",
     "priceCents": 18990,
     "category": "templates",
     "image": "/images/products/prod_013.svg",
@@ -175,7 +175,7 @@
   {
     "id": "prod_014",
     "name": "E-commerce UI Kit",
-    "description": "E-commerce UI Kit. Figma file plus React components, built on design tokens and tested for keyboard and screen readers.",
+    "description": "E-commerce UI Kit. Arquivo Figma e componentes React, com design tokens e testados com teclado e leitor de tela.",
     "priceCents": 12990,
     "originalPriceCents": 20990,
     "category": "ui-kits",
@@ -189,7 +189,7 @@
   {
     "id": "prod_015",
     "name": "Mobile Banking UI Kit",
-    "description": "Mobile Banking UI Kit. Figma file plus React components, built on design tokens and tested for keyboard and screen readers.",
+    "description": "Mobile Banking UI Kit. Arquivo Figma e componentes React, com design tokens e testados com teclado e leitor de tela.",
     "priceCents": 5990,
     "category": "ui-kits",
     "image": "/images/products/prod_015.svg",
@@ -202,7 +202,7 @@
   {
     "id": "prod_016",
     "name": "Dashboard Components Kit",
-    "description": "Dashboard Components Kit. Figma file plus React components, built on design tokens and tested for keyboard and screen readers.",
+    "description": "Dashboard Components Kit. Arquivo Figma e componentes React, com design tokens e testados com teclado e leitor de tela.",
     "priceCents": 7990,
     "originalPriceCents": 12990,
     "category": "ui-kits",
@@ -216,7 +216,7 @@
   {
     "id": "prod_017",
     "name": "Form Patterns Kit",
-    "description": "Form Patterns Kit. Figma file plus React components, built on design tokens and tested for keyboard and screen readers.",
+    "description": "Form Patterns Kit. Arquivo Figma e componentes React, com design tokens e testados com teclado e leitor de tela.",
     "priceCents": 12990,
     "originalPriceCents": 18990,
     "category": "ui-kits",
@@ -230,7 +230,7 @@
   {
     "id": "prod_018",
     "name": "Marketing Sections Kit",
-    "description": "Marketing Sections Kit. Figma file plus React components, built on design tokens and tested for keyboard and screen readers.",
+    "description": "Marketing Sections Kit. Arquivo Figma e componentes React, com design tokens e testados com teclado e leitor de tela.",
     "priceCents": 11990,
     "category": "ui-kits",
     "image": "/images/products/prod_018.svg",
@@ -243,7 +243,7 @@
   {
     "id": "prod_019",
     "name": "Data Table Kit",
-    "description": "Data Table Kit. Figma file plus React components, built on design tokens and tested for keyboard and screen readers.",
+    "description": "Data Table Kit. Arquivo Figma e componentes React, com design tokens e testados com teclado e leitor de tela.",
     "priceCents": 14990,
     "originalPriceCents": 24990,
     "category": "ui-kits",
@@ -257,7 +257,7 @@
   {
     "id": "prod_020",
     "name": "Chat Interface Kit",
-    "description": "Chat Interface Kit. Figma file plus React components, built on design tokens and tested for keyboard and screen readers.",
+    "description": "Chat Interface Kit. Arquivo Figma e componentes React, com design tokens e testados com teclado e leitor de tela.",
     "priceCents": 11990,
     "originalPriceCents": 16990,
     "category": "ui-kits",
@@ -271,7 +271,7 @@
   {
     "id": "prod_021",
     "name": "Onboarding Flows Kit",
-    "description": "Onboarding Flows Kit. Figma file plus React components, built on design tokens and tested for keyboard and screen readers.",
+    "description": "Onboarding Flows Kit. Arquivo Figma e componentes React, com design tokens e testados com teclado e leitor de tela.",
     "priceCents": 17990,
     "category": "ui-kits",
     "image": "/images/products/prod_021.svg",
@@ -284,7 +284,7 @@
   {
     "id": "prod_022",
     "name": "Icon Set — 1,200 icons",
-    "description": "Icon Set — 1,200 icons. Figma file plus React components, built on design tokens and tested for keyboard and screen readers.",
+    "description": "Icon Set — 1,200 icons. Arquivo Figma e componentes React, com design tokens e testados com teclado e leitor de tela.",
     "priceCents": 7990,
     "category": "ui-kits",
     "image": "/images/products/prod_022.svg",
@@ -297,7 +297,7 @@
   {
     "id": "prod_023",
     "name": "Charts & Graphs Kit",
-    "description": "Charts & Graphs Kit. Figma file plus React components, built on design tokens and tested for keyboard and screen readers.",
+    "description": "Charts & Graphs Kit. Arquivo Figma e componentes React, com design tokens e testados com teclado e leitor de tela.",
     "priceCents": 6990,
     "originalPriceCents": 10990,
     "category": "ui-kits",
@@ -311,7 +311,7 @@
   {
     "id": "prod_024",
     "name": "Settings Screens Kit",
-    "description": "Settings Screens Kit. Figma file plus React components, built on design tokens and tested for keyboard and screen readers.",
+    "description": "Settings Screens Kit. Arquivo Figma e componentes React, com design tokens e testados com teclado e leitor de tela.",
     "priceCents": 10990,
     "originalPriceCents": 15990,
     "category": "ui-kits",
@@ -325,7 +325,7 @@
   {
     "id": "prod_025",
     "name": "Pricing Pages Kit",
-    "description": "Pricing Pages Kit. Figma file plus React components, built on design tokens and tested for keyboard and screen readers.",
+    "description": "Pricing Pages Kit. Arquivo Figma e componentes React, com design tokens e testados com teclado e leitor de tela.",
     "priceCents": 15990,
     "originalPriceCents": 26990,
     "category": "ui-kits",
@@ -339,7 +339,7 @@
   {
     "id": "prod_026",
     "name": "Email Templates Kit",
-    "description": "Email Templates Kit. Figma file plus React components, built on design tokens and tested for keyboard and screen readers.",
+    "description": "Email Templates Kit. Arquivo Figma e componentes React, com design tokens e testados com teclado e leitor de tela.",
     "priceCents": 14990,
     "category": "ui-kits",
     "image": "/images/products/prod_026.svg",
@@ -352,7 +352,7 @@
   {
     "id": "prod_027",
     "name": "Next.js App Router in Depth",
-    "description": "Next.js App Router in Depth. Video course with source code for every lesson and a final project you can put in your portfolio.",
+    "description": "Next.js App Router in Depth. Curso em vídeo com código-fonte de cada aula e um projeto final para o seu portfólio.",
     "priceCents": 39990,
     "category": "courses",
     "image": "/images/products/prod_027.svg",
@@ -365,7 +365,7 @@
   {
     "id": "prod_028",
     "name": "TypeScript for React Developers",
-    "description": "TypeScript for React Developers. Video course with source code for every lesson and a final project you can put in your portfolio.",
+    "description": "TypeScript for React Developers. Curso em vídeo com código-fonte de cada aula e um projeto final para o seu portfólio.",
     "priceCents": 30990,
     "originalPriceCents": 44990,
     "category": "courses",
@@ -379,7 +379,7 @@
   {
     "id": "prod_029",
     "name": "Testing React Applications",
-    "description": "Testing React Applications. Video course with source code for every lesson and a final project you can put in your portfolio.",
+    "description": "Testing React Applications. Curso em vídeo com código-fonte de cada aula e um projeto final para o seu portfólio.",
     "priceCents": 17990,
     "originalPriceCents": 24990,
     "category": "courses",
@@ -393,7 +393,7 @@
   {
     "id": "prod_030",
     "name": "Web Performance Fundamentals",
-    "description": "Web Performance Fundamentals. Video course with source code for every lesson and a final project you can put in your portfolio.",
+    "description": "Web Performance Fundamentals. Curso em vídeo com código-fonte de cada aula e um projeto final para o seu portfólio.",
     "priceCents": 35990,
     "category": "courses",
     "image": "/images/products/prod_030.svg",
@@ -406,7 +406,7 @@
   {
     "id": "prod_031",
     "name": "Accessible Components Workshop",
-    "description": "Accessible Components Workshop. Video course with source code for every lesson and a final project you can put in your portfolio.",
+    "description": "Accessible Components Workshop. Curso em vídeo com código-fonte de cada aula e um projeto final para o seu portfólio.",
     "priceCents": 17990,
     "originalPriceCents": 23990,
     "category": "courses",
@@ -420,7 +420,7 @@
   {
     "id": "prod_032",
     "name": "Node.js APIs from Scratch",
-    "description": "Node.js APIs from Scratch. Video course with source code for every lesson and a final project you can put in your portfolio.",
+    "description": "Node.js APIs from Scratch. Curso em vídeo com código-fonte de cada aula e um projeto final para o seu portfólio.",
     "priceCents": 25990,
     "originalPriceCents": 38990,
     "category": "courses",
@@ -434,7 +434,7 @@
   {
     "id": "prod_033",
     "name": "PostgreSQL for Application Developers",
-    "description": "PostgreSQL for Application Developers. Video course with source code for every lesson and a final project you can put in your portfolio.",
+    "description": "PostgreSQL for Application Developers. Curso em vídeo com código-fonte de cada aula e um projeto final para o seu portfólio.",
     "priceCents": 21990,
     "originalPriceCents": 28990,
     "category": "courses",
@@ -448,7 +448,7 @@
   {
     "id": "prod_034",
     "name": "Tailwind CSS Design Systems",
-    "description": "Tailwind CSS Design Systems. Video course with source code for every lesson and a final project you can put in your portfolio.",
+    "description": "Tailwind CSS Design Systems. Curso em vídeo com código-fonte de cada aula e um projeto final para o seu portfólio.",
     "priceCents": 14990,
     "originalPriceCents": 20990,
     "category": "courses",
@@ -462,7 +462,7 @@
   {
     "id": "prod_035",
     "name": "GraphQL in Practice",
-    "description": "GraphQL in Practice. Video course with source code for every lesson and a final project you can put in your portfolio.",
+    "description": "GraphQL in Practice. Curso em vídeo com código-fonte de cada aula e um projeto final para o seu portfólio.",
     "priceCents": 32990,
     "category": "courses",
     "image": "/images/products/prod_035.svg",
@@ -475,7 +475,7 @@
   {
     "id": "prod_036",
     "name": "Git Beyond the Basics",
-    "description": "Git Beyond the Basics. Video course with source code for every lesson and a final project you can put in your portfolio.",
+    "description": "Git Beyond the Basics. Curso em vídeo com código-fonte de cada aula e um projeto final para o seu portfólio.",
     "priceCents": 38990,
     "category": "courses",
     "image": "/images/products/prod_036.svg",
@@ -488,7 +488,7 @@
   {
     "id": "prod_037",
     "name": "Docker for Web Developers",
-    "description": "Docker for Web Developers. Video course with source code for every lesson and a final project you can put in your portfolio.",
+    "description": "Docker for Web Developers. Curso em vídeo com código-fonte de cada aula e um projeto final para o seu portfólio.",
     "priceCents": 20990,
     "category": "courses",
     "image": "/images/products/prod_037.svg",
@@ -501,7 +501,7 @@
   {
     "id": "prod_038",
     "name": "Product Analytics with GA4",
-    "description": "Product Analytics with GA4. Video course with source code for every lesson and a final project you can put in your portfolio.",
+    "description": "Product Analytics with GA4. Curso em vídeo com código-fonte de cada aula e um projeto final para o seu portfólio.",
     "priceCents": 19990,
     "category": "courses",
     "image": "/images/products/prod_038.svg",
@@ -514,7 +514,7 @@
   {
     "id": "prod_039",
     "name": "Stripe Payments Integration",
-    "description": "Stripe Payments Integration. Video course with source code for every lesson and a final project you can put in your portfolio.",
+    "description": "Stripe Payments Integration. Curso em vídeo com código-fonte de cada aula e um projeto final para o seu portfólio.",
     "priceCents": 33990,
     "category": "courses",
     "image": "/images/products/prod_039.svg",
@@ -527,7 +527,7 @@
   {
     "id": "prod_040",
     "name": "TypeScript Advanced Patterns",
-    "description": "TypeScript Advanced Patterns. PDF and EPUB ebook with runnable examples and free updates for the current major version.",
+    "description": "TypeScript Advanced Patterns. E-book em PDF e EPUB com exemplos executáveis e atualizações grátis na versão atual.",
     "priceCents": 4990,
     "category": "ebooks",
     "image": "/images/products/prod_040.svg",
@@ -540,7 +540,7 @@
   {
     "id": "prod_041",
     "name": "Core Web Vitals Handbook",
-    "description": "Core Web Vitals Handbook. PDF and EPUB ebook with runnable examples and free updates for the current major version.",
+    "description": "Core Web Vitals Handbook. E-book em PDF e EPUB com exemplos executáveis e atualizações grátis na versão atual.",
     "priceCents": 2990,
     "category": "ebooks",
     "image": "/images/products/prod_041.svg",
@@ -553,7 +553,7 @@
   {
     "id": "prod_042",
     "name": "CSS Layout Field Guide",
-    "description": "CSS Layout Field Guide. PDF and EPUB ebook with runnable examples and free updates for the current major version.",
+    "description": "CSS Layout Field Guide. E-book em PDF e EPUB com exemplos executáveis e atualizações grátis na versão atual.",
     "priceCents": 2990,
     "category": "ebooks",
     "image": "/images/products/prod_042.svg",
@@ -566,7 +566,7 @@
   {
     "id": "prod_043",
     "name": "Clean React Architecture",
-    "description": "Clean React Architecture. PDF and EPUB ebook with runnable examples and free updates for the current major version.",
+    "description": "Clean React Architecture. E-book em PDF e EPUB com exemplos executáveis e atualizações grátis na versão atual.",
     "priceCents": 4990,
     "category": "ebooks",
     "image": "/images/products/prod_043.svg",
@@ -579,7 +579,7 @@
   {
     "id": "prod_044",
     "name": "SQL Query Cookbook",
-    "description": "SQL Query Cookbook. PDF and EPUB ebook with runnable examples and free updates for the current major version.",
+    "description": "SQL Query Cookbook. E-book em PDF e EPUB com exemplos executáveis e atualizações grátis na versão atual.",
     "priceCents": 2990,
     "category": "ebooks",
     "image": "/images/products/prod_044.svg",
@@ -592,7 +592,7 @@
   {
     "id": "prod_045",
     "name": "REST API Design Notes",
-    "description": "REST API Design Notes. PDF and EPUB ebook with runnable examples and free updates for the current major version.",
+    "description": "REST API Design Notes. E-book em PDF e EPUB com exemplos executáveis e atualizações grátis na versão atual.",
     "priceCents": 4990,
     "category": "ebooks",
     "image": "/images/products/prod_045.svg",
@@ -605,7 +605,7 @@
   {
     "id": "prod_046",
     "name": "JavaScript Async Deep Dive",
-    "description": "JavaScript Async Deep Dive. PDF and EPUB ebook with runnable examples and free updates for the current major version.",
+    "description": "JavaScript Async Deep Dive. E-book em PDF e EPUB com exemplos executáveis e atualizações grátis na versão atual.",
     "priceCents": 1990,
     "category": "ebooks",
     "image": "/images/products/prod_046.svg",
@@ -618,7 +618,7 @@
   {
     "id": "prod_047",
     "name": "Technical SEO for Developers",
-    "description": "Technical SEO for Developers. PDF and EPUB ebook with runnable examples and free updates for the current major version.",
+    "description": "Technical SEO for Developers. E-book em PDF e EPUB com exemplos executáveis e atualizações grátis na versão atual.",
     "priceCents": 2990,
     "category": "ebooks",
     "image": "/images/products/prod_047.svg",
@@ -631,7 +631,7 @@
   {
     "id": "prod_048",
     "name": "Refactoring Frontend Code",
-    "description": "Refactoring Frontend Code. PDF and EPUB ebook with runnable examples and free updates for the current major version.",
+    "description": "Refactoring Frontend Code. E-book em PDF e EPUB com exemplos executáveis e atualizações grátis na versão atual.",
     "priceCents": 4990,
     "category": "ebooks",
     "image": "/images/products/prod_048.svg",
@@ -644,7 +644,7 @@
   {
     "id": "prod_049",
     "name": "Monorepos with Turborepo",
-    "description": "Monorepos with Turborepo. PDF and EPUB ebook with runnable examples and free updates for the current major version.",
+    "description": "Monorepos with Turborepo. E-book em PDF e EPUB com exemplos executáveis e atualizações grátis na versão atual.",
     "priceCents": 2990,
     "category": "ebooks",
     "image": "/images/products/prod_049.svg",
@@ -657,7 +657,7 @@
   {
     "id": "prod_050",
     "name": "Security Checklist for Web Apps",
-    "description": "Security Checklist for Web Apps. PDF and EPUB ebook with runnable examples and free updates for the current major version.",
+    "description": "Security Checklist for Web Apps. E-book em PDF e EPUB com exemplos executáveis e atualizações grátis na versão atual.",
     "priceCents": 4990,
     "category": "ebooks",
     "image": "/images/products/prod_050.svg",
@@ -670,7 +670,7 @@
   {
     "id": "prod_051",
     "name": "Regex Pocket Reference",
-    "description": "Regex Pocket Reference. PDF and EPUB ebook with runnable examples and free updates for the current major version.",
+    "description": "Regex Pocket Reference. E-book em PDF e EPUB com exemplos executáveis e atualizações grátis na versão atual.",
     "priceCents": 4990,
     "category": "ebooks",
     "image": "/images/products/prod_051.svg",
@@ -683,7 +683,7 @@
   {
     "id": "prod_052",
     "name": "The Code Review Book",
-    "description": "The Code Review Book. PDF and EPUB ebook with runnable examples and free updates for the current major version.",
+    "description": "The Code Review Book. E-book em PDF e EPUB com exemplos executáveis e atualizações grátis na versão atual.",
     "priceCents": 5990,
     "originalPriceCents": 8990,
     "category": "ebooks",

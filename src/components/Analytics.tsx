@@ -46,16 +46,16 @@ export default function Analytics() {
   if (consent !== null) return null; // 'denied', or still reading storage
 
   return (
-    <div role="dialog" aria-label="Analytics consent" className="fixed inset-x-4 bottom-4 z-50 mx-auto max-w-xl rounded-lg border bg-white p-4 shadow-lg">
+    <div role="dialog" aria-label="Consentimento de analytics" className="fixed inset-x-4 bottom-4 z-50 mx-auto max-w-xl rounded-lg border bg-white p-4 shadow-lg">
       <p className="text-sm text-gray-700">
-        This demo can send anonymous e-commerce events (product views, cart, purchase) to Google Analytics. No name or email is sent.
+        Esta demo pode enviar eventos anônimos de e-commerce (visualização de produto, carrinho, compra) ao Google Analytics. Nome e email nunca são enviados.
       </p>
       <div className="mt-3 flex gap-2">
         <button onClick={() => decide('granted')} className="rounded-md bg-gray-900 px-4 py-2 text-sm font-semibold text-white hover:bg-gray-700">
-          Accept
+          Aceitar
         </button>
         <button onClick={() => decide('denied')} className="rounded-md border px-4 py-2 text-sm font-semibold hover:bg-gray-50">
-          Decline
+          Recusar
         </button>
       </div>
     </div>

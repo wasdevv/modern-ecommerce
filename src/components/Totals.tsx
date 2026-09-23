@@ -8,12 +8,12 @@ export default function Totals({ subtotalCents, taxCents }: { subtotalCents: num
         <dd>{formatBRL(subtotalCents)}</dd>
       </div>
       <div className="flex justify-between">
-        <dt>Tax (18%)</dt>
+        <dt>Impostos (18%)</dt>
         <dd>{formatBRL(taxCents)}</dd>
       </div>
       <div className="flex justify-between">
-        <dt>Delivery</dt>
-        <dd>Digital, free</dd>
+        <dt>Entrega</dt>
+        <dd>Digital, grátis</dd>
       </div>
       <div className="flex justify-between border-t pt-2 text-base font-bold">
         <dt>Total</dt>

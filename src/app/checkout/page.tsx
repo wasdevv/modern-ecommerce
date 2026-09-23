@@ -32,14 +32,14 @@ export default function CheckoutPage() {
     if (error) errorRef.current?.focus();
   }, [error]);
 
-  if (!hydrated) return <p className="text-gray-500">Loading…</p>;
-  if (status === 'placed') return <p className="text-gray-500">Order placed, opening your receipt…</p>;
+  if (!hydrated) return <p className="text-gray-500">Carregando…</p>;
+  if (status === 'placed') return <p className="text-gray-500">Pedido feito, abrindo o recibo…</p>;
   if (lines.length === 0) {
     return (
       <div className="py-16 text-center">
-        <h1 className="text-3xl font-bold">Your cart is empty</h1>
+        <h1 className="text-3xl font-bold">Seu carrinho está vazio</h1>
         <Link href="/products" className="mt-6 inline-block underline">
-          Browse products
+          Ver produtos
         </Link>
       </div>
     );
@@ -63,7 +63,7 @@ export default function CheckoutPage() {
         }),
       });
       const data = await res.json().catch(() => null);
-      if (!res.ok || !data?.id) throw new Error(data?.error || 'The order could not be created.');
+      if (!res.ok || !data?.id) throw new Error(data?.error || 'Não foi possível criar o pedido.');
       const receipt = data as Receipt;
       saveReceipt(receipt);
       // Fired here, once, right after the server confirmed the order: a refresh of the receipt page can't repeat it.
@@ -77,14 +77,14 @@ export default function CheckoutPage() {
       clear();
       router.push(`/order/${receipt.id}`);
     } catch (err) {
-      setError(err instanceof Error && err.message !== 'Failed to fetch' ? err.message : 'Network error. Please try again.');
+      setError(err instanceof Error && err.message !== 'Failed to fetch' ? err.message : 'Erro de rede. Tente novamente.');
       setStatus('idle');
     }
   };
 
   return (
     <>
-      <h1 className="text-3xl font-bold">Checkout</h1>
+      <h1 className="text-3xl font-bold">Finalizar compra</h1>
       <div className="mt-6 grid gap-8 lg:grid-cols-[2fr_1fr]">
         <form onSubmit={onSubmit} className="space-y-5 rounded-lg border bg-white p-6">
           {error && (
@@ -93,7 +93,7 @@ export default function CheckoutPage() {
             </p>
           )}
           <label className="block text-sm">
-            <span className="mb-1 block font-medium">Full name</span>
+            <span className="mb-1 block font-medium">Nome completo</span>
             <input name="name" required maxLength={100} autoComplete="name" className="w-full rounded-md border px-3 py-2" />
           </label>
           <label className="block text-sm">
@@ -101,11 +101,11 @@ export default function CheckoutPage() {
             <input name="email" type="email" required maxLength={254} autoComplete="email" className="w-full rounded-md border px-3 py-2" />
           </label>
           <fieldset className="text-sm">
-            <legend className="mb-1 font-medium">Payment method</legend>
+            <legend className="mb-1 font-medium">Forma de pagamento</legend>
             <div className="flex flex-wrap gap-4">
               {[
                 ['pix', 'Pix'],
-                ['card', 'Credit card'],
+                ['card', 'Cartão de crédito'],
                 ['boleto', 'Boleto'],
               ].map(([value, label], i) => (
                 <label key={value} className="flex items-center gap-2">
@@ -115,17 +115,17 @@ export default function CheckoutPage() {
             </div>
           </fieldset>
           <p className="rounded-md bg-amber-50 p-3 text-sm text-amber-900">
-            <strong>Simulated purchase.</strong> No payment details are collected and nothing will be charged.
+            <strong>Compra simulada.</strong> Nenhum dado de pagamento é coletado e nada será cobrado.
           </p>
           <button
             disabled={status === 'submitting'}
             className="w-full rounded-md bg-gray-900 py-3 font-semibold text-white hover:bg-gray-700 disabled:cursor-wait disabled:bg-gray-500"
           >
-            {status === 'submitting' ? 'Placing order…' : 'Place demo order'}
+            {status === 'submitting' ? 'Enviando pedido…' : 'Fazer pedido demo'}
           </button>
         </form>
         <aside className="h-fit rounded-lg border bg-white p-6">
-          <h2 className="mb-4 font-bold">Order summary</h2>
+          <h2 className="mb-4 font-bold">Resumo do pedido</h2>
           <ul className="mb-4 space-y-2 border-b pb-4 text-sm">
             {lines.map((l) => {
               const p = getProduct(l.productId)!;
@@ -140,7 +140,7 @@ export default function CheckoutPage() {
             })}
           </ul>
           <Totals subtotalCents={subtotalCents} taxCents={taxFor(subtotalCents)} />
-          <p className="mt-3 text-xs text-gray-500">Final prices are confirmed by the server.</p>
+          <p className="mt-3 text-xs text-gray-500">Os preços finais são confirmados pelo servidor.</p>
         </aside>
       </div>
     </>

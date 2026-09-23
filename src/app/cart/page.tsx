@@ -20,14 +20,14 @@ export default function CartPage() {
     track('view_cart', { items: lines.map((l) => toItem(getProduct(l.productId)!, l.quantity)), value: subtotalCents / 100 });
   }, [hydrated, lines, subtotalCents]);
 
-  if (!hydrated) return <p className="text-gray-500">Loading cart…</p>;
+  if (!hydrated) return <p className="text-gray-500">Carregando carrinho…</p>;
 
   if (lines.length === 0) {
     return (
       <div className="py-16 text-center">
-        <h1 className="text-3xl font-bold">Your cart is empty</h1>
+        <h1 className="text-3xl font-bold">Seu carrinho está vazio</h1>
         <Link href="/products" className="mt-6 inline-block rounded-md bg-gray-900 px-5 py-2.5 font-semibold text-white">
-          Browse products
+          Ver produtos
         </Link>
       </div>
     );
@@ -35,7 +35,7 @@ export default function CartPage() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold">Cart</h1>
+      <h1 className="text-3xl font-bold">Carrinho</h1>
       <div className="mt-6 grid gap-8 lg:grid-cols-[2fr_1fr]">
         <ul className="divide-y rounded-lg border bg-white">
           {lines.map((line) => {
@@ -48,11 +48,11 @@ export default function CartPage() {
                     <Link href={`/products/${product.id}`} className="font-semibold hover:underline">
                       {product.name}
                     </Link>
-                    <p className="text-sm text-gray-600">{formatBRL(product.priceCents)} each</p>
-                    {!product.inStock && <p className="text-sm text-red-700">No longer available — remove it to check out.</p>}
+                    <p className="text-sm text-gray-600">{formatBRL(product.priceCents)} cada</p>
+                    {!product.inStock && <p className="text-sm text-red-700">Não está mais disponível — remova para finalizar a compra.</p>}
                   </div>
                   <label className="text-sm">
-                    <span className="sr-only">Quantity of {product.name}</span>
+                    <span className="sr-only">Quantidade de {product.name}</span>
                     <select value={line.quantity} onChange={(e) => setQuantity(product.id, Number(e.target.value))} className="rounded-md border px-2 py-1">
                       {Array.from({ length: MAX_QUANTITY }, (_, i) => i + 1).map((n) => (
                         <option key={n}>{n}</option>
@@ -61,7 +61,7 @@ export default function CartPage() {
                   </label>
                   <p className="w-28 font-semibold sm:text-right">{formatBRL(product.priceCents * line.quantity)}</p>
                   <button onClick={() => remove(product.id)} className="text-sm text-red-700 hover:underline">
-                    Remove<span className="sr-only"> {product.name}</span>
+                    Remover<span className="sr-only"> {product.name}</span>
                   </button>
                 </div>
               </li>
@@ -71,7 +71,7 @@ export default function CartPage() {
         <aside className="h-fit rounded-lg border bg-white p-6">
           <Totals subtotalCents={subtotalCents} taxCents={taxFor(subtotalCents)} />
           <Link href="/checkout" className="mt-6 block rounded-md bg-gray-900 py-3 text-center font-semibold text-white hover:bg-gray-700">
-            Checkout
+            Finalizar compra
           </Link>
         </aside>
       </div>

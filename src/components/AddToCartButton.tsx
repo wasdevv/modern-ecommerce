@@ -12,7 +12,7 @@ export default function AddToCartButton({ product, className = '' }: { product: 
   if (!product.inStock) {
     return (
       <button disabled className={`cursor-not-allowed rounded-md bg-gray-200 px-4 py-2 text-sm font-semibold text-gray-500 ${className}`}>
-        Unavailable
+        Indisponível
       </button>
     );
   }
@@ -27,7 +27,7 @@ export default function AddToCartButton({ product, className = '' }: { product: 
       }}
       className={`rounded-md bg-gray-900 px-4 py-2 text-sm font-semibold text-white hover:bg-gray-700 ${className}`}
     >
-      <span aria-live="polite">{added ? 'Added ✓' : 'Add to cart'}</span>
+      <span aria-live="polite">{added ? 'Adicionado ✓' : 'Adicionar ao carrinho'}</span>
     </button>
   );
 }

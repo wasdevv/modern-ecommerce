@@ -14,11 +14,11 @@ export function confirmationHtml(order: Order) {
     )
     .join('');
   return `<div style="font-family:system-ui,sans-serif;max-width:560px;margin:0 auto;color:#111">
-<h1 style="font-size:20px">Order ${escape(order.id)} received</h1>
-<p>Hi ${escape(order.name)}, this is a demo store: no payment was charged.</p>
+<h1 style="font-size:20px">Pedido ${escape(order.id)} recebido</h1>
+<p>Olá, ${escape(order.name)}! Esta é uma loja demo: nenhum pagamento foi cobrado.</p>
 <table style="width:100%;border-collapse:collapse">${rows}</table>
-<p style="text-align:right">Subtotal ${formatBRL(order.subtotalCents)}<br>Tax ${formatBRL(order.taxCents)}<br><strong>Total ${formatBRL(order.totalCents)}</strong></p>
-<p><a href="${siteUrl()}/order/${encodeURIComponent(order.id)}">View your order</a> (the link works in the browser you ordered from).</p>
+<p style="text-align:right">Subtotal ${formatBRL(order.subtotalCents)}<br>Impostos ${formatBRL(order.taxCents)}<br><strong>Total ${formatBRL(order.totalCents)}</strong></p>
+<p><a href="${siteUrl()}/order/${encodeURIComponent(order.id)}">Ver seu pedido</a> (o link funciona no navegador em que você comprou).</p>
 </div>`;
 }
 
@@ -31,7 +31,7 @@ export async function sendConfirmation(order: Order): Promise<EmailStatus> {
     const res = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ from, to: order.email, subject: `Order ${order.id} received`, html: confirmationHtml(order) }),
+      body: JSON.stringify({ from, to: order.email, subject: `Pedido ${order.id} recebido`, html: confirmationHtml(order) }),
       signal: AbortSignal.timeout(5000),
     });
     if (res.ok) return 'sent';

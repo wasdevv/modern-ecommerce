@@ -3,5 +3,5 @@
 <rect width="800" height="600" fill="url(#g)"/>
 <circle cx="680" cy="110" r="190" fill="#fff" opacity=".07"/><circle cx="90" cy="560" r="150" fill="#fff" opacity=".06"/>
 <text x="400" y="330" text-anchor="middle" font-family="system-ui,sans-serif" font-size="200" font-weight="700" fill="#fff">OF</text>
-<text x="400" y="430" text-anchor="middle" font-family="system-ui,sans-serif" font-size="30" letter-spacing="6" fill="#fff" opacity=".8">UI KITS</text>
+<text x="400" y="430" text-anchor="middle" font-family="system-ui,sans-serif" font-size="30" letter-spacing="6" fill="#fff" opacity=".8">UI KIT</text>
 </svg>

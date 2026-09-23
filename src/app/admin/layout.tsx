@@ -10,10 +10,10 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     <>
       {isAdmin() && (
         <div className="mb-6 flex items-center gap-4 border-b pb-4 text-sm">
-          <Link href="/admin" className="font-semibold hover:underline">Dashboard</Link>
-          <Link href="/admin/orders" className="font-semibold hover:underline">Orders</Link>
+          <Link href="/admin" className="font-semibold hover:underline">Painel</Link>
+          <Link href="/admin/orders" className="font-semibold hover:underline">Pedidos</Link>
           <form action="/api/admin/logout" method="post" className="ml-auto">
-            <button className="text-red-700 hover:underline">Log out</button>
+            <button className="text-red-700 hover:underline">Sair</button>
           </form>
         </div>
       )}

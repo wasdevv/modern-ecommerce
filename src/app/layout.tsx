@@ -8,23 +8,23 @@ import { siteUrl } from '@/lib/format';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
-  title: { default: 'ModernStore — Digital products for developers', template: '%s · ModernStore' },
-  description: 'Demo store: templates, UI kits, courses and ebooks. Purchases are simulated and never charged.',
-  openGraph: { siteName: 'ModernStore', type: 'website' },
+  title: { default: 'ModernStore — Produtos digitais para devs', template: '%s · ModernStore' },
+  description: 'Loja demo: templates, UI kits, cursos e e-books. As compras são simuladas e nunca cobradas.',
+  openGraph: { siteName: 'ModernStore', type: 'website', locale: 'pt_BR' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body className="flex min-h-screen flex-col">
         <CartProvider>
           <p className="bg-amber-100 px-4 py-1.5 text-center text-xs text-amber-900">
-            Demo store — products, reviews and orders are simulated. No payment is ever charged.
+            Loja demo — produtos, avaliações e pedidos são simulados. Nenhum pagamento é cobrado.
           </p>
           <Header />
           <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8">{children}</main>
           <footer className="border-t py-6 text-center text-sm text-gray-500">
-            ModernStore is a portfolio project. <Link href="/products" className="underline">Browse the catalog</Link>
+            ModernStore é um projeto de portfólio. <Link href="/products" className="underline">Ver o catálogo</Link>
           </footer>
           <Analytics />
         </CartProvider>

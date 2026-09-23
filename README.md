@@ -43,7 +43,7 @@ Ratings and review counts are labeled as demo data in the UI and deliberately le
 - **No database.** Orders placed in the demo are returned to the browser as a receipt and stored in `localStorage`. The receipt page and the admin's "Placed from this browser" list work only in that browser. `GET /api/orders/:id` serves the seed orders only. Nothing is kept in server memory, because on serverless it would disappear between instances. Shared persistence would need a real database, and then order status changes in the admin.
 - **The admin login has no rate limiting.** Use a long random password. If the admin is ever exposed with real data, add rate limiting.
 - **`SITE_URL` is read at build time** for the statically generated pages (product JSON-LD, sitemap, robots). Set it before `npm run build`.
-- The store is English-only and prices are in BRL.
+- The UI is in Brazilian Portuguese and prices are in BRL. Product names stay in English, as they usually do for developer products.
 
 ## Measured performance
 

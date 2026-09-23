@@ -41,7 +41,7 @@ const catalog = {
     prefix: 'TMPL',
     color: ['#2563eb', '#1e3a8a'],
     price: [6990, 24990],
-    blurb: 'Production-ready Next.js + Tailwind template with TypeScript, dark mode and documented components.',
+    blurb: 'Template Next.js + Tailwind pronto para produção, com TypeScript, dark mode e componentes documentados.',
     names: [
       'SaaS Dashboard Template', 'Startup Landing Page', 'Admin Panel Pro', 'Developer Portfolio',
       'Documentation Site Starter', 'Analytics Dashboard', 'Agency Website Template', 'Blog Starter Kit',
@@ -53,7 +53,7 @@ const catalog = {
     prefix: 'UI',
     color: ['#7c3aed', '#4c1d95'],
     price: [4990, 17990],
-    blurb: 'Figma file plus React components, built on design tokens and tested for keyboard and screen readers.',
+    blurb: 'Arquivo Figma e componentes React, com design tokens e testados com teclado e leitor de tela.',
     names: [
       'E-commerce UI Kit', 'Mobile Banking UI Kit', 'Dashboard Components Kit', 'Form Patterns Kit',
       'Marketing Sections Kit', 'Data Table Kit', 'Chat Interface Kit', 'Onboarding Flows Kit',
@@ -65,7 +65,7 @@ const catalog = {
     prefix: 'CRS',
     color: ['#059669', '#064e3b'],
     price: [14990, 39990],
-    blurb: 'Video course with source code for every lesson and a final project you can put in your portfolio.',
+    blurb: 'Curso em vídeo com código-fonte de cada aula e um projeto final para o seu portfólio.',
     names: [
       'Next.js App Router in Depth', 'TypeScript for React Developers', 'Testing React Applications',
       'Web Performance Fundamentals', 'Accessible Components Workshop', 'Node.js APIs from Scratch',
@@ -78,7 +78,7 @@ const catalog = {
     prefix: 'EBK',
     color: ['#ea580c', '#7c2d12'],
     price: [1990, 5990],
-    blurb: 'PDF and EPUB ebook with runnable examples and free updates for the current major version.',
+    blurb: 'E-book em PDF e EPUB com exemplos executáveis e atualizações grátis na versão atual.',
     names: [
       'TypeScript Advanced Patterns', 'Core Web Vitals Handbook', 'CSS Layout Field Guide',
       'Clean React Architecture', 'SQL Query Cookbook', 'REST API Design Notes', 'JavaScript Async Deep Dive',
@@ -197,7 +197,7 @@ function svg(product) {
   const [from, to] = catalog[product.category].color;
   const words = product.name.replace(/[^\p{L}\p{N} ]/gu, '').split(' ').filter(Boolean);
   const initials = (words[0][0] + (words[1]?.[0] ?? '')).toUpperCase();
-  const label = product.category.replace('-', ' ').toUpperCase();
+  const label = { templates: 'TEMPLATE', 'ui-kits': 'UI KIT', courses: 'CURSO', ebooks: 'E-BOOK' }[product.category];
   return `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
 <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${from}"/><stop offset="1" stop-color="${to}"/></linearGradient></defs>
 <rect width="800" height="600" fill="url(#g)"/>

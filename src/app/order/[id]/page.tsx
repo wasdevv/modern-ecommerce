@@ -7,9 +7,9 @@ import { listReceipts } from '@/lib/receipts';
 import type { EmailStatus, Order } from '@/lib/types';
 
 const EMAIL_NOTE: Record<EmailStatus, string> = {
-  sent: 'A confirmation email is on its way.',
-  not_configured: 'Email is not configured in this demo, so no confirmation was sent.',
-  failed: 'We could not send the confirmation email, but the order itself is fine.',
+  sent: 'O email de confirmação está a caminho.',
+  not_configured: 'O envio de email não está configurado nesta demo, então nenhuma confirmação foi enviada.',
+  failed: 'Não conseguimos enviar o email de confirmação, mas o pedido está certo.',
 };
 
 type State = { kind: 'loading' } | { kind: 'missing' } | { kind: 'found'; order: Order; emailStatus?: EmailStatus };
@@ -31,16 +31,16 @@ export default function OrderPage({ params }: { params: { id: string } }) {
       .catch(() => setState({ kind: 'missing' }));
   }, [params.id]);
 
-  if (state.kind === 'loading') return <p className="text-gray-500">Loading order…</p>;
+  if (state.kind === 'loading') return <p className="text-gray-500">Carregando pedido…</p>;
   if (state.kind === 'missing') {
     return (
       <div className="py-16 text-center">
-        <h1 className="text-2xl font-bold">Order not found</h1>
+        <h1 className="text-2xl font-bold">Pedido não encontrado</h1>
         <p className="mx-auto mt-3 max-w-md text-gray-600">
-          Demo orders are kept only in the browser they were placed from. Open this link there, or place a new order.
+          Pedidos da demo ficam salvos só no navegador em que foram feitos. Abra este link lá, ou faça um novo pedido.
         </p>
         <Link href="/products" className="mt-6 inline-block underline">
-          Browse products
+          Ver produtos
         </Link>
       </div>
     );
@@ -48,11 +48,11 @@ export default function OrderPage({ params }: { params: { id: string } }) {
 
   return (
     <div className="mx-auto max-w-2xl">
-      <h1 className="text-3xl font-bold">{state.emailStatus ? 'Thanks for your order!' : 'Order'}</h1>
-      <p className="mt-2 break-all text-sm text-gray-600">Order {state.order.id}</p>
+      <h1 className="text-3xl font-bold">{state.emailStatus ? 'Obrigado pelo pedido!' : 'Pedido'}</h1>
+      <p className="mt-2 break-all text-sm text-gray-600">Pedido {state.order.id}</p>
       {state.emailStatus && (
         <p className="mt-4 rounded-md bg-gray-100 p-3 text-sm">
-          {EMAIL_NOTE[state.emailStatus]} This was a simulated purchase: nothing was charged. The receipt is saved in this browser only.
+          {EMAIL_NOTE[state.emailStatus]} Esta foi uma compra simulada: nada foi cobrado. O recibo fica salvo só neste navegador.
         </p>
       )}
       <div className="mt-6">

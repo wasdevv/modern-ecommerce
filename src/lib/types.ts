@@ -66,3 +66,14 @@ export interface DatasetMeta {
   periodEnd: string;
   simulatedSessions: number;
 }
+
+export const CATEGORY_LABELS: Record<Category, string> = {
+  templates: 'Templates',
+  'ui-kits': 'UI Kits',
+  courses: 'Cursos',
+  ebooks: 'E-books',
+};
+
+export const PAYMENT_LABELS: Record<PaymentMethod, string> = { pix: 'Pix', card: 'Cartão de crédito', boleto: 'Boleto' };
+
+export const STATUS_LABELS: Record<Order['status'], string> = { pending: 'Pendente', completed: 'Concluído', refunded: 'Reembolsado' };

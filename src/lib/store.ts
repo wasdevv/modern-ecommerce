@@ -52,12 +52,12 @@ export function parseProductQuery(params: Params): Result<ProductQuery> {
     return Array.isArray(v) ? v[0] : v;
   };
   const category = get('category') || undefined;
-  if (category && !CATEGORIES.includes(category as Category)) return fail(400, 'Unknown category');
+  if (category && !CATEGORIES.includes(category as Category)) return fail(400, 'Categoria desconhecida');
   const sort = get('sort') || 'featured';
-  if (!SORTS.includes(sort as Sort)) return fail(400, 'Unknown sort');
+  if (!SORTS.includes(sort as Sort)) return fail(400, 'Ordenação desconhecida');
   const page = positiveInt(get('page'), 1, 1000);
   const pageSize = positiveInt(get('pageSize'), 12, 60);
-  if (page === null || pageSize === null) return fail(400, 'page and pageSize must be positive integers');
+  if (page === null || pageSize === null) return fail(400, 'page e pageSize devem ser inteiros positivos');
   const search = get('search')?.trim().slice(0, 100).toLowerCase() || undefined;
   return { ok: true, value: { category: category as Category | undefined, search, sort: sort as Sort, page, pageSize } };
 }
@@ -90,29 +90,29 @@ const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 // The browser sends only product ids and quantities. Names, prices and totals come from the catalog,
 // so a tampered request can change what is bought, never what it costs.
 export function createOrder(body: unknown, id: string, now: Date): Result<Order> {
-  if (typeof body !== 'object' || body === null || Array.isArray(body)) return fail(400, 'Body must be a JSON object');
+  if (typeof body !== 'object' || body === null || Array.isArray(body)) return fail(400, 'O corpo deve ser um objeto JSON');
   const { name, email, paymentMethod, items } = body as Record<string, unknown>;
 
-  if (typeof name !== 'string' || !name.trim() || name.trim().length > 100) return fail(400, 'Name is required (max 100 characters)');
-  if (typeof email !== 'string' || email.length > 254 || !EMAIL.test(email.trim())) return fail(400, 'A valid email is required');
-  if (!PAYMENT_METHODS.includes(paymentMethod as PaymentMethod)) return fail(400, 'Unknown payment method');
-  if (!Array.isArray(items) || items.length === 0) return fail(400, 'Cart is empty');
-  if (items.length > MAX_LINES) return fail(400, `At most ${MAX_LINES} different products per order`);
+  if (typeof name !== 'string' || !name.trim() || name.trim().length > 100) return fail(400, 'Informe o nome (máx. 100 caracteres)');
+  if (typeof email !== 'string' || email.length > 254 || !EMAIL.test(email.trim())) return fail(400, 'Informe um email válido');
+  if (!PAYMENT_METHODS.includes(paymentMethod as PaymentMethod)) return fail(400, 'Forma de pagamento desconhecida');
+  if (!Array.isArray(items) || items.length === 0) return fail(400, 'O carrinho está vazio');
+  if (items.length > MAX_LINES) return fail(400, `No máximo ${MAX_LINES} produtos diferentes por pedido`);
 
   const seen = new Set<string>();
   const lines: Order['items'] = [];
   for (const raw of items) {
-    if (typeof raw !== 'object' || raw === null) return fail(400, 'Invalid item');
+    if (typeof raw !== 'object' || raw === null) return fail(400, 'Item inválido');
     const { productId, quantity } = raw as Record<string, unknown>;
-    if (typeof productId !== 'string') return fail(400, 'Invalid item');
-    if (seen.has(productId)) return fail(400, `Duplicate item ${productId}`);
+    if (typeof productId !== 'string') return fail(400, 'Item inválido');
+    if (seen.has(productId)) return fail(400, `Item duplicado: ${productId}`);
     seen.add(productId);
     if (!Number.isInteger(quantity) || (quantity as number) < 1 || (quantity as number) > MAX_QUANTITY) {
-      return fail(400, `Quantity must be an integer from 1 to ${MAX_QUANTITY}`);
+      return fail(400, `A quantidade deve ser um inteiro de 1 a ${MAX_QUANTITY}`);
     }
     const product = getProduct(productId);
-    if (!product) return fail(404, `Product ${productId} not found`);
-    if (!product.inStock) return fail(409, `${product.name} is not available`);
+    if (!product) return fail(404, `Produto ${productId} não encontrado`);
+    if (!product.inStock) return fail(409, `${product.name} não está disponível`);
     const qty = quantity as number;
     lines.push({ productId, productName: product.name, quantity: qty, unitPriceCents: product.priceCents, totalCents: product.priceCents * qty });
   }
