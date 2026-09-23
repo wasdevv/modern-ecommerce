@@ -2,6 +2,8 @@
 
 A demo e-commerce store for digital products (templates, UI kits, courses, ebooks), built with **Next.js 14 (App Router) + TypeScript + Tailwind**. The storefront follows the look of Shopify's Dawn theme (Assistant typeface, square buttons, borderless cards, cart notification), and checkout follows the two-column hosted-checkout layout. The catalog, reviews and order history are generated data. Payments go through a built-in **sandbox gateway** (Pix and card) that behaves like a real one and never charges anyone. The goal is to show how a store should be wired: server-side pricing, a payment state machine driven by signed webhooks, consent-gated analytics, a real admin session, SEO, and data that adds up.
 
+Full write-up (in Portuguese) of everything built, the decisions and the verification: [`docs/DESENVOLVIMENTO.md`](docs/DESENVOLVIMENTO.md).
+
 ## Run it
 
 ```bash
