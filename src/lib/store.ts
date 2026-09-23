@@ -3,12 +3,11 @@ import customersJson from '@/data/customers.json';
 import metaJson from '@/data/meta.json';
 import {
   CATEGORIES,
-  PAYMENT_METHODS,
   type Category,
   type Customer,
   type DatasetMeta,
   type Order,
-  type PaymentMethod,
+  type PricedOrder,
   type Product,
 } from './types';
 import { getProduct, products } from './catalog';
@@ -89,13 +88,12 @@ const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 // The browser sends only product ids and quantities. Names, prices and totals come from the catalog,
 // so a tampered request can change what is bought, never what it costs.
-export function createOrder(body: unknown, id: string, now: Date): Result<Order> {
+export function createOrder(body: unknown, id: string, now: Date): Result<PricedOrder> {
   if (typeof body !== 'object' || body === null || Array.isArray(body)) return fail(400, 'O corpo deve ser um objeto JSON');
-  const { name, email, paymentMethod, items } = body as Record<string, unknown>;
+  const { name, email, items } = body as Record<string, unknown>;
 
   if (typeof name !== 'string' || !name.trim() || name.trim().length > 100) return fail(400, 'Informe o nome (máx. 100 caracteres)');
   if (typeof email !== 'string' || email.length > 254 || !EMAIL.test(email.trim())) return fail(400, 'Informe um email válido');
-  if (!PAYMENT_METHODS.includes(paymentMethod as PaymentMethod)) return fail(400, 'Forma de pagamento desconhecida');
   if (!Array.isArray(items) || items.length === 0) return fail(400, 'O carrinho está vazio');
   if (items.length > MAX_LINES) return fail(400, `No máximo ${MAX_LINES} produtos diferentes por pedido`);
 
@@ -123,15 +121,12 @@ export function createOrder(body: unknown, id: string, now: Date): Result<Order>
     ok: true,
     value: {
       id,
-      customerId: null,
       name: name.trim(),
       email: email.trim(),
       items: lines,
       subtotalCents,
       taxCents,
       totalCents: subtotalCents + taxCents,
-      status: 'pending',
-      paymentMethod: paymentMethod as PaymentMethod,
       createdAt: now.toISOString(),
     },
   };

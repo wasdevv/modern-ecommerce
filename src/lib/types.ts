@@ -49,11 +49,10 @@ export interface Order {
   createdAt: string;
 }
 
-export type EmailStatus = 'sent' | 'not_configured' | 'failed';
+// An order as validated and priced by the server, before it has any payment.
+export type PricedOrder = Pick<Order, 'id' | 'name' | 'email' | 'items' | 'subtotalCents' | 'taxCents' | 'totalCents' | 'createdAt'>;
 
-export interface Receipt extends Order {
-  emailStatus: EmailStatus;
-}
+export type EmailStatus = 'sent' | 'not_configured' | 'failed';
 
 export interface CartLine {
   productId: string;
@@ -76,4 +75,4 @@ export const CATEGORY_LABELS: Record<Category, string> = {
 
 export const PAYMENT_LABELS: Record<PaymentMethod, string> = { pix: 'Pix', card: 'Cartão de crédito', boleto: 'Boleto' };
 
-export const STATUS_LABELS: Record<Order['status'], string> = { pending: 'Pendente', completed: 'Concluído', refunded: 'Reembolsado' };
+export const STATUS_LABELS: Record<Order['status'] | 'paid', string> = { pending: 'Aguardando pagamento', paid: 'Pago', completed: 'Concluído', refunded: 'Reembolsado' };

@@ -7,16 +7,21 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "test": "tsx --test src/lib/*.test.ts",
-    "seed": "node src/data/generate.mjs"
+    "test": "tsx --test src/lib/store.test.ts src/lib/payments/sandbox.test.ts",
+    "seed": "node src/data/generate.mjs",
+    "db:migrate": "node --env-file-if-exists=.env.local scripts/migrate.mjs",
+    "test:db": "tsx --test src/lib/payments/service.test.mts"
   },
   "dependencies": {
     "next": "^14.2.35",
+    "postgres": "^3.4.9",
+    "qrcode": "^1.5.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/node": "^22.20.4",
+    "@types/qrcode": "^1.5.6",
     "@types/react": "^18.3.31",
     "@types/react-dom": "^18.3.7",
     "autoprefixer": "^10.6.1",

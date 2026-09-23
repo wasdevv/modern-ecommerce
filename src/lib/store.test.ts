@@ -5,7 +5,7 @@ import { confirmationHtml } from './email';
 import { taxFor } from './limits';
 import { createOrder, customers, getAnalytics, meta, parseProductQuery, products, queryProducts, seedOrders } from './store';
 
-const validBody = { name: 'Ana', email: 'ana@example.com', paymentMethod: 'pix', items: [{ productId: 'prod_001', quantity: 2 }] };
+const validBody = { name: 'Ana', email: 'ana@example.com', items: [{ productId: 'prod_001', quantity: 2 }] };
 const now = new Date('2026-09-01T12:00:00Z');
 
 test('seed data meets the minimum sizes and has unique ids', () => {
@@ -73,7 +73,6 @@ test('createOrder prices from the catalog and ignores client-sent money', () => 
   const price = products.find((p) => p.id === 'prod_001')!.priceCents;
   assert.equal(r.value.subtotalCents, price * 2);
   assert.equal(r.value.totalCents, price * 2 + Math.round(price * 2 * 0.18));
-  assert.equal(r.value.customerId, null);
 });
 
 test('createOrder rejects invalid input with a predictable status', () => {
@@ -83,7 +82,6 @@ test('createOrder rejects invalid input with a predictable status', () => {
     [[], 400],
     [{ ...validBody, name: '  ' }, 400],
     [{ ...validBody, email: 'nope' }, 400],
-    [{ ...validBody, paymentMethod: 'crypto' }, 400],
     [{ ...validBody, items: [] }, 400],
     [{ ...validBody, items: [{ productId: 'prod_001', quantity: 0 }] }, 400],
     [{ ...validBody, items: [{ productId: 'prod_001', quantity: 1.5 }] }, 400],

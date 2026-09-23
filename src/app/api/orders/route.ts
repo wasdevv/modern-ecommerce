@@ -1,27 +1,23 @@
 import { randomUUID } from 'node:crypto';
 import { NextResponse } from 'next/server';
+import { dbConfigured } from '@/lib/db';
+import { error, readJson } from '@/lib/http';
+import { insertOrder } from '@/lib/payments/service';
 import { createOrder } from '@/lib/store';
-import { sendConfirmation } from '@/lib/email';
-import type { Receipt } from '@/lib/types';
 
-const MAX_BODY_BYTES = 10_000;
-
-// There is no database: the order is validated and priced here, returned as a receipt,
-// and the browser keeps it. Nothing is stored server-side, so nothing is lost between serverless instances.
+// Creates the order as "pending". Paying it is a separate call (POST /api/orders/:id/payments),
+// so a declined card can be retried, or switched to Pix, without creating a second order.
 export async function POST(request: Request) {
-  const raw = await request.text();
-  if (raw.length > MAX_BODY_BYTES) return NextResponse.json({ error: 'Requisição grande demais' }, { status: 413 });
-  let body: unknown;
-  try {
-    body = JSON.parse(raw);
-  } catch {
-    return NextResponse.json({ error: 'JSON malformado' }, { status: 400 });
-  }
+  if (!dbConfigured()) return error(503, 'Banco de dados não configurado (DATABASE_URL)');
+  const key = request.headers.get('idempotency-key');
+  if (!key || !/^[A-Za-z0-9-]{16,64}$/.test(key)) return error(400, 'Cabeçalho Idempotency-Key ausente ou inválido');
 
-  const result = createOrder(body, `ord_${randomUUID()}`, new Date());
-  if (!result.ok) return NextResponse.json({ error: result.error }, { status: result.status });
+  const parsed = await readJson(request);
+  if (!parsed.ok) return parsed.response;
+  const priced = createOrder(parsed.body, `ord_${randomUUID()}`, new Date());
+  if (!priced.ok) return error(priced.status, priced.error);
 
-  // An email failure is reported, never turned into a failed checkout.
-  const receipt: Receipt = { ...result.value, emailStatus: await sendConfirmation(result.value) };
-  return NextResponse.json(receipt, { status: 201 });
+  const saved = await insertOrder(priced.value, key);
+  if (!saved.ok) return error(saved.status, saved.error);
+  return NextResponse.json({ id: saved.id }, { status: 201 });
 }

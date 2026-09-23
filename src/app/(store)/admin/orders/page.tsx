@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
-import LocalOrders from '@/components/LocalOrders';
+import StoreOrders from '@/components/StoreOrders';
 import { isAdmin } from '@/lib/admin-auth';
 import { formatBRL, formatDate } from '@/lib/format';
 import { seedOrders } from '@/lib/store';
@@ -23,7 +23,8 @@ export default function AdminOrdersPage({ searchParams }: { searchParams: { q?: 
   return (
     <>
       <h1 className="text-[32px] md:text-[40px]">Pedidos</h1>
-      <LocalOrders />
+      <StoreOrders />
+      <h2 className="mt-12 text-xl">Histórico (seed)</h2>
       <form className="mt-6 flex gap-2">
         <label className="flex-1">
           <span className="sr-only">Buscar pedidos</span>
@@ -31,7 +32,7 @@ export default function AdminOrdersPage({ searchParams }: { searchParams: { q?: 
         </label>
         <button className="btn">Buscar</button>
       </form>
-      <p className="mt-4 text-sm text-ink/75">{matches.length} pedidos seed (clientes fictícios, somente leitura: não há banco de dados compartilhado).</p>
+      <p className="mt-4 text-sm text-ink/75">{matches.length} pedidos fictícios do conjunto de dados (somente leitura).</p>
       <div className="mt-2 overflow-x-auto border border-ink/10 bg-white">
         <table className="w-full text-left text-sm">
           <thead className="border-b bg-mist">
