@@ -10,7 +10,20 @@ export interface SummaryLine {
 }
 
 // The grey right-hand column of a hosted checkout: thumbnails with a quantity bubble, then totals.
-export default function OrderSummary({ lines, subtotalCents, taxCents }: { lines: SummaryLine[]; subtotalCents: number; taxCents: number }) {
+// `onRemove` is passed only on the checkout; the order page shows the same summary read-only.
+export default function OrderSummary({
+  lines,
+  subtotalCents,
+  taxCents,
+  onRemove,
+  disabled = false,
+}: {
+  lines: SummaryLine[];
+  subtotalCents: number;
+  taxCents: number;
+  onRemove?: (productId: string) => void;
+  disabled?: boolean;
+}) {
   return (
     <div className="text-[14px] text-[#333]">
       <ul className="space-y-4">
@@ -24,7 +37,19 @@ export default function OrderSummary({ lines, subtotalCents, taxCents }: { lines
                   {l.quantity}
                 </span>
               </div>
-              <p className="flex-1">{l.name}</p>
+              <div className="min-w-0 flex-1">
+                <p>{l.name}</p>
+                {onRemove && (
+                  <button
+                    type="button"
+                    onClick={() => onRemove(l.productId)}
+                    disabled={disabled}
+                    className="mt-0.5 text-[12px] text-[#707070] underline underline-offset-2 transition-colors hover:text-[#333] disabled:cursor-not-allowed disabled:opacity-50"
+                  >
+                    Remover<span className="sr-only"> {l.name}</span>
+                  </button>
+                )}
+              </div>
               <p>{formatBRL(l.totalCents)}</p>
             </li>
           );

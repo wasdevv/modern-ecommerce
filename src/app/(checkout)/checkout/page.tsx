@@ -32,7 +32,7 @@ const selected = 'bg-[#f0f5ff] shadow-[inset_0_0_0_1px_#1773b0]';
 
 export default function CheckoutPage() {
   const router = useRouter();
-  const { lines, hydrated, subtotalCents, clear } = useCart();
+  const { lines, hydrated, subtotalCents, clear, remove } = useCart();
   const [status, setStatus] = useState<'idle' | 'submitting' | 'leaving'>('idle');
   const [method, setMethod] = useState<Method>('pix');
   const [card, setCard] = useState({ number: '', expiry: '', cvc: '', holder: '' });
@@ -84,8 +84,8 @@ export default function CheckoutPage() {
       // 1. Card data goes to the gateway's tokenization endpoint, never to the order API.
       const cardToken = method === 'card' ? (await postJson('/api/payments/sandbox/tokens', card)).token : undefined;
 
-      // 2. Create the order once. Changing name or email afterwards starts a new order; the old one stays unpaid.
-      const buyer = `${name}\n${email}`;
+      // 2. Create the order once. Changing name, email or the cart afterwards starts a new order; the old one stays unpaid.
+      const buyer = `${name}\n${email}\n${JSON.stringify(lines)}`;
       if (!order.current || order.current.buyer !== buyer) {
         const created = await postJson(
           '/api/orders',
@@ -117,7 +117,19 @@ export default function CheckoutPage() {
 
   return (
     <CheckoutShell
-      summary={<OrderSummary lines={items.map((i) => ({ ...i, name: i.productName }))} subtotalCents={subtotalCents} taxCents={taxCents} />}
+      summary={
+        <OrderSummary
+          lines={items.map((i) => ({ ...i, name: i.productName }))}
+          subtotalCents={subtotalCents}
+          taxCents={taxCents}
+          disabled={status !== 'idle'}
+          onRemove={(productId) => {
+            const line = lines.find((l) => l.productId === productId);
+            if (line) track('remove_from_cart', { items: [toItem(getProduct(productId)!, line.quantity)] });
+            remove(productId);
+          }}
+        />
+      }
       totalCents={subtotalCents + taxCents}
     >
       <h1 className="sr-only">Finalizar compra</h1>
