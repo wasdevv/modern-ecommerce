@@ -1,0 +1,5658 @@
+[
+  {
+    "id": "ord_0001",
+    "customerId": "cus_056",
+    "name": "Mateus Silva",
+    "email": "mateus.silva@example.com",
+    "items": [
+      {
+        "productId": "prod_004",
+        "productName": "Developer Portfolio",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      },
+      {
+        "productId": "prod_015",
+        "productName": "Mobile Banking UI Kit",
+        "quantity": 1,
+        "unitPriceCents": 5990,
+        "totalCents": 5990
+      }
+    ],
+    "subtotalCents": 20980,
+    "taxCents": 3776,
+    "totalCents": 24756,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-01T11:01:04Z"
+  },
+  {
+    "id": "ord_0002",
+    "customerId": "cus_058",
+    "name": "Rafael Martins",
+    "email": "rafael.martins@example.com",
+    "items": [
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      }
+    ],
+    "subtotalCents": 1990,
+    "taxCents": 358,
+    "totalCents": 2348,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-01T13:00:46Z"
+  },
+  {
+    "id": "ord_0003",
+    "customerId": "cus_005",
+    "name": "Mariana Silva",
+    "email": "mariana.silva@example.com",
+    "items": [
+      {
+        "productId": "prod_002",
+        "productName": "Startup Landing Page",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      },
+      {
+        "productId": "prod_004",
+        "productName": "Developer Portfolio",
+        "quantity": 2,
+        "unitPriceCents": 14990,
+        "totalCents": 29980
+      }
+    ],
+    "subtotalCents": 50970,
+    "taxCents": 9175,
+    "totalCents": 60145,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-01T14:06:07Z"
+  },
+  {
+    "id": "ord_0004",
+    "customerId": "cus_078",
+    "name": "Otávio Costa",
+    "email": "otavio.costa@example.com",
+    "items": [
+      {
+        "productId": "prod_010",
+        "productName": "CRM Dashboard",
+        "quantity": 1,
+        "unitPriceCents": 21990,
+        "totalCents": 21990
+      }
+    ],
+    "subtotalCents": 21990,
+    "taxCents": 3958,
+    "totalCents": 25948,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-01T15:11:55Z"
+  },
+  {
+    "id": "ord_0005",
+    "customerId": "cus_112",
+    "name": "Sofia Oliveira",
+    "email": "sofia.oliveira@example.com",
+    "items": [
+      {
+        "productId": "prod_045",
+        "productName": "REST API Design Notes",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-02T01:42:14Z"
+  },
+  {
+    "id": "ord_0006",
+    "customerId": "cus_100",
+    "name": "Caio Ferreira",
+    "email": "caio.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      },
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      },
+      {
+        "productId": "prod_037",
+        "productName": "Docker for Web Developers",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      }
+    ],
+    "subtotalCents": 28970,
+    "taxCents": 5215,
+    "totalCents": 34185,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-02T11:05:53Z"
+  },
+  {
+    "id": "ord_0007",
+    "customerId": "cus_081",
+    "name": "Rafael Araújo",
+    "email": "rafael.araujo@example.com",
+    "items": [
+      {
+        "productId": "prod_039",
+        "productName": "Stripe Payments Integration",
+        "quantity": 1,
+        "unitPriceCents": 33990,
+        "totalCents": 33990
+      }
+    ],
+    "subtotalCents": 33990,
+    "taxCents": 6118,
+    "totalCents": 40108,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-02T13:41:50Z"
+  },
+  {
+    "id": "ord_0008",
+    "customerId": "cus_060",
+    "name": "Rafael Almeida",
+    "email": "rafael.almeida@example.com",
+    "items": [
+      {
+        "productId": "prod_051",
+        "productName": "Regex Pocket Reference",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      },
+      {
+        "productId": "prod_005",
+        "productName": "Documentation Site Starter",
+        "quantity": 1,
+        "unitPriceCents": 6990,
+        "totalCents": 6990
+      }
+    ],
+    "subtotalCents": 11980,
+    "taxCents": 2156,
+    "totalCents": 14136,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-02T19:06:37Z"
+  },
+  {
+    "id": "ord_0009",
+    "customerId": "cus_082",
+    "name": "Beatriz Martins",
+    "email": "beatriz.martins@example.com",
+    "items": [
+      {
+        "productId": "prod_052",
+        "productName": "The Code Review Book",
+        "quantity": 1,
+        "unitPriceCents": 5990,
+        "totalCents": 5990
+      }
+    ],
+    "subtotalCents": 5990,
+    "taxCents": 1078,
+    "totalCents": 7068,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-06-02T19:27:56Z"
+  },
+  {
+    "id": "ord_0010",
+    "customerId": "cus_056",
+    "name": "Mateus Silva",
+    "email": "mateus.silva@example.com",
+    "items": [
+      {
+        "productId": "prod_026",
+        "productName": "Email Templates Kit",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-02T20:21:56Z"
+  },
+  {
+    "id": "ord_0011",
+    "customerId": "cus_101",
+    "name": "Thiago Nascimento",
+    "email": "thiago.nascimento@example.com",
+    "items": [
+      {
+        "productId": "prod_024",
+        "productName": "Settings Screens Kit",
+        "quantity": 1,
+        "unitPriceCents": 10990,
+        "totalCents": 10990
+      }
+    ],
+    "subtotalCents": 10990,
+    "taxCents": 1978,
+    "totalCents": 12968,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-06-03T18:44:25Z"
+  },
+  {
+    "id": "ord_0012",
+    "customerId": "cus_045",
+    "name": "Bruno Almeida",
+    "email": "bruno.almeida@example.com",
+    "items": [
+      {
+        "productId": "prod_004",
+        "productName": "Developer Portfolio",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-04T17:42:08Z"
+  },
+  {
+    "id": "ord_0013",
+    "customerId": "cus_031",
+    "name": "Sofia Carvalho",
+    "email": "sofia.carvalho@example.com",
+    "items": [
+      {
+        "productId": "prod_024",
+        "productName": "Settings Screens Kit",
+        "quantity": 1,
+        "unitPriceCents": 10990,
+        "totalCents": 10990
+      }
+    ],
+    "subtotalCents": 10990,
+    "taxCents": 1978,
+    "totalCents": 12968,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-04T19:24:11Z"
+  },
+  {
+    "id": "ord_0014",
+    "customerId": "cus_066",
+    "name": "Bruno Alves",
+    "email": "bruno.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_039",
+        "productName": "Stripe Payments Integration",
+        "quantity": 1,
+        "unitPriceCents": 33990,
+        "totalCents": 33990
+      }
+    ],
+    "subtotalCents": 33990,
+    "taxCents": 6118,
+    "totalCents": 40108,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-06-05T02:51:10Z"
+  },
+  {
+    "id": "ord_0015",
+    "customerId": "cus_087",
+    "name": "Lucas Souza",
+    "email": "lucas.souza@example.com",
+    "items": [
+      {
+        "productId": "prod_044",
+        "productName": "SQL Query Cookbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 2990,
+    "taxCents": 538,
+    "totalCents": 3528,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-06-05T17:56:05Z"
+  },
+  {
+    "id": "ord_0016",
+    "customerId": "cus_033",
+    "name": "Thiago Rodrigues",
+    "email": "thiago.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_006",
+        "productName": "Analytics Dashboard",
+        "quantity": 1,
+        "unitPriceCents": 9990,
+        "totalCents": 9990
+      }
+    ],
+    "subtotalCents": 9990,
+    "taxCents": 1798,
+    "totalCents": 11788,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-06T00:34:33Z"
+  },
+  {
+    "id": "ord_0017",
+    "customerId": "cus_100",
+    "name": "Caio Ferreira",
+    "email": "caio.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_005",
+        "productName": "Documentation Site Starter",
+        "quantity": 1,
+        "unitPriceCents": 6990,
+        "totalCents": 6990
+      },
+      {
+        "productId": "prod_015",
+        "productName": "Mobile Banking UI Kit",
+        "quantity": 1,
+        "unitPriceCents": 5990,
+        "totalCents": 5990
+      }
+    ],
+    "subtotalCents": 12980,
+    "taxCents": 2336,
+    "totalCents": 15316,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-06T18:57:21Z"
+  },
+  {
+    "id": "ord_0018",
+    "customerId": "cus_044",
+    "name": "Natália Gomes",
+    "email": "natalia.gomes@example.com",
+    "items": [
+      {
+        "productId": "prod_033",
+        "productName": "PostgreSQL for Application Developers",
+        "quantity": 1,
+        "unitPriceCents": 21990,
+        "totalCents": 21990
+      },
+      {
+        "productId": "prod_048",
+        "productName": "Refactoring Frontend Code",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      },
+      {
+        "productId": "prod_026",
+        "productName": "Email Templates Kit",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 41970,
+    "taxCents": 7555,
+    "totalCents": 49525,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-06T21:03:31Z"
+  },
+  {
+    "id": "ord_0019",
+    "customerId": "cus_092",
+    "name": "Natália Carvalho",
+    "email": "natalia.carvalho@example.com",
+    "items": [
+      {
+        "productId": "prod_002",
+        "productName": "Startup Landing Page",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      },
+      {
+        "productId": "prod_007",
+        "productName": "Agency Website Template",
+        "quantity": 1,
+        "unitPriceCents": 12990,
+        "totalCents": 12990
+      },
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 36970,
+    "taxCents": 6655,
+    "totalCents": 43625,
+    "status": "refunded",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-06T23:43:13Z"
+  },
+  {
+    "id": "ord_0020",
+    "customerId": "cus_118",
+    "name": "Paula Ribeiro",
+    "email": "paula.ribeiro@example.com",
+    "items": [
+      {
+        "productId": "prod_035",
+        "productName": "GraphQL in Practice",
+        "quantity": 1,
+        "unitPriceCents": 32990,
+        "totalCents": 32990
+      }
+    ],
+    "subtotalCents": 32990,
+    "taxCents": 5938,
+    "totalCents": 38928,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-06-07T22:50:16Z"
+  },
+  {
+    "id": "ord_0021",
+    "customerId": "cus_079",
+    "name": "Henrique Santos",
+    "email": "henrique.santos@example.com",
+    "items": [
+      {
+        "productId": "prod_024",
+        "productName": "Settings Screens Kit",
+        "quantity": 1,
+        "unitPriceCents": 10990,
+        "totalCents": 10990
+      }
+    ],
+    "subtotalCents": 10990,
+    "taxCents": 1978,
+    "totalCents": 12968,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-07T23:51:56Z"
+  },
+  {
+    "id": "ord_0022",
+    "customerId": "cus_078",
+    "name": "Otávio Costa",
+    "email": "otavio.costa@example.com",
+    "items": [
+      {
+        "productId": "prod_011",
+        "productName": "Changelog & Roadmap Site",
+        "quantity": 1,
+        "unitPriceCents": 18990,
+        "totalCents": 18990
+      }
+    ],
+    "subtotalCents": 18990,
+    "taxCents": 3418,
+    "totalCents": 22408,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-06-08T13:22:11Z"
+  },
+  {
+    "id": "ord_0023",
+    "customerId": "cus_069",
+    "name": "Gabriela Martins",
+    "email": "gabriela.martins@example.com",
+    "items": [
+      {
+        "productId": "prod_005",
+        "productName": "Documentation Site Starter",
+        "quantity": 2,
+        "unitPriceCents": 6990,
+        "totalCents": 13980
+      },
+      {
+        "productId": "prod_010",
+        "productName": "CRM Dashboard",
+        "quantity": 1,
+        "unitPriceCents": 21990,
+        "totalCents": 21990
+      }
+    ],
+    "subtotalCents": 35970,
+    "taxCents": 6475,
+    "totalCents": 42445,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-08T17:34:42Z"
+  },
+  {
+    "id": "ord_0024",
+    "customerId": "cus_102",
+    "name": "Vitória Almeida",
+    "email": "vitoria.almeida@example.com",
+    "items": [
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      }
+    ],
+    "subtotalCents": 1990,
+    "taxCents": 358,
+    "totalCents": 2348,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-08T19:56:32Z"
+  },
+  {
+    "id": "ord_0025",
+    "customerId": "cus_039",
+    "name": "Natália Araújo",
+    "email": "natalia.araujo@example.com",
+    "items": [
+      {
+        "productId": "prod_023",
+        "productName": "Charts & Graphs Kit",
+        "quantity": 1,
+        "unitPriceCents": 6990,
+        "totalCents": 6990
+      }
+    ],
+    "subtotalCents": 6990,
+    "taxCents": 1258,
+    "totalCents": 8248,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-08T21:31:58Z"
+  },
+  {
+    "id": "ord_0026",
+    "customerId": "cus_008",
+    "name": "Camila Rocha",
+    "email": "camila.rocha@example.com",
+    "items": [
+      {
+        "productId": "prod_047",
+        "productName": "Technical SEO for Developers",
+        "quantity": 2,
+        "unitPriceCents": 2990,
+        "totalCents": 5980
+      }
+    ],
+    "subtotalCents": 5980,
+    "taxCents": 1076,
+    "totalCents": 7056,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-08T21:47:33Z"
+  },
+  {
+    "id": "ord_0027",
+    "customerId": "cus_005",
+    "name": "Mariana Silva",
+    "email": "mariana.silva@example.com",
+    "items": [
+      {
+        "productId": "prod_004",
+        "productName": "Developer Portfolio",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-10T00:42:24Z"
+  },
+  {
+    "id": "ord_0028",
+    "customerId": "cus_020",
+    "name": "Gabriela Pereira",
+    "email": "gabriela.pereira@example.com",
+    "items": [
+      {
+        "productId": "prod_049",
+        "productName": "Monorepos with Turborepo",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 2990,
+    "taxCents": 538,
+    "totalCents": 3528,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-10T12:38:59Z"
+  },
+  {
+    "id": "ord_0029",
+    "customerId": "cus_067",
+    "name": "João Santos",
+    "email": "joao.santos@example.com",
+    "items": [
+      {
+        "productId": "prod_029",
+        "productName": "Testing React Applications",
+        "quantity": 1,
+        "unitPriceCents": 17990,
+        "totalCents": 17990
+      }
+    ],
+    "subtotalCents": 17990,
+    "taxCents": 3238,
+    "totalCents": 21228,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-06-10T21:23:00Z"
+  },
+  {
+    "id": "ord_0030",
+    "customerId": "cus_047",
+    "name": "Caio Lima",
+    "email": "caio.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_028",
+        "productName": "TypeScript for React Developers",
+        "quantity": 2,
+        "unitPriceCents": 30990,
+        "totalCents": 61980
+      }
+    ],
+    "subtotalCents": 61980,
+    "taxCents": 11156,
+    "totalCents": 73136,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-11T01:31:47Z"
+  },
+  {
+    "id": "ord_0031",
+    "customerId": "cus_086",
+    "name": "Lucas Lima",
+    "email": "lucas.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_019",
+        "productName": "Data Table Kit",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      },
+      {
+        "productId": "prod_004",
+        "productName": "Developer Portfolio",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 29980,
+    "taxCents": 5396,
+    "totalCents": 35376,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-12T12:40:57Z"
+  },
+  {
+    "id": "ord_0032",
+    "customerId": "cus_087",
+    "name": "Lucas Souza",
+    "email": "lucas.souza@example.com",
+    "items": [
+      {
+        "productId": "prod_005",
+        "productName": "Documentation Site Starter",
+        "quantity": 1,
+        "unitPriceCents": 6990,
+        "totalCents": 6990
+      }
+    ],
+    "subtotalCents": 6990,
+    "taxCents": 1258,
+    "totalCents": 8248,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-06-12T19:46:19Z"
+  },
+  {
+    "id": "ord_0033",
+    "customerId": "cus_059",
+    "name": "Larissa Rocha",
+    "email": "larissa.rocha@example.com",
+    "items": [
+      {
+        "productId": "prod_011",
+        "productName": "Changelog & Roadmap Site",
+        "quantity": 1,
+        "unitPriceCents": 18990,
+        "totalCents": 18990
+      }
+    ],
+    "subtotalCents": 18990,
+    "taxCents": 3418,
+    "totalCents": 22408,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-12T22:47:45Z"
+  },
+  {
+    "id": "ord_0034",
+    "customerId": "cus_109",
+    "name": "Caio Nascimento",
+    "email": "caio.nascimento@example.com",
+    "items": [
+      {
+        "productId": "prod_036",
+        "productName": "Git Beyond the Basics",
+        "quantity": 1,
+        "unitPriceCents": 38990,
+        "totalCents": 38990
+      }
+    ],
+    "subtotalCents": 38990,
+    "taxCents": 7018,
+    "totalCents": 46008,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-12T23:47:55Z"
+  },
+  {
+    "id": "ord_0035",
+    "customerId": "cus_058",
+    "name": "Rafael Martins",
+    "email": "rafael.martins@example.com",
+    "items": [
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      }
+    ],
+    "subtotalCents": 1990,
+    "taxCents": 358,
+    "totalCents": 2348,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-13T01:22:40Z"
+  },
+  {
+    "id": "ord_0036",
+    "customerId": "cus_021",
+    "name": "Henrique Ferreira",
+    "email": "henrique.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      }
+    ],
+    "subtotalCents": 1990,
+    "taxCents": 358,
+    "totalCents": 2348,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-13T13:31:38Z"
+  },
+  {
+    "id": "ord_0037",
+    "customerId": "cus_030",
+    "name": "Eduarda Lima",
+    "email": "eduarda.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_034",
+        "productName": "Tailwind CSS Design Systems",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-13T18:02:45Z"
+  },
+  {
+    "id": "ord_0038",
+    "customerId": "cus_005",
+    "name": "Mariana Silva",
+    "email": "mariana.silva@example.com",
+    "items": [
+      {
+        "productId": "prod_014",
+        "productName": "E-commerce UI Kit",
+        "quantity": 1,
+        "unitPriceCents": 12990,
+        "totalCents": 12990
+      }
+    ],
+    "subtotalCents": 12990,
+    "taxCents": 2338,
+    "totalCents": 15328,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-14T13:47:59Z"
+  },
+  {
+    "id": "ord_0039",
+    "customerId": "cus_030",
+    "name": "Eduarda Lima",
+    "email": "eduarda.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_048",
+        "productName": "Refactoring Frontend Code",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-14T16:33:55Z"
+  },
+  {
+    "id": "ord_0040",
+    "customerId": "cus_095",
+    "name": "Camila Ribeiro",
+    "email": "camila.ribeiro@example.com",
+    "items": [
+      {
+        "productId": "prod_012",
+        "productName": "Invoice App Template",
+        "quantity": 1,
+        "unitPriceCents": 22990,
+        "totalCents": 22990
+      }
+    ],
+    "subtotalCents": 22990,
+    "taxCents": 4138,
+    "totalCents": 27128,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-14T20:14:20Z"
+  },
+  {
+    "id": "ord_0041",
+    "customerId": "cus_118",
+    "name": "Paula Ribeiro",
+    "email": "paula.ribeiro@example.com",
+    "items": [
+      {
+        "productId": "prod_037",
+        "productName": "Docker for Web Developers",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      },
+      {
+        "productId": "prod_042",
+        "productName": "CSS Layout Field Guide",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      },
+      {
+        "productId": "prod_027",
+        "productName": "Next.js App Router in Depth",
+        "quantity": 1,
+        "unitPriceCents": 39990,
+        "totalCents": 39990
+      }
+    ],
+    "subtotalCents": 63970,
+    "taxCents": 11515,
+    "totalCents": 75485,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-14T22:21:08Z"
+  },
+  {
+    "id": "ord_0042",
+    "customerId": "cus_005",
+    "name": "Mariana Silva",
+    "email": "mariana.silva@example.com",
+    "items": [
+      {
+        "productId": "prod_047",
+        "productName": "Technical SEO for Developers",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 2990,
+    "taxCents": 538,
+    "totalCents": 3528,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-15T12:00:04Z"
+  },
+  {
+    "id": "ord_0043",
+    "customerId": "cus_044",
+    "name": "Natália Gomes",
+    "email": "natalia.gomes@example.com",
+    "items": [
+      {
+        "productId": "prod_044",
+        "productName": "SQL Query Cookbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 2990,
+    "taxCents": 538,
+    "totalCents": 3528,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-16T15:49:22Z"
+  },
+  {
+    "id": "ord_0044",
+    "customerId": "cus_068",
+    "name": "Diego Alves",
+    "email": "diego.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      }
+    ],
+    "subtotalCents": 1990,
+    "taxCents": 358,
+    "totalCents": 2348,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-16T16:20:29Z"
+  },
+  {
+    "id": "ord_0045",
+    "customerId": "cus_053",
+    "name": "Henrique Carvalho",
+    "email": "henrique.carvalho@example.com",
+    "items": [
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      },
+      {
+        "productId": "prod_012",
+        "productName": "Invoice App Template",
+        "quantity": 1,
+        "unitPriceCents": 22990,
+        "totalCents": 22990
+      }
+    ],
+    "subtotalCents": 27980,
+    "taxCents": 5036,
+    "totalCents": 33016,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-17T11:41:46Z"
+  },
+  {
+    "id": "ord_0046",
+    "customerId": "cus_035",
+    "name": "Diego Ferreira",
+    "email": "diego.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_004",
+        "productName": "Developer Portfolio",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      },
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      },
+      {
+        "productId": "prod_023",
+        "productName": "Charts & Graphs Kit",
+        "quantity": 1,
+        "unitPriceCents": 6990,
+        "totalCents": 6990
+      }
+    ],
+    "subtotalCents": 33970,
+    "taxCents": 6115,
+    "totalCents": 40085,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-17T13:47:31Z"
+  },
+  {
+    "id": "ord_0047",
+    "customerId": "cus_096",
+    "name": "Mariana Alves",
+    "email": "mariana.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_026",
+        "productName": "Email Templates Kit",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-17T17:32:47Z"
+  },
+  {
+    "id": "ord_0048",
+    "customerId": "cus_035",
+    "name": "Diego Ferreira",
+    "email": "diego.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_048",
+        "productName": "Refactoring Frontend Code",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-18T17:08:53Z"
+  },
+  {
+    "id": "ord_0049",
+    "customerId": "cus_053",
+    "name": "Henrique Carvalho",
+    "email": "henrique.carvalho@example.com",
+    "items": [
+      {
+        "productId": "prod_048",
+        "productName": "Refactoring Frontend Code",
+        "quantity": 2,
+        "unitPriceCents": 4990,
+        "totalCents": 9980
+      }
+    ],
+    "subtotalCents": 9980,
+    "taxCents": 1796,
+    "totalCents": 11776,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-18T22:50:58Z"
+  },
+  {
+    "id": "ord_0050",
+    "customerId": "cus_082",
+    "name": "Beatriz Martins",
+    "email": "beatriz.martins@example.com",
+    "items": [
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 2990,
+    "taxCents": 538,
+    "totalCents": 3528,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-20T10:35:25Z"
+  },
+  {
+    "id": "ord_0051",
+    "customerId": "cus_061",
+    "name": "Larissa Ribeiro",
+    "email": "larissa.ribeiro@example.com",
+    "items": [
+      {
+        "productId": "prod_019",
+        "productName": "Data Table Kit",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-20T16:51:34Z"
+  },
+  {
+    "id": "ord_0052",
+    "customerId": "cus_028",
+    "name": "Paula Martins",
+    "email": "paula.martins@example.com",
+    "items": [
+      {
+        "productId": "prod_002",
+        "productName": "Startup Landing Page",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      }
+    ],
+    "subtotalCents": 20990,
+    "taxCents": 3778,
+    "totalCents": 24768,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-20T21:29:42Z"
+  },
+  {
+    "id": "ord_0053",
+    "customerId": "cus_024",
+    "name": "Rafael Gomes",
+    "email": "rafael.gomes@example.com",
+    "items": [
+      {
+        "productId": "prod_004",
+        "productName": "Developer Portfolio",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-21T20:55:54Z"
+  },
+  {
+    "id": "ord_0054",
+    "customerId": "cus_062",
+    "name": "João Oliveira",
+    "email": "joao.oliveira@example.com",
+    "items": [
+      {
+        "productId": "prod_044",
+        "productName": "SQL Query Cookbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 2990,
+    "taxCents": 538,
+    "totalCents": 3528,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-22T01:11:48Z"
+  },
+  {
+    "id": "ord_0055",
+    "customerId": "cus_032",
+    "name": "Bruno Ferreira",
+    "email": "bruno.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_004",
+        "productName": "Developer Portfolio",
+        "quantity": 2,
+        "unitPriceCents": 14990,
+        "totalCents": 29980
+      }
+    ],
+    "subtotalCents": 29980,
+    "taxCents": 5396,
+    "totalCents": 35376,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-22T16:08:20Z"
+  },
+  {
+    "id": "ord_0056",
+    "customerId": "cus_096",
+    "name": "Mariana Alves",
+    "email": "mariana.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_025",
+        "productName": "Pricing Pages Kit",
+        "quantity": 1,
+        "unitPriceCents": 15990,
+        "totalCents": 15990
+      }
+    ],
+    "subtotalCents": 15990,
+    "taxCents": 2878,
+    "totalCents": 18868,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-23T12:41:38Z"
+  },
+  {
+    "id": "ord_0057",
+    "customerId": "cus_039",
+    "name": "Natália Araújo",
+    "email": "natalia.araujo@example.com",
+    "items": [
+      {
+        "productId": "prod_048",
+        "productName": "Refactoring Frontend Code",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "refunded",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-23T17:26:21Z"
+  },
+  {
+    "id": "ord_0058",
+    "customerId": "cus_086",
+    "name": "Lucas Lima",
+    "email": "lucas.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_029",
+        "productName": "Testing React Applications",
+        "quantity": 1,
+        "unitPriceCents": 17990,
+        "totalCents": 17990
+      }
+    ],
+    "subtotalCents": 17990,
+    "taxCents": 3238,
+    "totalCents": 21228,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-24T18:42:12Z"
+  },
+  {
+    "id": "ord_0059",
+    "customerId": "cus_016",
+    "name": "Bruno Carvalho",
+    "email": "bruno.carvalho@example.com",
+    "items": [
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      },
+      {
+        "productId": "prod_012",
+        "productName": "Invoice App Template",
+        "quantity": 1,
+        "unitPriceCents": 22990,
+        "totalCents": 22990
+      },
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      }
+    ],
+    "subtotalCents": 27970,
+    "taxCents": 5035,
+    "totalCents": 33005,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-25T01:33:53Z"
+  },
+  {
+    "id": "ord_0060",
+    "customerId": "cus_060",
+    "name": "Rafael Almeida",
+    "email": "rafael.almeida@example.com",
+    "items": [
+      {
+        "productId": "prod_033",
+        "productName": "PostgreSQL for Application Developers",
+        "quantity": 1,
+        "unitPriceCents": 21990,
+        "totalCents": 21990
+      }
+    ],
+    "subtotalCents": 21990,
+    "taxCents": 3958,
+    "totalCents": 25948,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-25T23:15:03Z"
+  },
+  {
+    "id": "ord_0061",
+    "customerId": "cus_035",
+    "name": "Diego Ferreira",
+    "email": "diego.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_026",
+        "productName": "Email Templates Kit",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-26T00:17:05Z"
+  },
+  {
+    "id": "ord_0062",
+    "customerId": "cus_015",
+    "name": "Camila Pereira",
+    "email": "camila.pereira@example.com",
+    "items": [
+      {
+        "productId": "prod_015",
+        "productName": "Mobile Banking UI Kit",
+        "quantity": 1,
+        "unitPriceCents": 5990,
+        "totalCents": 5990
+      }
+    ],
+    "subtotalCents": 5990,
+    "taxCents": 1078,
+    "totalCents": 7068,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-06-26T16:18:38Z"
+  },
+  {
+    "id": "ord_0063",
+    "customerId": "cus_035",
+    "name": "Diego Ferreira",
+    "email": "diego.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_024",
+        "productName": "Settings Screens Kit",
+        "quantity": 1,
+        "unitPriceCents": 10990,
+        "totalCents": 10990
+      }
+    ],
+    "subtotalCents": 10990,
+    "taxCents": 1978,
+    "totalCents": 12968,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-27T04:35:37Z"
+  },
+  {
+    "id": "ord_0064",
+    "customerId": "cus_098",
+    "name": "Otávio Ferreira",
+    "email": "otavio.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_012",
+        "productName": "Invoice App Template",
+        "quantity": 1,
+        "unitPriceCents": 22990,
+        "totalCents": 22990
+      }
+    ],
+    "subtotalCents": 22990,
+    "taxCents": 4138,
+    "totalCents": 27128,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-29T00:34:31Z"
+  },
+  {
+    "id": "ord_0065",
+    "customerId": "cus_009",
+    "name": "Felipe Rodrigues",
+    "email": "felipe.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_014",
+        "productName": "E-commerce UI Kit",
+        "quantity": 1,
+        "unitPriceCents": 12990,
+        "totalCents": 12990
+      }
+    ],
+    "subtotalCents": 12990,
+    "taxCents": 2338,
+    "totalCents": 15328,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-29T19:59:06Z"
+  },
+  {
+    "id": "ord_0066",
+    "customerId": "cus_035",
+    "name": "Diego Ferreira",
+    "email": "diego.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_045",
+        "productName": "REST API Design Notes",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "refunded",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-29T20:13:53Z"
+  },
+  {
+    "id": "ord_0067",
+    "customerId": "cus_070",
+    "name": "Isabela Gomes",
+    "email": "isabela.gomes@example.com",
+    "items": [
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-29T20:24:20Z"
+  },
+  {
+    "id": "ord_0068",
+    "customerId": "cus_075",
+    "name": "Paula Rodrigues",
+    "email": "paula.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_019",
+        "productName": "Data Table Kit",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-29T23:51:57Z"
+  },
+  {
+    "id": "ord_0069",
+    "customerId": "cus_103",
+    "name": "Eduarda Rodrigues",
+    "email": "eduarda.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_015",
+        "productName": "Mobile Banking UI Kit",
+        "quantity": 1,
+        "unitPriceCents": 5990,
+        "totalCents": 5990
+      }
+    ],
+    "subtotalCents": 5990,
+    "taxCents": 1078,
+    "totalCents": 7068,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-06-30T10:23:50Z"
+  },
+  {
+    "id": "ord_0070",
+    "customerId": "cus_095",
+    "name": "Camila Ribeiro",
+    "email": "camila.ribeiro@example.com",
+    "items": [
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      }
+    ],
+    "subtotalCents": 11990,
+    "taxCents": 2158,
+    "totalCents": 14148,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-06-30T11:45:26Z"
+  },
+  {
+    "id": "ord_0071",
+    "customerId": "cus_068",
+    "name": "Diego Alves",
+    "email": "diego.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_028",
+        "productName": "TypeScript for React Developers",
+        "quantity": 1,
+        "unitPriceCents": 30990,
+        "totalCents": 30990
+      }
+    ],
+    "subtotalCents": 30990,
+    "taxCents": 5578,
+    "totalCents": 36568,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-06-30T15:57:18Z"
+  },
+  {
+    "id": "ord_0072",
+    "customerId": "cus_085",
+    "name": "Vitória Martins",
+    "email": "vitoria.martins@example.com",
+    "items": [
+      {
+        "productId": "prod_017",
+        "productName": "Form Patterns Kit",
+        "quantity": 1,
+        "unitPriceCents": 12990,
+        "totalCents": 12990
+      }
+    ],
+    "subtotalCents": 12990,
+    "taxCents": 2338,
+    "totalCents": 15328,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-01T12:01:00Z"
+  },
+  {
+    "id": "ord_0073",
+    "customerId": "cus_102",
+    "name": "Vitória Almeida",
+    "email": "vitoria.almeida@example.com",
+    "items": [
+      {
+        "productId": "prod_013",
+        "productName": "Status Page Template",
+        "quantity": 2,
+        "unitPriceCents": 18990,
+        "totalCents": 37980
+      }
+    ],
+    "subtotalCents": 37980,
+    "taxCents": 6836,
+    "totalCents": 44816,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-01T18:27:38Z"
+  },
+  {
+    "id": "ord_0074",
+    "customerId": "cus_030",
+    "name": "Eduarda Lima",
+    "email": "eduarda.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_010",
+        "productName": "CRM Dashboard",
+        "quantity": 1,
+        "unitPriceCents": 21990,
+        "totalCents": 21990
+      }
+    ],
+    "subtotalCents": 21990,
+    "taxCents": 3958,
+    "totalCents": 25948,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-07-01T23:17:57Z"
+  },
+  {
+    "id": "ord_0075",
+    "customerId": "cus_061",
+    "name": "Larissa Ribeiro",
+    "email": "larissa.ribeiro@example.com",
+    "items": [
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      }
+    ],
+    "subtotalCents": 1990,
+    "taxCents": 358,
+    "totalCents": 2348,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-07-02T00:03:35Z"
+  },
+  {
+    "id": "ord_0076",
+    "customerId": "cus_075",
+    "name": "Paula Rodrigues",
+    "email": "paula.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_005",
+        "productName": "Documentation Site Starter",
+        "quantity": 1,
+        "unitPriceCents": 6990,
+        "totalCents": 6990
+      }
+    ],
+    "subtotalCents": 6990,
+    "taxCents": 1258,
+    "totalCents": 8248,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-02T02:14:42Z"
+  },
+  {
+    "id": "ord_0077",
+    "customerId": "cus_104",
+    "name": "Thiago Lima",
+    "email": "thiago.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_019",
+        "productName": "Data Table Kit",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-02T18:59:44Z"
+  },
+  {
+    "id": "ord_0078",
+    "customerId": "cus_015",
+    "name": "Camila Pereira",
+    "email": "camila.pereira@example.com",
+    "items": [
+      {
+        "productId": "prod_014",
+        "productName": "E-commerce UI Kit",
+        "quantity": 1,
+        "unitPriceCents": 12990,
+        "totalCents": 12990
+      },
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      }
+    ],
+    "subtotalCents": 14980,
+    "taxCents": 2696,
+    "totalCents": 17676,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-02T19:36:27Z"
+  },
+  {
+    "id": "ord_0079",
+    "customerId": "cus_005",
+    "name": "Mariana Silva",
+    "email": "mariana.silva@example.com",
+    "items": [
+      {
+        "productId": "prod_024",
+        "productName": "Settings Screens Kit",
+        "quantity": 1,
+        "unitPriceCents": 10990,
+        "totalCents": 10990
+      },
+      {
+        "productId": "prod_016",
+        "productName": "Dashboard Components Kit",
+        "quantity": 1,
+        "unitPriceCents": 7990,
+        "totalCents": 7990
+      }
+    ],
+    "subtotalCents": 18980,
+    "taxCents": 3416,
+    "totalCents": 22396,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-03T20:06:19Z"
+  },
+  {
+    "id": "ord_0080",
+    "customerId": "cus_070",
+    "name": "Isabela Gomes",
+    "email": "isabela.gomes@example.com",
+    "items": [
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      }
+    ],
+    "subtotalCents": 1990,
+    "taxCents": 358,
+    "totalCents": 2348,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-04T01:24:32Z"
+  },
+  {
+    "id": "ord_0081",
+    "customerId": "cus_009",
+    "name": "Felipe Rodrigues",
+    "email": "felipe.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_014",
+        "productName": "E-commerce UI Kit",
+        "quantity": 1,
+        "unitPriceCents": 12990,
+        "totalCents": 12990
+      }
+    ],
+    "subtotalCents": 12990,
+    "taxCents": 2338,
+    "totalCents": 15328,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-04T02:55:31Z"
+  },
+  {
+    "id": "ord_0082",
+    "customerId": "cus_012",
+    "name": "Beatriz Costa",
+    "email": "beatriz.costa@example.com",
+    "items": [
+      {
+        "productId": "prod_026",
+        "productName": "Email Templates Kit",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      },
+      {
+        "productId": "prod_036",
+        "productName": "Git Beyond the Basics",
+        "quantity": 1,
+        "unitPriceCents": 38990,
+        "totalCents": 38990
+      }
+    ],
+    "subtotalCents": 53980,
+    "taxCents": 9716,
+    "totalCents": 63696,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-04T15:12:56Z"
+  },
+  {
+    "id": "ord_0083",
+    "customerId": "cus_100",
+    "name": "Caio Ferreira",
+    "email": "caio.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      },
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      },
+      {
+        "productId": "prod_043",
+        "productName": "Clean React Architecture",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 19970,
+    "taxCents": 3595,
+    "totalCents": 23565,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-05T03:08:23Z"
+  },
+  {
+    "id": "ord_0084",
+    "customerId": "cus_110",
+    "name": "Mariana Ferreira",
+    "email": "mariana.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_023",
+        "productName": "Charts & Graphs Kit",
+        "quantity": 1,
+        "unitPriceCents": 6990,
+        "totalCents": 6990
+      },
+      {
+        "productId": "prod_034",
+        "productName": "Tailwind CSS Design Systems",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 21980,
+    "taxCents": 3956,
+    "totalCents": 25936,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-05T21:31:54Z"
+  },
+  {
+    "id": "ord_0085",
+    "customerId": "cus_084",
+    "name": "Paula Lima",
+    "email": "paula.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      }
+    ],
+    "subtotalCents": 11990,
+    "taxCents": 2158,
+    "totalCents": 14148,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-06T11:08:21Z"
+  },
+  {
+    "id": "ord_0086",
+    "customerId": "cus_027",
+    "name": "Vitória Araújo",
+    "email": "vitoria.araujo@example.com",
+    "items": [
+      {
+        "productId": "prod_027",
+        "productName": "Next.js App Router in Depth",
+        "quantity": 1,
+        "unitPriceCents": 39990,
+        "totalCents": 39990
+      }
+    ],
+    "subtotalCents": 39990,
+    "taxCents": 7198,
+    "totalCents": 47188,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-06T14:38:34Z"
+  },
+  {
+    "id": "ord_0087",
+    "customerId": "cus_079",
+    "name": "Henrique Santos",
+    "email": "henrique.santos@example.com",
+    "items": [
+      {
+        "productId": "prod_029",
+        "productName": "Testing React Applications",
+        "quantity": 2,
+        "unitPriceCents": 17990,
+        "totalCents": 35980
+      }
+    ],
+    "subtotalCents": 35980,
+    "taxCents": 6476,
+    "totalCents": 42456,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-07-06T23:13:19Z"
+  },
+  {
+    "id": "ord_0088",
+    "customerId": "cus_095",
+    "name": "Camila Ribeiro",
+    "email": "camila.ribeiro@example.com",
+    "items": [
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      },
+      {
+        "productId": "prod_015",
+        "productName": "Mobile Banking UI Kit",
+        "quantity": 1,
+        "unitPriceCents": 5990,
+        "totalCents": 5990
+      }
+    ],
+    "subtotalCents": 10980,
+    "taxCents": 1976,
+    "totalCents": 12956,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-07T13:11:24Z"
+  },
+  {
+    "id": "ord_0089",
+    "customerId": "cus_058",
+    "name": "Rafael Martins",
+    "email": "rafael.martins@example.com",
+    "items": [
+      {
+        "productId": "prod_015",
+        "productName": "Mobile Banking UI Kit",
+        "quantity": 1,
+        "unitPriceCents": 5990,
+        "totalCents": 5990
+      },
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 10980,
+    "taxCents": 1976,
+    "totalCents": 12956,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-07T22:40:06Z"
+  },
+  {
+    "id": "ord_0090",
+    "customerId": "cus_089",
+    "name": "Isabela Alves",
+    "email": "isabela.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      }
+    ],
+    "subtotalCents": 11990,
+    "taxCents": 2158,
+    "totalCents": 14148,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-07T23:30:00Z"
+  },
+  {
+    "id": "ord_0091",
+    "customerId": "cus_114",
+    "name": "Isabela Lima",
+    "email": "isabela.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_051",
+        "productName": "Regex Pocket Reference",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      },
+      {
+        "productId": "prod_015",
+        "productName": "Mobile Banking UI Kit",
+        "quantity": 1,
+        "unitPriceCents": 5990,
+        "totalCents": 5990
+      }
+    ],
+    "subtotalCents": 10980,
+    "taxCents": 1976,
+    "totalCents": 12956,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-07-08T00:23:16Z"
+  },
+  {
+    "id": "ord_0092",
+    "customerId": "cus_062",
+    "name": "João Oliveira",
+    "email": "joao.oliveira@example.com",
+    "items": [
+      {
+        "productId": "prod_023",
+        "productName": "Charts & Graphs Kit",
+        "quantity": 2,
+        "unitPriceCents": 6990,
+        "totalCents": 13980
+      }
+    ],
+    "subtotalCents": 13980,
+    "taxCents": 2516,
+    "totalCents": 16496,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-08T00:27:03Z"
+  },
+  {
+    "id": "ord_0093",
+    "customerId": "cus_027",
+    "name": "Vitória Araújo",
+    "email": "vitoria.araujo@example.com",
+    "items": [
+      {
+        "productId": "prod_048",
+        "productName": "Refactoring Frontend Code",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-08T19:06:52Z"
+  },
+  {
+    "id": "ord_0094",
+    "customerId": "cus_074",
+    "name": "Lucas Alves",
+    "email": "lucas.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_044",
+        "productName": "SQL Query Cookbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 2990,
+    "taxCents": 538,
+    "totalCents": 3528,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-08T22:16:41Z"
+  },
+  {
+    "id": "ord_0095",
+    "customerId": "cus_004",
+    "name": "Gabriela Rodrigues",
+    "email": "gabriela.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      }
+    ],
+    "subtotalCents": 1990,
+    "taxCents": 358,
+    "totalCents": 2348,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-09T00:44:00Z"
+  },
+  {
+    "id": "ord_0096",
+    "customerId": "cus_072",
+    "name": "Beatriz Oliveira",
+    "email": "beatriz.oliveira@example.com",
+    "items": [
+      {
+        "productId": "prod_052",
+        "productName": "The Code Review Book",
+        "quantity": 1,
+        "unitPriceCents": 5990,
+        "totalCents": 5990
+      }
+    ],
+    "subtotalCents": 5990,
+    "taxCents": 1078,
+    "totalCents": 7068,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-09T01:43:18Z"
+  },
+  {
+    "id": "ord_0097",
+    "customerId": "cus_014",
+    "name": "Eduarda Martins",
+    "email": "eduarda.martins@example.com",
+    "items": [
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      },
+      {
+        "productId": "prod_027",
+        "productName": "Next.js App Router in Depth",
+        "quantity": 1,
+        "unitPriceCents": 39990,
+        "totalCents": 39990
+      },
+      {
+        "productId": "prod_014",
+        "productName": "E-commerce UI Kit",
+        "quantity": 1,
+        "unitPriceCents": 12990,
+        "totalCents": 12990
+      }
+    ],
+    "subtotalCents": 57970,
+    "taxCents": 10435,
+    "totalCents": 68405,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-10T17:46:34Z"
+  },
+  {
+    "id": "ord_0098",
+    "customerId": "cus_089",
+    "name": "Isabela Alves",
+    "email": "isabela.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      },
+      {
+        "productId": "prod_048",
+        "productName": "Refactoring Frontend Code",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 7980,
+    "taxCents": 1436,
+    "totalCents": 9416,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-10T21:16:34Z"
+  },
+  {
+    "id": "ord_0099",
+    "customerId": "cus_054",
+    "name": "Otávio Carvalho",
+    "email": "otavio.carvalho@example.com",
+    "items": [
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      },
+      {
+        "productId": "prod_047",
+        "productName": "Technical SEO for Developers",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 7980,
+    "taxCents": 1436,
+    "totalCents": 9416,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-10T22:30:42Z"
+  },
+  {
+    "id": "ord_0100",
+    "customerId": "cus_004",
+    "name": "Gabriela Rodrigues",
+    "email": "gabriela.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_024",
+        "productName": "Settings Screens Kit",
+        "quantity": 1,
+        "unitPriceCents": 10990,
+        "totalCents": 10990
+      }
+    ],
+    "subtotalCents": 10990,
+    "taxCents": 1978,
+    "totalCents": 12968,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-11T07:33:03Z"
+  },
+  {
+    "id": "ord_0101",
+    "customerId": "cus_045",
+    "name": "Bruno Almeida",
+    "email": "bruno.almeida@example.com",
+    "items": [
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      },
+      {
+        "productId": "prod_013",
+        "productName": "Status Page Template",
+        "quantity": 2,
+        "unitPriceCents": 18990,
+        "totalCents": 37980
+      },
+      {
+        "productId": "prod_011",
+        "productName": "Changelog & Roadmap Site",
+        "quantity": 1,
+        "unitPriceCents": 18990,
+        "totalCents": 18990
+      }
+    ],
+    "subtotalCents": 59960,
+    "taxCents": 10793,
+    "totalCents": 70753,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-11T22:13:48Z"
+  },
+  {
+    "id": "ord_0102",
+    "customerId": "cus_064",
+    "name": "Ana Almeida",
+    "email": "ana.almeida@example.com",
+    "items": [
+      {
+        "productId": "prod_048",
+        "productName": "Refactoring Frontend Code",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      },
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      },
+      {
+        "productId": "prod_049",
+        "productName": "Monorepos with Turborepo",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 12970,
+    "taxCents": 2335,
+    "totalCents": 15305,
+    "status": "refunded",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-12T01:30:41Z"
+  },
+  {
+    "id": "ord_0103",
+    "customerId": "cus_056",
+    "name": "Mateus Silva",
+    "email": "mateus.silva@example.com",
+    "items": [
+      {
+        "productId": "prod_040",
+        "productName": "TypeScript Advanced Patterns",
+        "quantity": 2,
+        "unitPriceCents": 4990,
+        "totalCents": 9980
+      },
+      {
+        "productId": "prod_045",
+        "productName": "REST API Design Notes",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 14970,
+    "taxCents": 2695,
+    "totalCents": 17665,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-12T11:08:35Z"
+  },
+  {
+    "id": "ord_0104",
+    "customerId": "cus_015",
+    "name": "Camila Pereira",
+    "email": "camila.pereira@example.com",
+    "items": [
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      }
+    ],
+    "subtotalCents": 1990,
+    "taxCents": 358,
+    "totalCents": 2348,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-12T12:35:22Z"
+  },
+  {
+    "id": "ord_0105",
+    "customerId": "cus_019",
+    "name": "Diego Oliveira",
+    "email": "diego.oliveira@example.com",
+    "items": [
+      {
+        "productId": "prod_022",
+        "productName": "Icon Set — 1,200 icons",
+        "quantity": 1,
+        "unitPriceCents": 7990,
+        "totalCents": 7990
+      },
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      },
+      {
+        "productId": "prod_047",
+        "productName": "Technical SEO for Developers",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 12970,
+    "taxCents": 2335,
+    "totalCents": 15305,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-13T07:03:28Z"
+  },
+  {
+    "id": "ord_0106",
+    "customerId": "cus_116",
+    "name": "Isabela Silva",
+    "email": "isabela.silva@example.com",
+    "items": [
+      {
+        "productId": "prod_025",
+        "productName": "Pricing Pages Kit",
+        "quantity": 1,
+        "unitPriceCents": 15990,
+        "totalCents": 15990
+      }
+    ],
+    "subtotalCents": 15990,
+    "taxCents": 2878,
+    "totalCents": 18868,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-13T11:07:02Z"
+  },
+  {
+    "id": "ord_0107",
+    "customerId": "cus_116",
+    "name": "Isabela Silva",
+    "email": "isabela.silva@example.com",
+    "items": [
+      {
+        "productId": "prod_033",
+        "productName": "PostgreSQL for Application Developers",
+        "quantity": 1,
+        "unitPriceCents": 21990,
+        "totalCents": 21990
+      }
+    ],
+    "subtotalCents": 21990,
+    "taxCents": 3958,
+    "totalCents": 25948,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-14T12:03:07Z"
+  },
+  {
+    "id": "ord_0108",
+    "customerId": "cus_036",
+    "name": "Thiago Silva",
+    "email": "thiago.silva@example.com",
+    "items": [
+      {
+        "productId": "prod_029",
+        "productName": "Testing React Applications",
+        "quantity": 1,
+        "unitPriceCents": 17990,
+        "totalCents": 17990
+      }
+    ],
+    "subtotalCents": 17990,
+    "taxCents": 3238,
+    "totalCents": 21228,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-14T12:08:25Z"
+  },
+  {
+    "id": "ord_0109",
+    "customerId": "cus_083",
+    "name": "Henrique Souza",
+    "email": "henrique.souza@example.com",
+    "items": [
+      {
+        "productId": "prod_034",
+        "productName": "Tailwind CSS Design Systems",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-15T04:25:05Z"
+  },
+  {
+    "id": "ord_0110",
+    "customerId": "cus_030",
+    "name": "Eduarda Lima",
+    "email": "eduarda.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_005",
+        "productName": "Documentation Site Starter",
+        "quantity": 1,
+        "unitPriceCents": 6990,
+        "totalCents": 6990
+      }
+    ],
+    "subtotalCents": 6990,
+    "taxCents": 1258,
+    "totalCents": 8248,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-15T12:28:48Z"
+  },
+  {
+    "id": "ord_0111",
+    "customerId": "cus_087",
+    "name": "Lucas Souza",
+    "email": "lucas.souza@example.com",
+    "items": [
+      {
+        "productId": "prod_035",
+        "productName": "GraphQL in Practice",
+        "quantity": 1,
+        "unitPriceCents": 32990,
+        "totalCents": 32990
+      }
+    ],
+    "subtotalCents": 32990,
+    "taxCents": 5938,
+    "totalCents": 38928,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-17T01:08:39Z"
+  },
+  {
+    "id": "ord_0112",
+    "customerId": "cus_007",
+    "name": "Henrique Rodrigues",
+    "email": "henrique.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_038",
+        "productName": "Product Analytics with GA4",
+        "quantity": 1,
+        "unitPriceCents": 19990,
+        "totalCents": 19990
+      }
+    ],
+    "subtotalCents": 19990,
+    "taxCents": 3598,
+    "totalCents": 23588,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-07-17T02:28:44Z"
+  },
+  {
+    "id": "ord_0113",
+    "customerId": "cus_082",
+    "name": "Beatriz Martins",
+    "email": "beatriz.martins@example.com",
+    "items": [
+      {
+        "productId": "prod_024",
+        "productName": "Settings Screens Kit",
+        "quantity": 1,
+        "unitPriceCents": 10990,
+        "totalCents": 10990
+      }
+    ],
+    "subtotalCents": 10990,
+    "taxCents": 1978,
+    "totalCents": 12968,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-18T14:46:57Z"
+  },
+  {
+    "id": "ord_0114",
+    "customerId": "cus_087",
+    "name": "Lucas Souza",
+    "email": "lucas.souza@example.com",
+    "items": [
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 2990,
+    "taxCents": 538,
+    "totalCents": 3528,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-07-18T16:06:50Z"
+  },
+  {
+    "id": "ord_0115",
+    "customerId": "cus_035",
+    "name": "Diego Ferreira",
+    "email": "diego.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_048",
+        "productName": "Refactoring Frontend Code",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      },
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      },
+      {
+        "productId": "prod_002",
+        "productName": "Startup Landing Page",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      }
+    ],
+    "subtotalCents": 28970,
+    "taxCents": 5215,
+    "totalCents": 34185,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-19T22:41:33Z"
+  },
+  {
+    "id": "ord_0116",
+    "customerId": "cus_050",
+    "name": "Caio Costa",
+    "email": "caio.costa@example.com",
+    "items": [
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      },
+      {
+        "productId": "prod_028",
+        "productName": "TypeScript for React Developers",
+        "quantity": 1,
+        "unitPriceCents": 30990,
+        "totalCents": 30990
+      },
+      {
+        "productId": "prod_005",
+        "productName": "Documentation Site Starter",
+        "quantity": 1,
+        "unitPriceCents": 6990,
+        "totalCents": 6990
+      }
+    ],
+    "subtotalCents": 49970,
+    "taxCents": 8995,
+    "totalCents": 58965,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-20T00:59:26Z"
+  },
+  {
+    "id": "ord_0117",
+    "customerId": "cus_045",
+    "name": "Bruno Almeida",
+    "email": "bruno.almeida@example.com",
+    "items": [
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-20T21:06:00Z"
+  },
+  {
+    "id": "ord_0118",
+    "customerId": "cus_019",
+    "name": "Diego Oliveira",
+    "email": "diego.oliveira@example.com",
+    "items": [
+      {
+        "productId": "prod_006",
+        "productName": "Analytics Dashboard",
+        "quantity": 1,
+        "unitPriceCents": 9990,
+        "totalCents": 9990
+      }
+    ],
+    "subtotalCents": 9990,
+    "taxCents": 1798,
+    "totalCents": 11788,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-20T22:40:39Z"
+  },
+  {
+    "id": "ord_0119",
+    "customerId": "cus_065",
+    "name": "Bruno Nascimento",
+    "email": "bruno.nascimento@example.com",
+    "items": [
+      {
+        "productId": "prod_004",
+        "productName": "Developer Portfolio",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-21T19:22:42Z"
+  },
+  {
+    "id": "ord_0120",
+    "customerId": "cus_115",
+    "name": "Paula Alves",
+    "email": "paula.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_039",
+        "productName": "Stripe Payments Integration",
+        "quantity": 1,
+        "unitPriceCents": 33990,
+        "totalCents": 33990
+      }
+    ],
+    "subtotalCents": 33990,
+    "taxCents": 6118,
+    "totalCents": 40108,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-07-22T13:49:15Z"
+  },
+  {
+    "id": "ord_0121",
+    "customerId": "cus_099",
+    "name": "Isabela Carvalho",
+    "email": "isabela.carvalho@example.com",
+    "items": [
+      {
+        "productId": "prod_003",
+        "productName": "Admin Panel Pro",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-22T14:28:07Z"
+  },
+  {
+    "id": "ord_0122",
+    "customerId": "cus_045",
+    "name": "Bruno Almeida",
+    "email": "bruno.almeida@example.com",
+    "items": [
+      {
+        "productId": "prod_004",
+        "productName": "Developer Portfolio",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-07-22T16:14:32Z"
+  },
+  {
+    "id": "ord_0123",
+    "customerId": "cus_009",
+    "name": "Felipe Rodrigues",
+    "email": "felipe.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_035",
+        "productName": "GraphQL in Practice",
+        "quantity": 1,
+        "unitPriceCents": 32990,
+        "totalCents": 32990
+      }
+    ],
+    "subtotalCents": 32990,
+    "taxCents": 5938,
+    "totalCents": 38928,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-23T00:30:30Z"
+  },
+  {
+    "id": "ord_0124",
+    "customerId": "cus_062",
+    "name": "João Oliveira",
+    "email": "joao.oliveira@example.com",
+    "items": [
+      {
+        "productId": "prod_030",
+        "productName": "Web Performance Fundamentals",
+        "quantity": 1,
+        "unitPriceCents": 35990,
+        "totalCents": 35990
+      }
+    ],
+    "subtotalCents": 35990,
+    "taxCents": 6478,
+    "totalCents": 42468,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-23T01:52:59Z"
+  },
+  {
+    "id": "ord_0125",
+    "customerId": "cus_033",
+    "name": "Thiago Rodrigues",
+    "email": "thiago.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_001",
+        "productName": "SaaS Dashboard Template",
+        "quantity": 1,
+        "unitPriceCents": 23990,
+        "totalCents": 23990
+      },
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      }
+    ],
+    "subtotalCents": 25980,
+    "taxCents": 4676,
+    "totalCents": 30656,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-07-23T12:32:07Z"
+  },
+  {
+    "id": "ord_0126",
+    "customerId": "cus_004",
+    "name": "Gabriela Rodrigues",
+    "email": "gabriela.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_011",
+        "productName": "Changelog & Roadmap Site",
+        "quantity": 1,
+        "unitPriceCents": 18990,
+        "totalCents": 18990
+      },
+      {
+        "productId": "prod_016",
+        "productName": "Dashboard Components Kit",
+        "quantity": 1,
+        "unitPriceCents": 7990,
+        "totalCents": 7990
+      }
+    ],
+    "subtotalCents": 26980,
+    "taxCents": 4856,
+    "totalCents": 31836,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-23T20:42:02Z"
+  },
+  {
+    "id": "ord_0127",
+    "customerId": "cus_118",
+    "name": "Paula Ribeiro",
+    "email": "paula.ribeiro@example.com",
+    "items": [
+      {
+        "productId": "prod_016",
+        "productName": "Dashboard Components Kit",
+        "quantity": 1,
+        "unitPriceCents": 7990,
+        "totalCents": 7990
+      }
+    ],
+    "subtotalCents": 7990,
+    "taxCents": 1438,
+    "totalCents": 9428,
+    "status": "refunded",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-24T15:49:37Z"
+  },
+  {
+    "id": "ord_0128",
+    "customerId": "cus_014",
+    "name": "Eduarda Martins",
+    "email": "eduarda.martins@example.com",
+    "items": [
+      {
+        "productId": "prod_004",
+        "productName": "Developer Portfolio",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-07-24T21:07:48Z"
+  },
+  {
+    "id": "ord_0129",
+    "customerId": "cus_029",
+    "name": "Mateus Ribeiro",
+    "email": "mateus.ribeiro@example.com",
+    "items": [
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-24T23:43:01Z"
+  },
+  {
+    "id": "ord_0130",
+    "customerId": "cus_017",
+    "name": "Beatriz Nascimento",
+    "email": "beatriz.nascimento@example.com",
+    "items": [
+      {
+        "productId": "prod_034",
+        "productName": "Tailwind CSS Design Systems",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-07-25T12:59:00Z"
+  },
+  {
+    "id": "ord_0131",
+    "customerId": "cus_103",
+    "name": "Eduarda Rodrigues",
+    "email": "eduarda.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_004",
+        "productName": "Developer Portfolio",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      },
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      },
+      {
+        "productId": "prod_008",
+        "productName": "Blog Starter Kit",
+        "quantity": 2,
+        "unitPriceCents": 18990,
+        "totalCents": 37980
+      }
+    ],
+    "subtotalCents": 57960,
+    "taxCents": 10433,
+    "totalCents": 68393,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-07-27T00:27:14Z"
+  },
+  {
+    "id": "ord_0132",
+    "customerId": "cus_085",
+    "name": "Vitória Martins",
+    "email": "vitoria.martins@example.com",
+    "items": [
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 2990,
+    "taxCents": 538,
+    "totalCents": 3528,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-27T13:58:49Z"
+  },
+  {
+    "id": "ord_0133",
+    "customerId": "cus_097",
+    "name": "Sofia Santos",
+    "email": "sofia.santos@example.com",
+    "items": [
+      {
+        "productId": "prod_047",
+        "productName": "Technical SEO for Developers",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 2990,
+    "taxCents": 538,
+    "totalCents": 3528,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-27T19:21:24Z"
+  },
+  {
+    "id": "ord_0134",
+    "customerId": "cus_012",
+    "name": "Beatriz Costa",
+    "email": "beatriz.costa@example.com",
+    "items": [
+      {
+        "productId": "prod_036",
+        "productName": "Git Beyond the Basics",
+        "quantity": 2,
+        "unitPriceCents": 38990,
+        "totalCents": 77980
+      }
+    ],
+    "subtotalCents": 77980,
+    "taxCents": 14036,
+    "totalCents": 92016,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-27T19:29:06Z"
+  },
+  {
+    "id": "ord_0135",
+    "customerId": "cus_119",
+    "name": "Beatriz Santos",
+    "email": "beatriz.santos@example.com",
+    "items": [
+      {
+        "productId": "prod_014",
+        "productName": "E-commerce UI Kit",
+        "quantity": 1,
+        "unitPriceCents": 12990,
+        "totalCents": 12990
+      }
+    ],
+    "subtotalCents": 12990,
+    "taxCents": 2338,
+    "totalCents": 15328,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-27T23:28:57Z"
+  },
+  {
+    "id": "ord_0136",
+    "customerId": "cus_035",
+    "name": "Diego Ferreira",
+    "email": "diego.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_037",
+        "productName": "Docker for Web Developers",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      }
+    ],
+    "subtotalCents": 20990,
+    "taxCents": 3778,
+    "totalCents": 24768,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-28T05:31:13Z"
+  },
+  {
+    "id": "ord_0137",
+    "customerId": "cus_099",
+    "name": "Isabela Carvalho",
+    "email": "isabela.carvalho@example.com",
+    "items": [
+      {
+        "productId": "prod_043",
+        "productName": "Clean React Architecture",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "refunded",
+    "paymentMethod": "pix",
+    "createdAt": "2026-07-28T14:34:27Z"
+  },
+  {
+    "id": "ord_0138",
+    "customerId": "cus_007",
+    "name": "Henrique Rodrigues",
+    "email": "henrique.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_029",
+        "productName": "Testing React Applications",
+        "quantity": 1,
+        "unitPriceCents": 17990,
+        "totalCents": 17990
+      }
+    ],
+    "subtotalCents": 17990,
+    "taxCents": 3238,
+    "totalCents": 21228,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-07-30T17:00:20Z"
+  },
+  {
+    "id": "ord_0139",
+    "customerId": "cus_091",
+    "name": "Bruno Lima",
+    "email": "bruno.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_048",
+        "productName": "Refactoring Frontend Code",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-31T21:19:51Z"
+  },
+  {
+    "id": "ord_0140",
+    "customerId": "cus_091",
+    "name": "Bruno Lima",
+    "email": "bruno.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_005",
+        "productName": "Documentation Site Starter",
+        "quantity": 1,
+        "unitPriceCents": 6990,
+        "totalCents": 6990
+      }
+    ],
+    "subtotalCents": 6990,
+    "taxCents": 1258,
+    "totalCents": 8248,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-07-31T22:37:56Z"
+  },
+  {
+    "id": "ord_0141",
+    "customerId": "cus_087",
+    "name": "Lucas Souza",
+    "email": "lucas.souza@example.com",
+    "items": [
+      {
+        "productId": "prod_045",
+        "productName": "REST API Design Notes",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-02T20:11:16Z"
+  },
+  {
+    "id": "ord_0142",
+    "customerId": "cus_083",
+    "name": "Henrique Souza",
+    "email": "henrique.souza@example.com",
+    "items": [
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      }
+    ],
+    "subtotalCents": 11990,
+    "taxCents": 2158,
+    "totalCents": 14148,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-02T22:53:52Z"
+  },
+  {
+    "id": "ord_0143",
+    "customerId": "cus_057",
+    "name": "Eduarda Almeida",
+    "email": "eduarda.almeida@example.com",
+    "items": [
+      {
+        "productId": "prod_043",
+        "productName": "Clean React Architecture",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-03T01:18:04Z"
+  },
+  {
+    "id": "ord_0144",
+    "customerId": "cus_096",
+    "name": "Mariana Alves",
+    "email": "mariana.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      },
+      {
+        "productId": "prod_037",
+        "productName": "Docker for Web Developers",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      }
+    ],
+    "subtotalCents": 22980,
+    "taxCents": 4136,
+    "totalCents": 27116,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-03T04:51:26Z"
+  },
+  {
+    "id": "ord_0145",
+    "customerId": "cus_065",
+    "name": "Bruno Nascimento",
+    "email": "bruno.nascimento@example.com",
+    "items": [
+      {
+        "productId": "prod_032",
+        "productName": "Node.js APIs from Scratch",
+        "quantity": 1,
+        "unitPriceCents": 25990,
+        "totalCents": 25990
+      },
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      },
+      {
+        "productId": "prod_004",
+        "productName": "Developer Portfolio",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 52970,
+    "taxCents": 9535,
+    "totalCents": 62505,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-08-03T10:58:43Z"
+  },
+  {
+    "id": "ord_0146",
+    "customerId": "cus_116",
+    "name": "Isabela Silva",
+    "email": "isabela.silva@example.com",
+    "items": [
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-04T12:28:32Z"
+  },
+  {
+    "id": "ord_0147",
+    "customerId": "cus_070",
+    "name": "Isabela Gomes",
+    "email": "isabela.gomes@example.com",
+    "items": [
+      {
+        "productId": "prod_004",
+        "productName": "Developer Portfolio",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-08-04T12:48:48Z"
+  },
+  {
+    "id": "ord_0148",
+    "customerId": "cus_034",
+    "name": "Paula Carvalho",
+    "email": "paula.carvalho@example.com",
+    "items": [
+      {
+        "productId": "prod_029",
+        "productName": "Testing React Applications",
+        "quantity": 1,
+        "unitPriceCents": 17990,
+        "totalCents": 17990
+      }
+    ],
+    "subtotalCents": 17990,
+    "taxCents": 3238,
+    "totalCents": 21228,
+    "status": "refunded",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-04T15:53:24Z"
+  },
+  {
+    "id": "ord_0149",
+    "customerId": "cus_099",
+    "name": "Isabela Carvalho",
+    "email": "isabela.carvalho@example.com",
+    "items": [
+      {
+        "productId": "prod_004",
+        "productName": "Developer Portfolio",
+        "quantity": 2,
+        "unitPriceCents": 14990,
+        "totalCents": 29980
+      }
+    ],
+    "subtotalCents": 29980,
+    "taxCents": 5396,
+    "totalCents": 35376,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-04T23:32:26Z"
+  },
+  {
+    "id": "ord_0150",
+    "customerId": "cus_012",
+    "name": "Beatriz Costa",
+    "email": "beatriz.costa@example.com",
+    "items": [
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-05T13:25:53Z"
+  },
+  {
+    "id": "ord_0151",
+    "customerId": "cus_026",
+    "name": "Gabriela Ferreira",
+    "email": "gabriela.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_047",
+        "productName": "Technical SEO for Developers",
+        "quantity": 2,
+        "unitPriceCents": 2990,
+        "totalCents": 5980
+      }
+    ],
+    "subtotalCents": 5980,
+    "taxCents": 1076,
+    "totalCents": 7056,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-05T19:47:54Z"
+  },
+  {
+    "id": "ord_0152",
+    "customerId": "cus_008",
+    "name": "Camila Rocha",
+    "email": "camila.rocha@example.com",
+    "items": [
+      {
+        "productId": "prod_036",
+        "productName": "Git Beyond the Basics",
+        "quantity": 1,
+        "unitPriceCents": 38990,
+        "totalCents": 38990
+      }
+    ],
+    "subtotalCents": 38990,
+    "taxCents": 7018,
+    "totalCents": 46008,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-06T06:24:07Z"
+  },
+  {
+    "id": "ord_0153",
+    "customerId": "cus_006",
+    "name": "Rafael Ferreira",
+    "email": "rafael.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_005",
+        "productName": "Documentation Site Starter",
+        "quantity": 1,
+        "unitPriceCents": 6990,
+        "totalCents": 6990
+      }
+    ],
+    "subtotalCents": 6990,
+    "taxCents": 1258,
+    "totalCents": 8248,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-08-06T10:12:19Z"
+  },
+  {
+    "id": "ord_0154",
+    "customerId": "cus_068",
+    "name": "Diego Alves",
+    "email": "diego.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-06T20:13:04Z"
+  },
+  {
+    "id": "ord_0155",
+    "customerId": "cus_015",
+    "name": "Camila Pereira",
+    "email": "camila.pereira@example.com",
+    "items": [
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 2990,
+    "taxCents": 538,
+    "totalCents": 3528,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-06T20:13:19Z"
+  },
+  {
+    "id": "ord_0156",
+    "customerId": "cus_068",
+    "name": "Diego Alves",
+    "email": "diego.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_002",
+        "productName": "Startup Landing Page",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      }
+    ],
+    "subtotalCents": 20990,
+    "taxCents": 3778,
+    "totalCents": 24768,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-07T14:29:29Z"
+  },
+  {
+    "id": "ord_0157",
+    "customerId": "cus_094",
+    "name": "Felipe Alves",
+    "email": "felipe.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_004",
+        "productName": "Developer Portfolio",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-07T20:16:35Z"
+  },
+  {
+    "id": "ord_0158",
+    "customerId": "cus_086",
+    "name": "Lucas Lima",
+    "email": "lucas.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      }
+    ],
+    "subtotalCents": 11990,
+    "taxCents": 2158,
+    "totalCents": 14148,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-08T18:14:05Z"
+  },
+  {
+    "id": "ord_0159",
+    "customerId": "cus_062",
+    "name": "João Oliveira",
+    "email": "joao.oliveira@example.com",
+    "items": [
+      {
+        "productId": "prod_021",
+        "productName": "Onboarding Flows Kit",
+        "quantity": 1,
+        "unitPriceCents": 17990,
+        "totalCents": 17990
+      }
+    ],
+    "subtotalCents": 17990,
+    "taxCents": 3238,
+    "totalCents": 21228,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-08T18:27:14Z"
+  },
+  {
+    "id": "ord_0160",
+    "customerId": "cus_074",
+    "name": "Lucas Alves",
+    "email": "lucas.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      }
+    ],
+    "subtotalCents": 1990,
+    "taxCents": 358,
+    "totalCents": 2348,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-09T17:38:06Z"
+  },
+  {
+    "id": "ord_0161",
+    "customerId": "cus_051",
+    "name": "Rafael Alves",
+    "email": "rafael.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_003",
+        "productName": "Admin Panel Pro",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-10T10:40:03Z"
+  },
+  {
+    "id": "ord_0162",
+    "customerId": "cus_086",
+    "name": "Lucas Lima",
+    "email": "lucas.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      },
+      {
+        "productId": "prod_048",
+        "productName": "Refactoring Frontend Code",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 16980,
+    "taxCents": 3056,
+    "totalCents": 20036,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-10T15:07:49Z"
+  },
+  {
+    "id": "ord_0163",
+    "customerId": "cus_109",
+    "name": "Caio Nascimento",
+    "email": "caio.nascimento@example.com",
+    "items": [
+      {
+        "productId": "prod_037",
+        "productName": "Docker for Web Developers",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      }
+    ],
+    "subtotalCents": 20990,
+    "taxCents": 3778,
+    "totalCents": 24768,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-10T19:08:59Z"
+  },
+  {
+    "id": "ord_0164",
+    "customerId": "cus_043",
+    "name": "Sofia Rodrigues",
+    "email": "sofia.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 2990,
+    "taxCents": 538,
+    "totalCents": 3528,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-11T01:12:16Z"
+  },
+  {
+    "id": "ord_0165",
+    "customerId": "cus_039",
+    "name": "Natália Araújo",
+    "email": "natalia.araujo@example.com",
+    "items": [
+      {
+        "productId": "prod_005",
+        "productName": "Documentation Site Starter",
+        "quantity": 1,
+        "unitPriceCents": 6990,
+        "totalCents": 6990
+      }
+    ],
+    "subtotalCents": 6990,
+    "taxCents": 1258,
+    "totalCents": 8248,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-11T15:30:11Z"
+  },
+  {
+    "id": "ord_0166",
+    "customerId": "cus_006",
+    "name": "Rafael Ferreira",
+    "email": "rafael.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_025",
+        "productName": "Pricing Pages Kit",
+        "quantity": 1,
+        "unitPriceCents": 15990,
+        "totalCents": 15990
+      },
+      {
+        "productId": "prod_036",
+        "productName": "Git Beyond the Basics",
+        "quantity": 1,
+        "unitPriceCents": 38990,
+        "totalCents": 38990
+      },
+      {
+        "productId": "prod_002",
+        "productName": "Startup Landing Page",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      }
+    ],
+    "subtotalCents": 75970,
+    "taxCents": 13675,
+    "totalCents": 89645,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-11T15:50:45Z"
+  },
+  {
+    "id": "ord_0167",
+    "customerId": "cus_051",
+    "name": "Rafael Alves",
+    "email": "rafael.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_039",
+        "productName": "Stripe Payments Integration",
+        "quantity": 2,
+        "unitPriceCents": 33990,
+        "totalCents": 67980
+      }
+    ],
+    "subtotalCents": 67980,
+    "taxCents": 12236,
+    "totalCents": 80216,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-11T18:49:47Z"
+  },
+  {
+    "id": "ord_0168",
+    "customerId": "cus_091",
+    "name": "Bruno Lima",
+    "email": "bruno.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_048",
+        "productName": "Refactoring Frontend Code",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      },
+      {
+        "productId": "prod_036",
+        "productName": "Git Beyond the Basics",
+        "quantity": 1,
+        "unitPriceCents": 38990,
+        "totalCents": 38990
+      }
+    ],
+    "subtotalCents": 43980,
+    "taxCents": 7916,
+    "totalCents": 51896,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-12T15:50:07Z"
+  },
+  {
+    "id": "ord_0169",
+    "customerId": "cus_058",
+    "name": "Rafael Martins",
+    "email": "rafael.martins@example.com",
+    "items": [
+      {
+        "productId": "prod_044",
+        "productName": "SQL Query Cookbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      },
+      {
+        "productId": "prod_004",
+        "productName": "Developer Portfolio",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 17980,
+    "taxCents": 3236,
+    "totalCents": 21216,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-08-12T19:50:44Z"
+  },
+  {
+    "id": "ord_0170",
+    "customerId": "cus_076",
+    "name": "Mariana Costa",
+    "email": "mariana.costa@example.com",
+    "items": [
+      {
+        "productId": "prod_003",
+        "productName": "Admin Panel Pro",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-13T13:45:54Z"
+  },
+  {
+    "id": "ord_0171",
+    "customerId": "cus_085",
+    "name": "Vitória Martins",
+    "email": "vitoria.martins@example.com",
+    "items": [
+      {
+        "productId": "prod_012",
+        "productName": "Invoice App Template",
+        "quantity": 1,
+        "unitPriceCents": 22990,
+        "totalCents": 22990
+      },
+      {
+        "productId": "prod_045",
+        "productName": "REST API Design Notes",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 27980,
+    "taxCents": 5036,
+    "totalCents": 33016,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-14T13:47:36Z"
+  },
+  {
+    "id": "ord_0172",
+    "customerId": "cus_024",
+    "name": "Rafael Gomes",
+    "email": "rafael.gomes@example.com",
+    "items": [
+      {
+        "productId": "prod_034",
+        "productName": "Tailwind CSS Design Systems",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      },
+      {
+        "productId": "prod_019",
+        "productName": "Data Table Kit",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 29980,
+    "taxCents": 5396,
+    "totalCents": 35376,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-14T16:52:53Z"
+  },
+  {
+    "id": "ord_0173",
+    "customerId": "cus_065",
+    "name": "Bruno Nascimento",
+    "email": "bruno.nascimento@example.com",
+    "items": [
+      {
+        "productId": "prod_033",
+        "productName": "PostgreSQL for Application Developers",
+        "quantity": 1,
+        "unitPriceCents": 21990,
+        "totalCents": 21990
+      }
+    ],
+    "subtotalCents": 21990,
+    "taxCents": 3958,
+    "totalCents": 25948,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-14T19:40:40Z"
+  },
+  {
+    "id": "ord_0174",
+    "customerId": "cus_085",
+    "name": "Vitória Martins",
+    "email": "vitoria.martins@example.com",
+    "items": [
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      }
+    ],
+    "subtotalCents": 11990,
+    "taxCents": 2158,
+    "totalCents": 14148,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-15T10:58:07Z"
+  },
+  {
+    "id": "ord_0175",
+    "customerId": "cus_069",
+    "name": "Gabriela Martins",
+    "email": "gabriela.martins@example.com",
+    "items": [
+      {
+        "productId": "prod_036",
+        "productName": "Git Beyond the Basics",
+        "quantity": 2,
+        "unitPriceCents": 38990,
+        "totalCents": 77980
+      }
+    ],
+    "subtotalCents": 77980,
+    "taxCents": 14036,
+    "totalCents": 92016,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-08-15T11:40:53Z"
+  },
+  {
+    "id": "ord_0176",
+    "customerId": "cus_037",
+    "name": "Gabriela Gomes",
+    "email": "gabriela.gomes@example.com",
+    "items": [
+      {
+        "productId": "prod_026",
+        "productName": "Email Templates Kit",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-15T12:21:36Z"
+  },
+  {
+    "id": "ord_0177",
+    "customerId": "cus_120",
+    "name": "Mateus Rodrigues",
+    "email": "mateus.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_029",
+        "productName": "Testing React Applications",
+        "quantity": 1,
+        "unitPriceCents": 17990,
+        "totalCents": 17990
+      }
+    ],
+    "subtotalCents": 17990,
+    "taxCents": 3238,
+    "totalCents": 21228,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-16T01:06:10Z"
+  },
+  {
+    "id": "ord_0178",
+    "customerId": "cus_097",
+    "name": "Sofia Santos",
+    "email": "sofia.santos@example.com",
+    "items": [
+      {
+        "productId": "prod_049",
+        "productName": "Monorepos with Turborepo",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 2990,
+    "taxCents": 538,
+    "totalCents": 3528,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-16T13:42:09Z"
+  },
+  {
+    "id": "ord_0179",
+    "customerId": "cus_058",
+    "name": "Rafael Martins",
+    "email": "rafael.martins@example.com",
+    "items": [
+      {
+        "productId": "prod_051",
+        "productName": "Regex Pocket Reference",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-16T13:43:43Z"
+  },
+  {
+    "id": "ord_0180",
+    "customerId": "cus_029",
+    "name": "Mateus Ribeiro",
+    "email": "mateus.ribeiro@example.com",
+    "items": [
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      },
+      {
+        "productId": "prod_044",
+        "productName": "SQL Query Cookbook",
+        "quantity": 2,
+        "unitPriceCents": 2990,
+        "totalCents": 5980
+      }
+    ],
+    "subtotalCents": 10970,
+    "taxCents": 1975,
+    "totalCents": 12945,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-16T18:46:59Z"
+  },
+  {
+    "id": "ord_0181",
+    "customerId": "cus_113",
+    "name": "Camila Carvalho",
+    "email": "camila.carvalho@example.com",
+    "items": [
+      {
+        "productId": "prod_028",
+        "productName": "TypeScript for React Developers",
+        "quantity": 1,
+        "unitPriceCents": 30990,
+        "totalCents": 30990
+      },
+      {
+        "productId": "prod_013",
+        "productName": "Status Page Template",
+        "quantity": 1,
+        "unitPriceCents": 18990,
+        "totalCents": 18990
+      }
+    ],
+    "subtotalCents": 49980,
+    "taxCents": 8996,
+    "totalCents": 58976,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-17T00:36:22Z"
+  },
+  {
+    "id": "ord_0182",
+    "customerId": "cus_033",
+    "name": "Thiago Rodrigues",
+    "email": "thiago.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_013",
+        "productName": "Status Page Template",
+        "quantity": 1,
+        "unitPriceCents": 18990,
+        "totalCents": 18990
+      }
+    ],
+    "subtotalCents": 18990,
+    "taxCents": 3418,
+    "totalCents": 22408,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-17T14:14:44Z"
+  },
+  {
+    "id": "ord_0183",
+    "customerId": "cus_101",
+    "name": "Thiago Nascimento",
+    "email": "thiago.nascimento@example.com",
+    "items": [
+      {
+        "productId": "prod_047",
+        "productName": "Technical SEO for Developers",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      },
+      {
+        "productId": "prod_030",
+        "productName": "Web Performance Fundamentals",
+        "quantity": 1,
+        "unitPriceCents": 35990,
+        "totalCents": 35990
+      }
+    ],
+    "subtotalCents": 38980,
+    "taxCents": 7016,
+    "totalCents": 45996,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-17T14:59:07Z"
+  },
+  {
+    "id": "ord_0184",
+    "customerId": "cus_091",
+    "name": "Bruno Lima",
+    "email": "bruno.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      }
+    ],
+    "subtotalCents": 11990,
+    "taxCents": 2158,
+    "totalCents": 14148,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-08-17T19:19:22Z"
+  },
+  {
+    "id": "ord_0185",
+    "customerId": "cus_087",
+    "name": "Lucas Souza",
+    "email": "lucas.souza@example.com",
+    "items": [
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      },
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      },
+      {
+        "productId": "prod_048",
+        "productName": "Refactoring Frontend Code",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 12970,
+    "taxCents": 2335,
+    "totalCents": 15305,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-18T01:18:24Z"
+  },
+  {
+    "id": "ord_0186",
+    "customerId": "cus_035",
+    "name": "Diego Ferreira",
+    "email": "diego.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_014",
+        "productName": "E-commerce UI Kit",
+        "quantity": 1,
+        "unitPriceCents": 12990,
+        "totalCents": 12990
+      },
+      {
+        "productId": "prod_011",
+        "productName": "Changelog & Roadmap Site",
+        "quantity": 1,
+        "unitPriceCents": 18990,
+        "totalCents": 18990
+      }
+    ],
+    "subtotalCents": 31980,
+    "taxCents": 5756,
+    "totalCents": 37736,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-18T06:40:47Z"
+  },
+  {
+    "id": "ord_0187",
+    "customerId": "cus_023",
+    "name": "Caio Rocha",
+    "email": "caio.rocha@example.com",
+    "items": [
+      {
+        "productId": "prod_029",
+        "productName": "Testing React Applications",
+        "quantity": 1,
+        "unitPriceCents": 17990,
+        "totalCents": 17990
+      }
+    ],
+    "subtotalCents": 17990,
+    "taxCents": 3238,
+    "totalCents": 21228,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-18T20:16:24Z"
+  },
+  {
+    "id": "ord_0188",
+    "customerId": "cus_116",
+    "name": "Isabela Silva",
+    "email": "isabela.silva@example.com",
+    "items": [
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      },
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      },
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      }
+    ],
+    "subtotalCents": 19970,
+    "taxCents": 3595,
+    "totalCents": 23565,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-18T20:19:21Z"
+  },
+  {
+    "id": "ord_0189",
+    "customerId": "cus_108",
+    "name": "Lucas Ferreira",
+    "email": "lucas.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_042",
+        "productName": "CSS Layout Field Guide",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      },
+      {
+        "productId": "prod_015",
+        "productName": "Mobile Banking UI Kit",
+        "quantity": 1,
+        "unitPriceCents": 5990,
+        "totalCents": 5990
+      }
+    ],
+    "subtotalCents": 8980,
+    "taxCents": 1616,
+    "totalCents": 10596,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-18T20:59:09Z"
+  },
+  {
+    "id": "ord_0190",
+    "customerId": "cus_004",
+    "name": "Gabriela Rodrigues",
+    "email": "gabriela.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_023",
+        "productName": "Charts & Graphs Kit",
+        "quantity": 1,
+        "unitPriceCents": 6990,
+        "totalCents": 6990
+      }
+    ],
+    "subtotalCents": 6990,
+    "taxCents": 1258,
+    "totalCents": 8248,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-19T12:29:17Z"
+  },
+  {
+    "id": "ord_0191",
+    "customerId": "cus_068",
+    "name": "Diego Alves",
+    "email": "diego.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_037",
+        "productName": "Docker for Web Developers",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      },
+      {
+        "productId": "prod_044",
+        "productName": "SQL Query Cookbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 23980,
+    "taxCents": 4316,
+    "totalCents": 28296,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-08-19T17:58:57Z"
+  },
+  {
+    "id": "ord_0192",
+    "customerId": "cus_009",
+    "name": "Felipe Rodrigues",
+    "email": "felipe.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_010",
+        "productName": "CRM Dashboard",
+        "quantity": 1,
+        "unitPriceCents": 21990,
+        "totalCents": 21990
+      },
+      {
+        "productId": "prod_002",
+        "productName": "Startup Landing Page",
+        "quantity": 2,
+        "unitPriceCents": 20990,
+        "totalCents": 41980
+      }
+    ],
+    "subtotalCents": 63970,
+    "taxCents": 11515,
+    "totalCents": 75485,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-19T18:24:28Z"
+  },
+  {
+    "id": "ord_0193",
+    "customerId": "cus_056",
+    "name": "Mateus Silva",
+    "email": "mateus.silva@example.com",
+    "items": [
+      {
+        "productId": "prod_020",
+        "productName": "Chat Interface Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      },
+      {
+        "productId": "prod_048",
+        "productName": "Refactoring Frontend Code",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 16980,
+    "taxCents": 3056,
+    "totalCents": 20036,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-19T20:23:01Z"
+  },
+  {
+    "id": "ord_0194",
+    "customerId": "cus_097",
+    "name": "Sofia Santos",
+    "email": "sofia.santos@example.com",
+    "items": [
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      }
+    ],
+    "subtotalCents": 1990,
+    "taxCents": 358,
+    "totalCents": 2348,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-19T20:27:40Z"
+  },
+  {
+    "id": "ord_0195",
+    "customerId": "cus_039",
+    "name": "Natália Araújo",
+    "email": "natalia.araujo@example.com",
+    "items": [
+      {
+        "productId": "prod_045",
+        "productName": "REST API Design Notes",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "refunded",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-19T21:04:45Z"
+  },
+  {
+    "id": "ord_0196",
+    "customerId": "cus_070",
+    "name": "Isabela Gomes",
+    "email": "isabela.gomes@example.com",
+    "items": [
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      },
+      {
+        "productId": "prod_039",
+        "productName": "Stripe Payments Integration",
+        "quantity": 1,
+        "unitPriceCents": 33990,
+        "totalCents": 33990
+      },
+      {
+        "productId": "prod_037",
+        "productName": "Docker for Web Developers",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      }
+    ],
+    "subtotalCents": 57970,
+    "taxCents": 10435,
+    "totalCents": 68405,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-19T21:36:07Z"
+  },
+  {
+    "id": "ord_0197",
+    "customerId": "cus_021",
+    "name": "Henrique Ferreira",
+    "email": "henrique.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-20T01:03:23Z"
+  },
+  {
+    "id": "ord_0198",
+    "customerId": "cus_002",
+    "name": "Ana Rodrigues",
+    "email": "ana.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_047",
+        "productName": "Technical SEO for Developers",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 2990,
+    "taxCents": 538,
+    "totalCents": 3528,
+    "status": "refunded",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-20T10:06:23Z"
+  },
+  {
+    "id": "ord_0199",
+    "customerId": "cus_072",
+    "name": "Beatriz Oliveira",
+    "email": "beatriz.oliveira@example.com",
+    "items": [
+      {
+        "productId": "prod_028",
+        "productName": "TypeScript for React Developers",
+        "quantity": 1,
+        "unitPriceCents": 30990,
+        "totalCents": 30990
+      },
+      {
+        "productId": "prod_008",
+        "productName": "Blog Starter Kit",
+        "quantity": 1,
+        "unitPriceCents": 18990,
+        "totalCents": 18990
+      }
+    ],
+    "subtotalCents": 49980,
+    "taxCents": 8996,
+    "totalCents": 58976,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-20T19:00:27Z"
+  },
+  {
+    "id": "ord_0200",
+    "customerId": "cus_101",
+    "name": "Thiago Nascimento",
+    "email": "thiago.nascimento@example.com",
+    "items": [
+      {
+        "productId": "prod_026",
+        "productName": "Email Templates Kit",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      },
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      }
+    ],
+    "subtotalCents": 16980,
+    "taxCents": 3056,
+    "totalCents": 20036,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-20T19:31:09Z"
+  },
+  {
+    "id": "ord_0201",
+    "customerId": "cus_058",
+    "name": "Rafael Martins",
+    "email": "rafael.martins@example.com",
+    "items": [
+      {
+        "productId": "prod_049",
+        "productName": "Monorepos with Turborepo",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 2990,
+    "taxCents": 538,
+    "totalCents": 3528,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-08-20T22:23:20Z"
+  },
+  {
+    "id": "ord_0202",
+    "customerId": "cus_119",
+    "name": "Beatriz Santos",
+    "email": "beatriz.santos@example.com",
+    "items": [
+      {
+        "productId": "prod_028",
+        "productName": "TypeScript for React Developers",
+        "quantity": 1,
+        "unitPriceCents": 30990,
+        "totalCents": 30990
+      },
+      {
+        "productId": "prod_037",
+        "productName": "Docker for Web Developers",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      }
+    ],
+    "subtotalCents": 51980,
+    "taxCents": 9356,
+    "totalCents": 61336,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-21T01:06:51Z"
+  },
+  {
+    "id": "ord_0203",
+    "customerId": "cus_012",
+    "name": "Beatriz Costa",
+    "email": "beatriz.costa@example.com",
+    "items": [
+      {
+        "productId": "prod_038",
+        "productName": "Product Analytics with GA4",
+        "quantity": 1,
+        "unitPriceCents": 19990,
+        "totalCents": 19990
+      },
+      {
+        "productId": "prod_023",
+        "productName": "Charts & Graphs Kit",
+        "quantity": 1,
+        "unitPriceCents": 6990,
+        "totalCents": 6990
+      }
+    ],
+    "subtotalCents": 26980,
+    "taxCents": 4856,
+    "totalCents": 31836,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-21T13:48:59Z"
+  },
+  {
+    "id": "ord_0204",
+    "customerId": "cus_051",
+    "name": "Rafael Alves",
+    "email": "rafael.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-21T20:00:45Z"
+  },
+  {
+    "id": "ord_0205",
+    "customerId": "cus_018",
+    "name": "Henrique Ribeiro",
+    "email": "henrique.ribeiro@example.com",
+    "items": [
+      {
+        "productId": "prod_004",
+        "productName": "Developer Portfolio",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-21T21:56:14Z"
+  },
+  {
+    "id": "ord_0206",
+    "customerId": "cus_083",
+    "name": "Henrique Souza",
+    "email": "henrique.souza@example.com",
+    "items": [
+      {
+        "productId": "prod_026",
+        "productName": "Email Templates Kit",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-21T23:13:25Z"
+  },
+  {
+    "id": "ord_0207",
+    "customerId": "cus_040",
+    "name": "Otávio Alves",
+    "email": "otavio.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_034",
+        "productName": "Tailwind CSS Design Systems",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-08-21T23:34:35Z"
+  },
+  {
+    "id": "ord_0208",
+    "customerId": "cus_011",
+    "name": "Lucas Oliveira",
+    "email": "lucas.oliveira@example.com",
+    "items": [
+      {
+        "productId": "prod_034",
+        "productName": "Tailwind CSS Design Systems",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-22T13:02:14Z"
+  },
+  {
+    "id": "ord_0209",
+    "customerId": "cus_068",
+    "name": "Diego Alves",
+    "email": "diego.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      },
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      },
+      {
+        "productId": "prod_035",
+        "productName": "GraphQL in Practice",
+        "quantity": 1,
+        "unitPriceCents": 32990,
+        "totalCents": 32990
+      }
+    ],
+    "subtotalCents": 47970,
+    "taxCents": 8635,
+    "totalCents": 56605,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-22T23:00:01Z"
+  },
+  {
+    "id": "ord_0210",
+    "customerId": "cus_012",
+    "name": "Beatriz Costa",
+    "email": "beatriz.costa@example.com",
+    "items": [
+      {
+        "productId": "prod_002",
+        "productName": "Startup Landing Page",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      },
+      {
+        "productId": "prod_028",
+        "productName": "TypeScript for React Developers",
+        "quantity": 1,
+        "unitPriceCents": 30990,
+        "totalCents": 30990
+      }
+    ],
+    "subtotalCents": 51980,
+    "taxCents": 9356,
+    "totalCents": 61336,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-23T15:11:17Z"
+  },
+  {
+    "id": "ord_0211",
+    "customerId": "cus_010",
+    "name": "Eduarda Gomes",
+    "email": "eduarda.gomes@example.com",
+    "items": [
+      {
+        "productId": "prod_012",
+        "productName": "Invoice App Template",
+        "quantity": 1,
+        "unitPriceCents": 22990,
+        "totalCents": 22990
+      },
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      }
+    ],
+    "subtotalCents": 34980,
+    "taxCents": 6296,
+    "totalCents": 41276,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-24T12:09:12Z"
+  },
+  {
+    "id": "ord_0212",
+    "customerId": "cus_102",
+    "name": "Vitória Almeida",
+    "email": "vitoria.almeida@example.com",
+    "items": [
+      {
+        "productId": "prod_051",
+        "productName": "Regex Pocket Reference",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-25T00:13:27Z"
+  },
+  {
+    "id": "ord_0213",
+    "customerId": "cus_043",
+    "name": "Sofia Rodrigues",
+    "email": "sofia.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      }
+    ],
+    "subtotalCents": 11990,
+    "taxCents": 2158,
+    "totalCents": 14148,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-25T03:34:33Z"
+  },
+  {
+    "id": "ord_0214",
+    "customerId": "cus_035",
+    "name": "Diego Ferreira",
+    "email": "diego.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_036",
+        "productName": "Git Beyond the Basics",
+        "quantity": 1,
+        "unitPriceCents": 38990,
+        "totalCents": 38990
+      },
+      {
+        "productId": "prod_002",
+        "productName": "Startup Landing Page",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      }
+    ],
+    "subtotalCents": 59980,
+    "taxCents": 10796,
+    "totalCents": 70776,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-25T10:44:53Z"
+  },
+  {
+    "id": "ord_0215",
+    "customerId": "cus_075",
+    "name": "Paula Rodrigues",
+    "email": "paula.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_003",
+        "productName": "Admin Panel Pro",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-25T12:53:08Z"
+  },
+  {
+    "id": "ord_0216",
+    "customerId": "cus_090",
+    "name": "Yuri Oliveira",
+    "email": "yuri.oliveira@example.com",
+    "items": [
+      {
+        "productId": "prod_002",
+        "productName": "Startup Landing Page",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      }
+    ],
+    "subtotalCents": 20990,
+    "taxCents": 3778,
+    "totalCents": 24768,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-25T14:21:52Z"
+  },
+  {
+    "id": "ord_0217",
+    "customerId": "cus_061",
+    "name": "Larissa Ribeiro",
+    "email": "larissa.ribeiro@example.com",
+    "items": [
+      {
+        "productId": "prod_014",
+        "productName": "E-commerce UI Kit",
+        "quantity": 1,
+        "unitPriceCents": 12990,
+        "totalCents": 12990
+      }
+    ],
+    "subtotalCents": 12990,
+    "taxCents": 2338,
+    "totalCents": 15328,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-25T14:24:33Z"
+  },
+  {
+    "id": "ord_0218",
+    "customerId": "cus_010",
+    "name": "Eduarda Gomes",
+    "email": "eduarda.gomes@example.com",
+    "items": [
+      {
+        "productId": "prod_038",
+        "productName": "Product Analytics with GA4",
+        "quantity": 2,
+        "unitPriceCents": 19990,
+        "totalCents": 39980
+      }
+    ],
+    "subtotalCents": 39980,
+    "taxCents": 7196,
+    "totalCents": 47176,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-25T17:21:54Z"
+  },
+  {
+    "id": "ord_0219",
+    "customerId": "cus_067",
+    "name": "João Santos",
+    "email": "joao.santos@example.com",
+    "items": [
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      }
+    ],
+    "subtotalCents": 11990,
+    "taxCents": 2158,
+    "totalCents": 14148,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-26T00:48:49Z"
+  },
+  {
+    "id": "ord_0220",
+    "customerId": "cus_049",
+    "name": "Vitória Rodrigues",
+    "email": "vitoria.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_047",
+        "productName": "Technical SEO for Developers",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 2990,
+    "taxCents": 538,
+    "totalCents": 3528,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-26T01:29:49Z"
+  },
+  {
+    "id": "ord_0221",
+    "customerId": "cus_051",
+    "name": "Rafael Alves",
+    "email": "rafael.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_002",
+        "productName": "Startup Landing Page",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      }
+    ],
+    "subtotalCents": 20990,
+    "taxCents": 3778,
+    "totalCents": 24768,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-26T14:22:46Z"
+  },
+  {
+    "id": "ord_0222",
+    "customerId": "cus_092",
+    "name": "Natália Carvalho",
+    "email": "natalia.carvalho@example.com",
+    "items": [
+      {
+        "productId": "prod_005",
+        "productName": "Documentation Site Starter",
+        "quantity": 1,
+        "unitPriceCents": 6990,
+        "totalCents": 6990
+      }
+    ],
+    "subtotalCents": 6990,
+    "taxCents": 1258,
+    "totalCents": 8248,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-26T18:55:19Z"
+  },
+  {
+    "id": "ord_0223",
+    "customerId": "cus_055",
+    "name": "Vitória Souza",
+    "email": "vitoria.souza@example.com",
+    "items": [
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      }
+    ],
+    "subtotalCents": 1990,
+    "taxCents": 358,
+    "totalCents": 2348,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-26T20:50:57Z"
+  },
+  {
+    "id": "ord_0224",
+    "customerId": "cus_086",
+    "name": "Lucas Lima",
+    "email": "lucas.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      },
+      {
+        "productId": "prod_028",
+        "productName": "TypeScript for React Developers",
+        "quantity": 1,
+        "unitPriceCents": 30990,
+        "totalCents": 30990
+      }
+    ],
+    "subtotalCents": 42980,
+    "taxCents": 7736,
+    "totalCents": 50716,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-27T01:30:18Z"
+  },
+  {
+    "id": "ord_0225",
+    "customerId": "cus_034",
+    "name": "Paula Carvalho",
+    "email": "paula.carvalho@example.com",
+    "items": [
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      },
+      {
+        "productId": "prod_044",
+        "productName": "SQL Query Cookbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      },
+      {
+        "productId": "prod_038",
+        "productName": "Product Analytics with GA4",
+        "quantity": 2,
+        "unitPriceCents": 19990,
+        "totalCents": 39980
+      }
+    ],
+    "subtotalCents": 47960,
+    "taxCents": 8633,
+    "totalCents": 56593,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-27T14:00:38Z"
+  },
+  {
+    "id": "ord_0226",
+    "customerId": "cus_061",
+    "name": "Larissa Ribeiro",
+    "email": "larissa.ribeiro@example.com",
+    "items": [
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 2990,
+    "taxCents": 538,
+    "totalCents": 3528,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-27T16:13:02Z"
+  },
+  {
+    "id": "ord_0227",
+    "customerId": "cus_070",
+    "name": "Isabela Gomes",
+    "email": "isabela.gomes@example.com",
+    "items": [
+      {
+        "productId": "prod_002",
+        "productName": "Startup Landing Page",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      }
+    ],
+    "subtotalCents": 20990,
+    "taxCents": 3778,
+    "totalCents": 24768,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-27T17:16:23Z"
+  },
+  {
+    "id": "ord_0228",
+    "customerId": "cus_030",
+    "name": "Eduarda Lima",
+    "email": "eduarda.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_029",
+        "productName": "Testing React Applications",
+        "quantity": 1,
+        "unitPriceCents": 17990,
+        "totalCents": 17990
+      }
+    ],
+    "subtotalCents": 17990,
+    "taxCents": 3238,
+    "totalCents": 21228,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-27T20:09:17Z"
+  },
+  {
+    "id": "ord_0229",
+    "customerId": "cus_019",
+    "name": "Diego Oliveira",
+    "email": "diego.oliveira@example.com",
+    "items": [
+      {
+        "productId": "prod_045",
+        "productName": "REST API Design Notes",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 4990,
+    "taxCents": 898,
+    "totalCents": 5888,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-28T01:45:53Z"
+  },
+  {
+    "id": "ord_0230",
+    "customerId": "cus_021",
+    "name": "Henrique Ferreira",
+    "email": "henrique.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_021",
+        "productName": "Onboarding Flows Kit",
+        "quantity": 1,
+        "unitPriceCents": 17990,
+        "totalCents": 17990
+      }
+    ],
+    "subtotalCents": 17990,
+    "taxCents": 3238,
+    "totalCents": 21228,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-28T16:49:04Z"
+  },
+  {
+    "id": "ord_0231",
+    "customerId": "cus_035",
+    "name": "Diego Ferreira",
+    "email": "diego.ferreira@example.com",
+    "items": [
+      {
+        "productId": "prod_026",
+        "productName": "Email Templates Kit",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      },
+      {
+        "productId": "prod_009",
+        "productName": "Booking App Template",
+        "quantity": 1,
+        "unitPriceCents": 20990,
+        "totalCents": 20990
+      }
+    ],
+    "subtotalCents": 35980,
+    "taxCents": 6476,
+    "totalCents": 42456,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-28T17:55:41Z"
+  },
+  {
+    "id": "ord_0232",
+    "customerId": "cus_037",
+    "name": "Gabriela Gomes",
+    "email": "gabriela.gomes@example.com",
+    "items": [
+      {
+        "productId": "prod_026",
+        "productName": "Email Templates Kit",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-28T22:41:13Z"
+  },
+  {
+    "id": "ord_0233",
+    "customerId": "cus_077",
+    "name": "Gabriela Oliveira",
+    "email": "gabriela.oliveira@example.com",
+    "items": [
+      {
+        "productId": "prod_029",
+        "productName": "Testing React Applications",
+        "quantity": 1,
+        "unitPriceCents": 17990,
+        "totalCents": 17990
+      }
+    ],
+    "subtotalCents": 17990,
+    "taxCents": 3238,
+    "totalCents": 21228,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-29T13:29:34Z"
+  },
+  {
+    "id": "ord_0234",
+    "customerId": "cus_005",
+    "name": "Mariana Silva",
+    "email": "mariana.silva@example.com",
+    "items": [
+      {
+        "productId": "prod_048",
+        "productName": "Refactoring Frontend Code",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      },
+      {
+        "productId": "prod_028",
+        "productName": "TypeScript for React Developers",
+        "quantity": 1,
+        "unitPriceCents": 30990,
+        "totalCents": 30990
+      }
+    ],
+    "subtotalCents": 35980,
+    "taxCents": 6476,
+    "totalCents": 42456,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-29T23:11:18Z"
+  },
+  {
+    "id": "ord_0235",
+    "customerId": "cus_086",
+    "name": "Lucas Lima",
+    "email": "lucas.lima@example.com",
+    "items": [
+      {
+        "productId": "prod_032",
+        "productName": "Node.js APIs from Scratch",
+        "quantity": 1,
+        "unitPriceCents": 25990,
+        "totalCents": 25990
+      }
+    ],
+    "subtotalCents": 25990,
+    "taxCents": 4678,
+    "totalCents": 30668,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-30T12:52:13Z"
+  },
+  {
+    "id": "ord_0236",
+    "customerId": "cus_070",
+    "name": "Isabela Gomes",
+    "email": "isabela.gomes@example.com",
+    "items": [
+      {
+        "productId": "prod_018",
+        "productName": "Marketing Sections Kit",
+        "quantity": 1,
+        "unitPriceCents": 11990,
+        "totalCents": 11990
+      },
+      {
+        "productId": "prod_026",
+        "productName": "Email Templates Kit",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      },
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      }
+    ],
+    "subtotalCents": 29970,
+    "taxCents": 5395,
+    "totalCents": 35365,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-30T19:32:44Z"
+  },
+  {
+    "id": "ord_0237",
+    "customerId": "cus_099",
+    "name": "Isabela Carvalho",
+    "email": "isabela.carvalho@example.com",
+    "items": [
+      {
+        "productId": "prod_019",
+        "productName": "Data Table Kit",
+        "quantity": 1,
+        "unitPriceCents": 14990,
+        "totalCents": 14990
+      }
+    ],
+    "subtotalCents": 14990,
+    "taxCents": 2698,
+    "totalCents": 17688,
+    "status": "completed",
+    "paymentMethod": "card",
+    "createdAt": "2026-08-30T21:40:18Z"
+  },
+  {
+    "id": "ord_0238",
+    "customerId": "cus_096",
+    "name": "Mariana Alves",
+    "email": "mariana.alves@example.com",
+    "items": [
+      {
+        "productId": "prod_041",
+        "productName": "Core Web Vitals Handbook",
+        "quantity": 1,
+        "unitPriceCents": 2990,
+        "totalCents": 2990
+      },
+      {
+        "productId": "prod_050",
+        "productName": "Security Checklist for Web Apps",
+        "quantity": 1,
+        "unitPriceCents": 4990,
+        "totalCents": 4990
+      }
+    ],
+    "subtotalCents": 7980,
+    "taxCents": 1436,
+    "totalCents": 9416,
+    "status": "completed",
+    "paymentMethod": "pix",
+    "createdAt": "2026-08-31T05:54:58Z"
+  },
+  {
+    "id": "ord_0239",
+    "customerId": "cus_044",
+    "name": "Natália Gomes",
+    "email": "natalia.gomes@example.com",
+    "items": [
+      {
+        "productId": "prod_022",
+        "productName": "Icon Set — 1,200 icons",
+        "quantity": 1,
+        "unitPriceCents": 7990,
+        "totalCents": 7990
+      }
+    ],
+    "subtotalCents": 7990,
+    "taxCents": 1438,
+    "totalCents": 9428,
+    "status": "pending",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-08-31T14:46:06Z"
+  },
+  {
+    "id": "ord_0240",
+    "customerId": "cus_075",
+    "name": "Paula Rodrigues",
+    "email": "paula.rodrigues@example.com",
+    "items": [
+      {
+        "productId": "prod_046",
+        "productName": "JavaScript Async Deep Dive",
+        "quantity": 1,
+        "unitPriceCents": 1990,
+        "totalCents": 1990
+      }
+    ],
+    "subtotalCents": 1990,
+    "taxCents": 358,
+    "totalCents": 2348,
+    "status": "pending",
+    "paymentMethod": "boleto",
+    "createdAt": "2026-08-31T23:51:15Z"
+  }
+]

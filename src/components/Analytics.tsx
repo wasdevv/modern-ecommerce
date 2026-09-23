@@ -1,0 +1,63 @@
+'use client';
+
+import Script from 'next/script';
+import { useEffect, useState } from 'react';
+import { CONSENT_KEY, GA4_ID, GTM_ID } from '@/lib/tracking';
+
+type Consent = 'granted' | 'denied' | null;
+
+// Loads GTM (or GA4 when GTM isn't set) only after an explicit "Accept".
+// Page views come from GA4 enhanced measurement / a GTM History Change trigger, not from here.
+export default function Analytics() {
+  const [consent, setConsent] = useState<Consent | 'unknown'>('unknown');
+
+  useEffect(() => {
+    try {
+      setConsent(localStorage.getItem(CONSENT_KEY) as Consent);
+    } catch {
+      setConsent(null);
+    }
+  }, []);
+
+  if (!GTM_ID && !GA4_ID) return null;
+
+  const decide = (value: 'granted' | 'denied') => {
+    try {
+      localStorage.setItem(CONSENT_KEY, value);
+    } catch {}
+    setConsent(value);
+  };
+
+  if (consent === 'granted') {
+    return GTM_ID ? (
+      <Script id="gtm" strategy="afterInteractive">
+        {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',${JSON.stringify(GTM_ID)});`}
+      </Script>
+    ) : (
+      <>
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(GA4_ID)}`} strategy="afterInteractive" />
+        <Script id="ga4" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config',${JSON.stringify(GA4_ID)});`}
+        </Script>
+      </>
+    );
+  }
+
+  if (consent !== null) return null; // 'denied', or still reading storage
+
+  return (
+    <div role="dialog" aria-label="Analytics consent" className="fixed inset-x-4 bottom-4 z-50 mx-auto max-w-xl rounded-lg border bg-white p-4 shadow-lg">
+      <p className="text-sm text-gray-700">
+        This demo can send anonymous e-commerce events (product views, cart, purchase) to Google Analytics. No name or email is sent.
+      </p>
+      <div className="mt-3 flex gap-2">
+        <button onClick={() => decide('granted')} className="rounded-md bg-gray-900 px-4 py-2 text-sm font-semibold text-white hover:bg-gray-700">
+          Accept
+        </button>
+        <button onClick={() => decide('denied')} className="rounded-md border px-4 py-2 text-sm font-semibold hover:bg-gray-50">
+          Decline
+        </button>
+      </div>
+    </div>
+  );
+}
