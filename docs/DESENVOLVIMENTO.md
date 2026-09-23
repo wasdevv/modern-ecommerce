@@ -2,6 +2,7 @@
 
 Este documento registra o que existe no projeto, como cada parte funciona, as decisões tomadas (e por quê), o que foi verificado e o que ficou de fora. O README cobre o essencial para rodar. Aqui está o detalhe.
 
+- Site: https://modernstore-wasdevv.vercel.app (pagamentos em modo sandbox)
 - Repositório: https://github.com/wasdevv/modern-ecommerce (público)
 - Stack: Next.js 14 (App Router), React 18, TypeScript, Tailwind CSS 3, Postgres 16
 - Idioma da interface: português do Brasil. Preços em BRL.
@@ -567,16 +568,33 @@ Além dos testes automatizados:
 - **Analytics** (com um ID de GTM de teste): nada é enviado antes do Aceitar; cada evento dispara uma vez; `purchase` não repete no reload; nenhum dado pessoal vai para o `dataLayer`.
 - Nenhuma página transborda a tela em 360–375 px, e não houve erro no console.
 
-**Lighthouse 12** (build de produção, localhost)
+**Lighthouse 12 no site publicado** (https://modernstore-wasdevv.vercel.app, medido em 23/09/2026)
 
-| Página | Mobile (perf / a11y / best practices / SEO) | Desktop |
-| --- | --- | --- |
-| `/` | 100 / 100 / 100 / 100 | 100 / 100 / 100 / 100 |
-| `/products` | 99 / 100 / 100 / 100 | 100 / 100 / 100 / 100 |
-| `/products/prod_001` | 99 / 100 / 100 / 100 | 100 / 100 / 100 / 100 |
-| `/cart`, `/checkout` | 98–99 / 100 / 100 / 63 | 100 / 100 / 100 / 63 |
+| Página | Mobile (perf / a11y / best practices / SEO) | Desktop | LCP mobile | FCP mobile |
+| --- | --- | --- | --- | --- |
+| `/` | 100 / 100 / 100 / 100 | 100 / 100 / 100 / 100 | 1,9 s | 1,0 s |
+| `/products` | 100 / 100 / 100 / 100 | 100 / 100 / 100 / 100 | 1,7 s | 0,9 s |
+| `/products/prod_001` | 100 / 100 / 100 / 100 | 100 / 100 / 100 / 100 | 1,2 s | 0,8 s |
+| `/cart`, `/checkout` | 100 / 100 / 100 / 63 | 100 / 100 / 100 / 63 | 1,7 s | 0,8 s |
 
-O SEO de carrinho e checkout fica em 63 porque essas páginas são `noindex` de propósito. O CLS máximo foi 0,015. Esses números são de localhost e precisam ser medidos de novo depois do deploy.
+- O SEO de carrinho e checkout fica em 63 porque essas páginas são `noindex` de propósito.
+- TBT máximo de 20 ms e CLS máximo de 0,015.
+- São números de laboratório, não de campo (CrUX): o site ainda não tem tráfego real.
+
+**No site publicado** também rodei o fluxo completo no navegador:
+
+- cartão recusado e depois aprovado no mesmo pedido;
+- cartão real recusado;
+- Pix gerado e pago pelo webhook assinado, que passa pela própria Vercel, com a segunda aba atualizando pelo polling;
+- admin listando os pedidos do Neon;
+- tela mobile sem transbordar.
+
+Pela API:
+
+- analytics sem cookie devolve 401;
+- webhook forjado devolve 401;
+- pedido sem `Idempotency-Key` devolve 400;
+- o JSON-LD traz a URL de produção.
 
 ---
 
@@ -626,7 +644,6 @@ Decisões que vieram ao longo do projeto:
 ## 22. Próximos passos sugeridos
 
 1. Um adapter real (Mercado Pago tem Pix e cartão em modo de teste), usando o SDK do gateway para tokenizar no navegador.
-2. Deploy: Neon + Vercel, com `DATABASE_URL`, `SANDBOX_SECRET` e `SITE_URL`, e Lighthouse medido de novo em produção.
 3. Painel do admin incluindo os pedidos pagos do banco.
 4. Limite de tentativas no login do admin e na tokenização.
 5. Job de limpeza de pedidos pendentes antigos.
@@ -642,3 +659,4 @@ Decisões que vieram ao longo do projeto:
 | `9824b18` | Tradução completa para pt-BR (interface, API, email, descrições) e ajuste do card no mobile |
 | `8b66655` | Redesign no estilo Dawn da Shopify: fonte, tokens, header, notificação de carrinho, catálogo, página de produto, checkout em duas colunas e capas novas |
 | `318d6ae` | Pagamentos Pix e cartão via gateway sandbox, Postgres, máquina de estados, webhook assinado e testes de integração |
+| — | Deploy na Vercel (`iad1`) com Neon Postgres via Vercel Marketplace, domínio `modernstore-wasdevv.vercel.app`, Lighthouse medido no site publicado |

@@ -1,5 +1,7 @@
 # ModernStore
 
+**Live:** https://modernstore-wasdevv.vercel.app (payments run in sandbox mode: Pix and test cards, nothing is charged)
+
 A demo e-commerce store for digital products (templates, UI kits, courses, ebooks), built with **Next.js 14 (App Router) + TypeScript + Tailwind**. The storefront follows the look of Shopify's Dawn theme (Assistant typeface, square buttons, borderless cards, cart notification), and checkout follows the two-column hosted-checkout layout. The catalog, reviews and order history are generated data. Payments go through a built-in **sandbox gateway** (Pix and card) that behaves like a real one and never charges anyone. The goal is to show how a store should be wired: server-side pricing, a payment state machine driven by signed webhooks, consent-gated analytics, a real admin session, SEO, and data that adds up.
 
 Full write-up (in Portuguese) of everything built, the decisions and the verification: [`docs/DESENVOLVIMENTO.md`](docs/DESENVOLVIMENTO.md).
@@ -81,18 +83,16 @@ Ratings and review counts are labeled as demo data in the UI and deliberately le
 
 ## Measured performance
 
-Lighthouse 12, production build (`next start`) on localhost, no analytics IDs configured:
+Lighthouse 12 against the **deployed site** (https://modernstore-wasdevv.vercel.app, Vercel `iad1` + Neon), measured 2026-09-23. These are lab numbers, not field data (CrUX): the site has no real traffic yet.
 
-| Page | Mobile (perf / a11y / best practices / SEO) | Desktop | Mobile LCP |
-| --- | --- | --- | --- |
-| `/` | 100 / 100 / 100 / 100 | 100 / 100 / 100 / 100 | 1.9 s |
-| `/products` | 99 / 100 / 100 / 100 | 100 / 100 / 100 / 100 | 2.2 s |
-| `/products/prod_001` | 99 / 100 / 100 / 100 | 100 / 100 / 100 / 100 | 2.1 s |
-| `/cart`, `/checkout` | 98–99 / 100 / 100 / 63 | 100 / 100 / 100 / 63 | 2.3 s |
+| Page | Mobile (perf / a11y / best practices / SEO) | Desktop | Mobile LCP | Mobile FCP |
+| --- | --- | --- | --- | --- |
+| `/` | 100 / 100 / 100 / 100 | 100 / 100 / 100 / 100 | 1.9 s | 1.0 s |
+| `/products` | 100 / 100 / 100 / 100 | 100 / 100 / 100 / 100 | 1.7 s | 0.9 s |
+| `/products/prod_001` | 100 / 100 / 100 / 100 | 100 / 100 / 100 / 100 | 1.2 s | 0.8 s |
+| `/cart`, `/checkout` | 100 / 100 / 100 / 63 | 100 / 100 / 100 / 63 | 1.7 s | 0.8 s |
 
-CLS is at most 0.015. Cart and checkout score 63 on SEO because they are `noindex` on purpose.
-
-These are local numbers. A deployed site will differ, so measure it again after deploying.
+Total blocking time is at most 20 ms and CLS at most 0.015. Cart and checkout score 63 on SEO because they are `noindex` on purpose.
 
 ## Deploying (Vercel)
 
