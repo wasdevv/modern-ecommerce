@@ -22,19 +22,19 @@ export default function AdminOrdersPage({ searchParams }: { searchParams: { q?: 
 
   return (
     <>
-      <h1 className="text-3xl font-bold">Pedidos</h1>
+      <h1 className="text-[32px] md:text-[40px]">Pedidos</h1>
       <LocalOrders />
       <form className="mt-6 flex gap-2">
         <label className="flex-1">
           <span className="sr-only">Buscar pedidos</span>
-          <input name="q" type="search" defaultValue={q} placeholder="ID do pedido, nome ou email" className="w-full rounded-md border px-3 py-2 text-sm" />
+          <input name="q" type="search" defaultValue={q} placeholder="ID do pedido, nome ou email" className="field peer pt-0 placeholder:text-ink/50" />
         </label>
-        <button className="rounded-md bg-gray-900 px-4 py-2 text-sm font-semibold text-white">Buscar</button>
+        <button className="btn">Buscar</button>
       </form>
-      <p className="mt-4 text-sm text-gray-600">{matches.length} pedidos seed (clientes fictícios, somente leitura: não há banco de dados compartilhado).</p>
-      <div className="mt-2 overflow-x-auto rounded-lg border bg-white">
+      <p className="mt-4 text-sm text-ink/75">{matches.length} pedidos seed (clientes fictícios, somente leitura: não há banco de dados compartilhado).</p>
+      <div className="mt-2 overflow-x-auto border border-ink/10 bg-white">
         <table className="w-full text-left text-sm">
-          <thead className="border-b bg-gray-50">
+          <thead className="border-b bg-mist">
             <tr>
               <th className="p-3">Pedido</th>
               <th className="p-3">Data</th>
@@ -52,7 +52,7 @@ export default function AdminOrdersPage({ searchParams }: { searchParams: { q?: 
                 <td className="p-3">
                   {o.name}
                   <br />
-                  <span className="text-gray-500">{o.email}</span>
+                  <span className="text-ink/75">{o.email}</span>
                 </td>
                 <td className="p-3">{o.items.reduce((n, i) => n + i.quantity, 0)}</td>
                 <td className="p-3">{STATUS_LABELS[o.status]}</td>

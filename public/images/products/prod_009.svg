@@ -1,7 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#1e3a8a"/></linearGradient></defs>
-<rect width="800" height="600" fill="url(#g)"/>
-<circle cx="680" cy="110" r="190" fill="#fff" opacity=".07"/><circle cx="90" cy="560" r="150" fill="#fff" opacity=".06"/>
-<text x="400" y="330" text-anchor="middle" font-family="system-ui,sans-serif" font-size="200" font-weight="700" fill="#fff">BA</text>
-<text x="400" y="430" text-anchor="middle" font-family="system-ui,sans-serif" font-size="30" letter-spacing="6" fill="#fff" opacity=".8">TEMPLATE</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+<rect width="800" height="800" fill="#f3f3f1"/>
+<rect x="118" y="150" width="564" height="400" rx="18" fill="#121212" opacity=".07" transform="translate(0 14)"/>
+<rect x="118" y="150" width="564" height="400" rx="18" fill="#fff"/>
+<path d="M118 168a18 18 0 0 1 18-18h528a18 18 0 0 1 18 18v28H118z" fill="#5b4a6e" opacity=".12"/>
+<circle cx="146" cy="173" r="7" fill="#5b4a6e" opacity=".45"/><circle cx="170" cy="173" r="7" fill="#5b4a6e" opacity=".3"/><circle cx="194" cy="173" r="7" fill="#5b4a6e" opacity=".2"/>
+<rect x="142" y="222" width="104" height="304" rx="8" fill="#5b4a6e" opacity=".12"/>
+<rect x="266" y="222" width="392" height="124" rx="10" fill="#5b4a6e"/>
+<rect x="266" y="366" width="120" height="160" rx="10" fill="#5b4a6e" opacity=".22"/><rect x="402" y="366" width="120" height="160" rx="10" fill="#5b4a6e" opacity=".22"/><rect x="538" y="366" width="120" height="160" rx="10" fill="#5b4a6e" opacity=".22"/>
+<text x="400" y="640" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="36" font-weight="600" fill="#121212">Booking App Template</text>
 </svg>

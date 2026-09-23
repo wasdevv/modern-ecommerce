@@ -12,7 +12,7 @@ export default function LocalOrders() {
   useEffect(() => setReceipts(Object.values(listReceipts()).sort((a, b) => b.createdAt.localeCompare(a.createdAt))), []);
   if (receipts.length === 0) return null;
   return (
-    <section className="mt-6 rounded-lg border border-dashed bg-white p-4">
+    <section className="mt-6 border border-dashed border-ink/20 p-4">
       <h2 className="font-semibold">Feitos neste navegador</h2>
       <ul className="mt-2 divide-y text-sm">
         {receipts.map((r) => (

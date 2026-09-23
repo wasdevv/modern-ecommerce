@@ -1,30 +1,42 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import AddToCartButton from './AddToCartButton';
-import { formatRating } from '@/lib/format';
 import Price from './Price';
-import { CATEGORY_LABELS, type Product } from '@/lib/types';
+import { formatRating } from '@/lib/format';
+import type { Product } from '@/lib/types';
 
-export default function ProductCard({ product }: { product: Product }) {
+// Dawn's card: borderless, image on a studio background, badge over the image, quick add below.
+export default function ProductCard({ product, quickAdd = true }: { product: Product; quickAdd?: boolean }) {
   return (
-    <article className="flex flex-col overflow-hidden rounded-lg border bg-white">
-      <Link href={`/products/${product.id}`} aria-hidden tabIndex={-1} className="relative aspect-[4/3] bg-gray-100">
-        <Image src={product.image} alt="" fill sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" className="object-cover" />
-      </Link>
-      <div className="flex flex-1 flex-col p-4">
-        <p className="text-xs uppercase tracking-wide text-gray-500">{CATEGORY_LABELS[product.category]}</p>
-        <h2 className="mt-1 font-semibold leading-snug">
-          <Link href={`/products/${product.id}`} className="hover:underline">
+    <article className="group relative flex flex-col">
+      <div className="relative aspect-square overflow-hidden bg-mist">
+        <Image
+          src={product.image}
+          alt=""
+          fill
+          sizes="(min-width: 990px) 25vw, 50vw"
+          className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+        />
+        {(product.originalPriceCents || !product.inStock) && (
+          <span className={`badge absolute bottom-3 left-3 ${product.inStock ? 'bg-ink text-white' : 'bg-white text-ink'}`}>
+            {product.inStock ? 'Promoção' : 'Esgotado'}
+          </span>
+        )}
+      </div>
+      <div className="flex flex-1 flex-col pt-4">
+        <h3 className="text-[15px] leading-snug md:text-base">
+          {/* The ::after stretches the link over the whole card, as in Dawn. */}
+          <Link href={`/products/${product.id}`} className="after:absolute after:inset-0 group-hover:underline group-hover:underline-offset-[0.3rem]">
             {product.name}
           </Link>
-        </h2>
-        <p className="mt-1 text-sm text-gray-600">
-          ★ {formatRating(product.rating)} <span className="text-gray-500">({product.reviewCount} avaliações demo)</span>
+        </h3>
+        <p className="mt-1 text-[13px] text-ink/60" aria-label={`Nota ${formatRating(product.rating)} de 5, ${product.reviewCount} avaliações`}>
+          <span className="text-ink">★</span> {formatRating(product.rating)} ({product.reviewCount})
         </p>
-        <div className="mt-auto space-y-3 pt-4">
+        <div className="mb-auto mt-2">
           <Price product={product} />
-          <AddToCartButton product={product} className="w-full" />
         </div>
+        {quickAdd && <AddToCartButton product={product} compact className="relative z-10 mt-4 w-full px-2 text-sm" />}
       </div>
     </article>
   );

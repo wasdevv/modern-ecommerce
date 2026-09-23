@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+<rect width="800" height="800" fill="#f3f3f1"/>
+<ellipse cx="400" cy="650" rx="190" ry="18" fill="#121212" opacity=".08"/>
+<rect x="240" y="120" width="320" height="520" rx="6" fill="#8c3b2e"/>
+<rect x="240" y="120" width="22" height="520" fill="#121212" opacity=".18"/>
+<rect x="296" y="190" width="208" height="3" fill="#fff" opacity=".6"/>
+<text x="411" y="270" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="38" font-weight="600" fill="#fff">E-books</text>
+<text x="411" y="590" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="20" letter-spacing="5" fill="#fff" opacity=".75">E-BOOK</text>
+
+</svg>

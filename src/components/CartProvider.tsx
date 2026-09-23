@@ -35,6 +35,9 @@ interface CartContextValue {
   setQuantity: (productId: string, quantity: number) => void;
   remove: (productId: string) => void;
   clear: () => void;
+  // Drives the "added to cart" popup under the header, like Dawn's cart notification.
+  lastAdded: CartLine | null;
+  dismissNotice: () => void;
 }
 
 const CartContext = createContext<CartContextValue | null>(null);
@@ -42,6 +45,7 @@ const CartContext = createContext<CartContextValue | null>(null);
 export function CartProvider({ children }: { children: React.ReactNode }) {
   const [lines, setLines] = useState<CartLine[]>([]);
   const [hydrated, setHydrated] = useState(false);
+  const [lastAdded, setLastAdded] = useState<CartLine | null>(null);
 
   // Read after mount (not during render) so server and client HTML match.
   useEffect(() => {
@@ -71,18 +75,22 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       hydrated,
       count: lines.reduce((sum, l) => sum + l.quantity, 0),
       subtotalCents: lines.reduce((sum, l) => sum + (getProduct(l.productId)?.priceCents ?? 0) * l.quantity, 0),
-      add: (productId, quantity = 1) =>
+      add: (productId, quantity = 1) => {
+        setLastAdded({ productId, quantity });
         update((cur) =>
           cur.some((l) => l.productId === productId)
             ? cur.map((l) => (l.productId === productId ? { ...l, quantity: clamp(l.quantity + quantity) } : l))
             : [...cur, { productId, quantity: clamp(quantity) }],
-        ),
+        );
+      },
       setQuantity: (productId, quantity) =>
         update((cur) => cur.map((l) => (l.productId === productId ? { ...l, quantity: clamp(quantity) } : l))),
       remove: (productId) => update((cur) => cur.filter((l) => l.productId !== productId)),
       clear: () => update(() => []),
+      lastAdded,
+      dismissNotice: () => setLastAdded(null),
     };
-  }, [lines, hydrated, update]);
+  }, [lines, hydrated, update, lastAdded]);
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 }

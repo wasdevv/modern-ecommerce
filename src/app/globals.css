@@ -2,6 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-gray-50 text-gray-900 antialiased;
+@layer base {
+  body {
+    @apply bg-white font-sans text-[15px] leading-[1.8] tracking-dawn text-ink/75 antialiased md:text-base;
+  }
+  h1, h2, h3 {
+    @apply font-normal leading-[1.3] tracking-dawn text-ink;
+    text-wrap: balance;
+  }
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-ink/50;
+  }
+}
+
+@layer components {
+  .page-width {
+    @apply mx-auto w-full max-w-page px-6 md:px-12;
+  }
+  /* Dawn's .button: square, 45px tall, a 1px outline that thickens on hover. */
+  .btn {
+    @apply inline-flex min-h-[45px] items-center justify-center bg-ink px-8 text-[15px] tracking-btn text-white shadow-[0_0_0_1px_#121212] transition-shadow duration-100 hover:shadow-[0_0_0_2px_#121212] active:translate-y-px disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:shadow-[0_0_0_1px_#121212];
+  }
+  .btn-outline {
+    @apply btn bg-transparent text-ink;
+  }
+  .link {
+    @apply text-ink underline underline-offset-[0.3rem] decoration-ink/40 transition-colors hover:decoration-ink;
+  }
+  .field {
+    @apply h-[45px] w-full bg-white px-4 pt-4 text-[15px] text-ink shadow-[0_0_0_1px_rgba(18,18,18,0.55)] outline-none transition-shadow placeholder:text-transparent hover:shadow-[0_0_0_2px_rgba(18,18,18,0.55)] focus:shadow-[0_0_0_2px_rgba(18,18,18,0.75)];
+  }
+  .field-label {
+    @apply pointer-events-none absolute left-4 top-1 text-[11px] tracking-dawn text-ink/75 transition-all peer-placeholder-shown:top-[11px] peer-placeholder-shown:text-[15px];
+  }
+  .badge {
+    @apply inline-block rounded-full px-3 py-0.5 text-xs tracking-dawn;
+  }
+  .caption {
+    @apply text-[13px] uppercase tracking-label text-ink/75;
+  }
+}
+
+/* Hosted-checkout look: rounded inputs, blue focus, floating labels. */
+@layer components {
+  .co-input {
+    @apply h-[52px] w-full rounded-[5px] border border-checkout-line bg-white px-3 pt-4 text-[14px] text-[#333] outline-none transition-[border-color,box-shadow] placeholder:text-transparent focus:border-checkout focus:shadow-[0_0_0_1px_#1773b0];
+  }
+  .co-label {
+    @apply pointer-events-none absolute left-3 top-1.5 text-[12px] text-[#707070] transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-[14px];
+  }
+  .co-h2 {
+    @apply text-[21px] font-semibold tracking-normal text-[#333];
+  }
 }

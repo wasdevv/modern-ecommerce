@@ -1,6 +1,6 @@
 # ModernStore
 
-A demo e-commerce store for digital products (templates, UI kits, courses, ebooks), built with **Next.js 14 (App Router) + TypeScript + Tailwind**. The catalog, reviews and order history are generated data; checkout is simulated and never charges anyone. The goal is to show how a store should be wired: server-side pricing, consent-gated analytics, a real admin session, SEO, and data that adds up.
+A demo e-commerce store for digital products (templates, UI kits, courses, ebooks), built with **Next.js 14 (App Router) + TypeScript + Tailwind**. The storefront follows the look of Shopify's Dawn theme (Assistant typeface, square buttons, borderless cards, cart notification), and checkout follows the two-column hosted-checkout layout. The catalog, reviews and order history are generated data; checkout is simulated and never charges anyone. The goal is to show how a store should be wired: server-side pricing, consent-gated analytics, a real admin session, SEO, and data that adds up.
 
 ## Run it
 
@@ -51,12 +51,12 @@ Lighthouse 12, production build (`next start`) on localhost, no analytics IDs co
 
 | Page | Mobile (perf / a11y / best practices / SEO) | Desktop | Mobile LCP |
 | --- | --- | --- | --- |
-| `/` | 99 / 100 / 100 / 100 | 100 / 100 / 100 / 100 | 1.9 s |
-| `/products` | 99 / 100 / 100 / 100 | 100 / 100 / 100 / 100 | 2.0 s |
-| `/products/prod_001` | 100 / 100 / 100 / 100 | 100 / 100 / 100 / 100 | 1.9 s |
-| `/cart`, `/checkout` | 100 / 100 / 100 / 63 | 100 / 100 / 100 / 63 | 1.5 s |
+| `/` | 100 / 100 / 100 / 100 | 100 / 100 / 100 / 100 | 1.9 s |
+| `/products` | 99 / 100 / 100 / 100 | 100 / 100 / 100 / 100 | 2.2 s |
+| `/products/prod_001` | 99 / 100 / 100 / 100 | 100 / 100 / 100 / 100 | 2.1 s |
+| `/cart`, `/checkout` | 98–99 / 100 / 100 / 63 | 100 / 100 / 100 / 63 | 2.3 s |
 
-CLS is 0 on every page. Cart and checkout score 63 on SEO because they are `noindex` on purpose.
+CLS is at most 0.015. Cart and checkout score 63 on SEO because they are `noindex` on purpose.
 
 These are local numbers. A deployed site will differ, so measure it again after deploying.
 

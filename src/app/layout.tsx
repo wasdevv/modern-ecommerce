@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
+import { Assistant } from 'next/font/google';
 import './globals.css';
 import Analytics from '@/components/Analytics';
 import { CartProvider } from '@/components/CartProvider';
-import Header from '@/components/Header';
 import { siteUrl } from '@/lib/format';
+
+// Assistant is the typeface of Shopify's Dawn theme; next/font self-hosts it at build time.
+const assistant = Assistant({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-assistant', display: 'swap' });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
@@ -15,17 +17,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className={assistant.variable}>
       <body className="flex min-h-screen flex-col">
+        <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-white focus:p-3">
+          Pular para o conteúdo
+        </a>
         <CartProvider>
-          <p className="bg-amber-100 px-4 py-1.5 text-center text-xs text-amber-900">
-            Loja demo — produtos, avaliações e pedidos são simulados. Nenhum pagamento é cobrado.
-          </p>
-          <Header />
-          <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8">{children}</main>
-          <footer className="border-t py-6 text-center text-sm text-gray-500">
-            ModernStore é um projeto de portfólio. <Link href="/products" className="underline">Ver o catálogo</Link>
-          </footer>
+          {children}
           <Analytics />
         </CartProvider>
       </body>

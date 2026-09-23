@@ -39,7 +39,7 @@ function weighted(entries) {
 const catalog = {
   templates: {
     prefix: 'TMPL',
-    color: ['#2563eb', '#1e3a8a'],
+    tones: ['#34506b', '#2f5d5a', '#5b4a6e'],
     price: [6990, 24990],
     blurb: 'Template Next.js + Tailwind pronto para produção, com TypeScript, dark mode e componentes documentados.',
     names: [
@@ -51,7 +51,7 @@ const catalog = {
   },
   'ui-kits': {
     prefix: 'UI',
-    color: ['#7c3aed', '#4c1d95'],
+    tones: ['#4a4e69', '#6d5a4b', '#355c4a'],
     price: [4990, 17990],
     blurb: 'Arquivo Figma e componentes React, com design tokens e testados com teclado e leitor de tela.',
     names: [
@@ -63,7 +63,7 @@ const catalog = {
   },
   courses: {
     prefix: 'CRS',
-    color: ['#059669', '#064e3b'],
+    tones: ['#1f3a3d', '#3b3355', '#4a3a2a'],
     price: [14990, 39990],
     blurb: 'Curso em vídeo com código-fonte de cada aula e um projeto final para o seu portfólio.',
     names: [
@@ -76,7 +76,7 @@ const catalog = {
   },
   ebooks: {
     prefix: 'EBK',
-    color: ['#ea580c', '#7c2d12'],
+    tones: ['#8c3b2e', '#1f4e5f', '#6b5d2f', '#2e3b55'],
     price: [1990, 5990],
     blurb: 'E-book em PDF e EPUB com exemplos executáveis e atualizações grátis na versão atual.',
     names: [
@@ -193,17 +193,62 @@ for (const c of customers) {
   c.createdAt = new Date(t).toISOString().slice(0, 10);
 }
 
-function svg(product) {
-  const [from, to] = catalog[product.category].color;
-  const words = product.name.replace(/[^\p{L}\p{N} ]/gu, '').split(' ').filter(Boolean);
-  const initials = (words[0][0] + (words[1]?.[0] ?? '')).toUpperCase();
-  const label = { templates: 'TEMPLATE', 'ui-kits': 'UI KIT', courses: 'CURSO', ebooks: 'E-BOOK' }[product.category];
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${from}"/><stop offset="1" stop-color="${to}"/></linearGradient></defs>
-<rect width="800" height="600" fill="url(#g)"/>
-<circle cx="680" cy="110" r="190" fill="#fff" opacity=".07"/><circle cx="90" cy="560" r="150" fill="#fff" opacity=".06"/>
-<text x="400" y="330" text-anchor="middle" font-family="system-ui,sans-serif" font-size="200" font-weight="700" fill="#fff">${initials}</text>
-<text x="400" y="430" text-anchor="middle" font-family="system-ui,sans-serif" font-size="30" letter-spacing="6" fill="#fff" opacity=".8">${label}</text>
+// Covers are flat illustrations on a neutral backdrop, like product photos on a studio background.
+const escapeXml = (t) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+function wrap(text, max) {
+  const lines = [];
+  for (const word of text.split(' ')) {
+    const last = lines.at(-1);
+    if (last && (last + ' ' + word).length <= max) lines[lines.length - 1] = last + ' ' + word;
+    else lines.push(word);
+  }
+  return lines;
+}
+const textLines = (lines, { x, y, size, weight = 600, fill = '#121212', gap = 1.2 }) =>
+  lines
+    .map((l, i) => `<text x="${x}" y="${y + i * size * gap}" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="${size}" font-weight="${weight}" fill="${fill}">${escapeXml(l)}</text>`)
+    .join('');
+
+const art = {
+  templates: (t) => `<rect x="118" y="150" width="564" height="400" rx="18" fill="#121212" opacity=".07" transform="translate(0 14)"/>
+<rect x="118" y="150" width="564" height="400" rx="18" fill="#fff"/>
+<path d="M118 168a18 18 0 0 1 18-18h528a18 18 0 0 1 18 18v28H118z" fill="${t}" opacity=".12"/>
+<circle cx="146" cy="173" r="7" fill="${t}" opacity=".45"/><circle cx="170" cy="173" r="7" fill="${t}" opacity=".3"/><circle cx="194" cy="173" r="7" fill="${t}" opacity=".2"/>
+<rect x="142" y="222" width="104" height="304" rx="8" fill="${t}" opacity=".12"/>
+<rect x="266" y="222" width="392" height="124" rx="10" fill="${t}"/>
+<rect x="266" y="366" width="120" height="160" rx="10" fill="${t}" opacity=".22"/><rect x="402" y="366" width="120" height="160" rx="10" fill="${t}" opacity=".22"/><rect x="538" y="366" width="120" height="160" rx="10" fill="${t}" opacity=".22"/>`,
+  'ui-kits': (t) =>
+    [0, 1, 2]
+      .flatMap((r) => [0, 1, 2].map((c) => [c, r]))
+      .map(([c, r], i) => {
+        const x = 130 + c * 186, y = 130 + r * 146;
+        const inner = [
+          `<rect x="${x + 30}" y="${y + 48}" width="110" height="34" rx="17" fill="${t}"/>`,
+          `<rect x="${x + 44}" y="${y + 44}" width="82" height="42" rx="21" fill="${t}" opacity=".25"/><circle cx="${x + 105}" cy="${y + 65}" r="16" fill="${t}"/>`,
+          `<rect x="${x + 28}" y="${y + 36}" width="114" height="14" rx="7" fill="${t}" opacity=".5"/><rect x="${x + 28}" y="${y + 62}" width="80" height="14" rx="7" fill="${t}" opacity=".25"/>`,
+        ][i % 3];
+        return `<rect x="${x}" y="${y}" width="170" height="130" rx="14" fill="#fff"/>${inner}`;
+      })
+      .join(''),
+  courses: (t) => `<rect x="100" y="150" width="600" height="360" rx="16" fill="${t}"/>
+<circle cx="400" cy="315" r="56" fill="#fff" opacity=".95"/><path d="M386 290l42 25-42 25z" fill="${t}"/>
+<rect x="136" y="468" width="528" height="8" rx="4" fill="#fff" opacity=".25"/><rect x="136" y="468" width="190" height="8" rx="4" fill="#fff"/>`,
+  ebooks: (t, name) => `<ellipse cx="400" cy="650" rx="190" ry="18" fill="#121212" opacity=".08"/>
+<rect x="240" y="120" width="320" height="520" rx="6" fill="${t}"/>
+<rect x="240" y="120" width="22" height="520" fill="#121212" opacity=".18"/>
+<rect x="296" y="190" width="208" height="3" fill="#fff" opacity=".6"/>
+${textLines(wrap(name, 13), { x: 411, y: 270, size: 38, fill: '#fff' })}
+<text x="411" y="590" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="20" letter-spacing="5" fill="#fff" opacity=".75">E-BOOK</text>`,
+};
+
+function svg(category, name, index, withCaption = true) {
+  const cfg = catalog[category];
+  const tone = cfg.tones[index % cfg.tones.length];
+  const caption = category === 'ebooks' || !withCaption ? '' : textLines(wrap(name, 26).slice(0, 2), { x: 400, y: 640, size: 36 });
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+<rect width="800" height="800" fill="#f3f3f1"/>
+${art[category](tone, name)}
+${caption}
 </svg>
 `;
 }
@@ -219,5 +264,8 @@ write('meta.json', {
   simulatedSessions: SIMULATED_SESSIONS,
 });
 mkdirSync(imagesDir, { recursive: true });
-for (const p of products) writeFileSync(join(imagesDir, `${p.id}.svg`), svg(p));
+products.forEach((p, i) => writeFileSync(join(imagesDir, `${p.id}.svg`), svg(p.category, p.name, i)));
+const categoryNames = { templates: 'Templates', 'ui-kits': 'UI Kits', courses: 'Cursos', ebooks: 'E-books' };
+mkdirSync(join(imagesDir, '../categories'), { recursive: true });
+Object.keys(catalog).forEach((c, i) => writeFileSync(join(imagesDir, `../categories/${c}.svg`), svg(c, categoryNames[c], i + 1, false)));
 console.log(`${products.length} products, ${customers.length} customers, ${orders.length} orders`);
